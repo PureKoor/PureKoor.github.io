@@ -1,7 +1,12 @@
+:root{
+    --main-bg-color: black;
+    --text-color: white;
+}
+
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: Black; /*Color: Black Black*/
+    background-color: var(--mainbg-color);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -15,7 +20,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #FF0000; /*Color: White, is temp red*/
+    color: var(--text-color);
 }
 a:hover {
     text-decoration: underline;
@@ -28,7 +33,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: red;
+    color: var(--text-color);
 }
 footer {
     border-top: 1px solid #d5d5d5;
