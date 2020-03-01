@@ -20,14 +20,14 @@ nav ul li, footer ul li {
 }
 
 img {
-    margin: center;
+    margin: auto;
     width: 50%;
     border: 3px solid red;
     padding: 10px;
 }
 
 img:hover {
-    display: none;
+    /*display: none;*/
 }
 
 a {
