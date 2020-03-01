@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: 000000; /*Color: Black Black*/
+    background-color: Black; /*Color: Black Black*/
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -21,13 +21,14 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
+    color: white;
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: red;
 }
 footer {
     border-top: 1px solid #d5d5d5;
