@@ -4,8 +4,8 @@
 	--borderColor: #ffcc00;
 	--basicFamilyfont:"Lucida Sans Unicode", "Lucida Grande", 'sans-serif';
 	--thepaddingspace: 10%;
-    	--koorTextColor: #fcf9eb;
-	--shadowColor: #a82400;
+    	--koorTextColor: black;
+	--shadowColor: black;
 	--textBorderMargin: .69em;
 	--maxWidth: 62.500em; /*1000 px*/
 }
