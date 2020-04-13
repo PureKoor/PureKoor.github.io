@@ -1,13 +1,13 @@
 :root{
-	--bgColor: #ffa500;
-    	--textColor: black;
-	--borderColor: #fcf9eb;
+	--bgColor: #FFFFFE;
+    	--textColor: FFFFFE;
+	--borderColor: #ffcc00;
 	--basicFamilyfont:"Lucida Sans Unicode", "Lucida Grande", 'sans-serif';
 	--thepaddingspace: 10%;
-    	--koorTextColor: #fcf9eb;
-	--shadowColor: #a82400;
+    	--koorTextColor: #black;
+	--shadowColor: #black;
 	--textBorderMargin: .69em;
-	--maxWidth: 1000px; /*1000 px*/
+	--maxWidth: 62.73em; /*1000 px*/
 }
 
 .centerTextBlock {
