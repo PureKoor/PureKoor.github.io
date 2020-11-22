@@ -1,7 +1,7 @@
 tx=[`Gooey`,`BIG`,`ˢᵐᵒˡ`,`Cute`,`Rubber`,`Fluffy`,`Buff`,`Chubby`,`Stone`,`Skinny`,`Latex`,`Pool Toy`,`Soft`,``,``,``,``,``];
 ra=[`slowly`,`meticulously`,`casually`,`sluggishly`,`rapidly`,`swiftly`];
 tf=[`Alligator`,`Alpaca`,
-    `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`
+    `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`,
     `Cat`,`Chicken`,`Cow`,`Crab`,`Crocodile`,`Caribou`,`Camel`,`Capybara`,`Chamelon`,`Cheetah`,`Chipmunk`,`Cougar`,`Coyote`,
     `Deer`,`Dog`,`Dragon`,`Donkey`,`Duck`,
     `Egale`,`Echidna`,
@@ -12,7 +12,7 @@ tf=[`Alligator`,`Alpaca`,
     `Jaguar`,`Jackal`,
     `Kangaroo`,`Kiwi`,`Koala`,
     `Llama`,`Lion`,`Leopard`,`Lemur`,`Lynx`,`Lizard`,
-    `Marten`,`Moose`,`Mouse`,`Mule`
+    `Marten`,`Moose`,`Mouse`,`Mule`,
     `Otter`,`Owl`,`Ocelot`,`Ostrich`,`Ox`,
     `Pig`,`Panda`,`Panther`,`Penguin`,`Pigeon`,`Porcupine`,
     `Raccoon`,`Raven`,`Reindeer`,`Rhinoceros`,
