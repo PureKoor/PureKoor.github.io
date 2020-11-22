@@ -1,6 +1,30 @@
-tx=[`Gooey`,`BIG`,`ˢᵐᵒˡ`,`Cute`,`Rubber`,`Fluffy`,`Buff`,`Chubby`,``,``,``,``];
+tx=[`Gooey`,`BIG`,`ˢᵐᵒˡ`,`Cute`,`Rubber`,`Fluffy`,`Buff`,`Chubby`,`Stone`,`Skinny`,`Latex`,`Pool Toy`,`Soft`,``,``,``,``,``];
 ra=[`slowly`,`meticulously`,`casually`,`sluggishly`,`rapidly`,`swiftly`];
-tf=[`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`,`t`,`u`,`v`,`w`,`x`,`y`,`z`,`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`,`10`,`11`,`12`,`13`,`14`,`15`,`16`,`17`,`Bear`,`Cat`,`Chicken`,`Cow`,`Crab`,`Croc`,`Deer`,`Dog`,`Dragon`,`Goat`,`Giraffe`,`Horse`,`Ott`,`Owl`,`Raccoon`,`Raven`,`Shark`,`Tiger`,`Tanuki`,`Wolf`,`Ox`,`Tycoon`]; 
+tf=[`Alligator`,`Alpaca`,
+    `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`
+    `Cat`,`Chicken`,`Cow`,`Crab`,`Crocodile`,`Caribou`,`Camel`,`Capybara`,`Chamelon`,`Cheetah`,`Chipmunk`,`Cougar`,`Coyote`,
+    `Deer`,`Dog`,`Dragon`,`Donkey`,`Duck`,
+    `Egale`,`Echidna`,
+    `Fox`,`Falcon`,`Flamingo`,
+    `Goat`,`Giraffe`,`Guinea pig`,
+    `Horse`,`Hamster`,`Hedgehog`,`Hippopotamus`,`Hyena`,
+    `Iguana`,
+    `Jaguar`,`Jackal`,
+    `Kangaroo`,`Kiwi`,`Koala`,
+    `Llama`,`Lion`,`Leopard`,`Lemur`,`Lynx`,`Lizard`,
+    `Marten`,`Moose`,`Mouse`,`Mule`
+    `Otter`,`Owl`,`Ocelot`,`Ostrich`,`Ox`,
+    `Pig`,`Panda`,`Panther`,`Penguin`,`Pigeon`,`Porcupine`,
+    `Raccoon`,`Raven`,`Reindeer`,`Rhinoceros`,
+    `Synth`,`Salamander`,`Sheep`,`Sloth`,`Stoat`,
+    `Tiger`,`Tanuki`,`Turkey`,
+    `Wolf`,`Wolverine`,
+    `Ox`,
+    `Werewolf`,`Basilisk`,`Gryphon`,`Wyvern`,`Kobold`,
+    `Ant`,`Bug`,`Butterfly`,`Caterpillar`,`Snail`,`Slug`,`Spider`,
+    `Clam`,`Whale`,`Shark`,`Jellyfish`,`Clown Fish`,`Crawdad`,`Dolphin`,`Eel`,`Frog`,`Lobster`,`Manta Ray`,`Octopus`,`Piranha`,`Salmon`,`Stingray`,`Tuna`,
+    `Tycoon`];
+
 
 function choose(arr){
   return arr[Math.floor(Math.random()*arr.length)] + " ";
