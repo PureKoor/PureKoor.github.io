@@ -1,9 +1,28 @@
-tx=[`Gooey`,`BIG`,`ˢᵐᵒˡ`,`Cute`,`Rubber`,`Fluffy`,`Buff`,`Chubby`,`Stone`,`Skinny`,`Latex`,`Pool Toy`,`Soft`,``,``,``,``,``];
-ra=[`slowly`,`meticulously`,`casually`,`sluggishly`,`rapidly`,`swiftly`];
+ra=[`slowly`,`meticulously`,`casually`,`sluggishly`,`rapidly`,`swiftly`,`poof`,`securely`];
+
+tx=[`Airy`,
+    `Bouncy`,`BIG`,`Buff`,`Bulky`,
+    `Cute`,`Chubby`,`Cozy`,
+    `Drowzy`,
+    `Fluffy`,`Firey`
+    `Earthy`,`Elastic`,
+    `Gooey`,`Glossy`,
+    `Icy`,
+    `Latex`,
+    `Metallic`,
+    `Nibble`,
+    `Rubber`,`Reflective`,
+    `ˢᵐᵒˡ`,`Stone`,`Skinny`,`Soft`,`Scaly`,`Snarling`,`Silky`,`Strong`,``,
+    `THICK`,`Thin`,
+    `Pool Toy`,`Pure`,
+    `Watery`,`Wholesome`,`Wooden`,
+    `Velvety`,
+    ,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``];
+
 tf=[`Alligator`,`Alpaca`,
     `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`,
     `Cat`,`Chicken`,`Cow`,`Crab`,`Crocodile`,`Caribou`,`Camel`,`Capybara`,`Chamelon`,`Cheetah`,`Chipmunk`,`Cougar`,`Coyote`,
-    `Deer`,`Dog`,`Dragon`,`Donkey`,`Duck`,
+    `Deer`,`Dog`,`Donkey`,`Duck`,
     `Egale`,`Echidna`,
     `Fox`,`Falcon`,`Flamingo`,
     `Goat`,`Giraffe`,`Guinea pig`,
@@ -21,7 +40,7 @@ tf=[`Alligator`,`Alpaca`,
     `Wolf`,`Wolverine`,`Walrus`,`Weasel`,
     `Ox`,
     `Zebra`,
-    `Werewolf`,`Basilisk`,`Gryphon`,`Wyvern`,`Kobold`,`Unicorn`,`Chimera`,`Kitsune`,
+    `Werewolf`,`Basilisk`,`Gryphon`,`Wyvern`,`Kobold`,`Unicorn`,`Chimera`,`Kitsune`,`Dragon`,
     `Ant`,`Bug`,`Butterfly`,`Caterpillar`,`Snail`,`Slug`,`Spider`,
     `Clam`,`Whale`,`Shark`,`Jellyfish`,`Clown Fish`,`Crawdad`,`Dolphin`,`Eel`,`Frog`,`Lobster`,`Manta Ray`,`Octopus`,`Piranha`,`Salmon`,`Stingray`,`Tuna`,
     `Tycoon`];
@@ -34,7 +53,7 @@ function choose(arr){
 function transformation(user) {
   str = "/me now ";
   str += choose(ra);
-  str += "transforms " + user +" into a ";
+  str += "transforms " + user + " into a ";
   str += choose(tx);
   str += choose(tf);
   
