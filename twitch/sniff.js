@@ -1,4 +1,4 @@
-smell = [`an intoxicating nature`,`like, comment, & subscribe. Hit that bell for notifications...`
+smell = [`an intoxicating nature`,`like, comment, & subscribe. Hit that bell for notifications...`,
          `aloe`,`antiseptic`,`apple`,`AHHH`,
          `bondfire`,`burntness`,`butter toast`,`banana`,
          `comfort`,`coldness`,`coffee`,`citrus`,`caramel`,`cat`,
