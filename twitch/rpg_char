@@ -1,0 +1,55 @@
+rpg char maker
+
+s_HP
+s_MP
+s_STR
+s_INT
+s_DEF
+s_SPD
+
+let weapons = [
+    ['Axe', 9],
+    ['Boomerage',1],
+    ['Stick', 2],
+    ['Whip', 1],
+    ['Blade', 2],
+    ['Club', 1],
+    ['Knife', 7],
+    ['Needle',1 ],
+    ['Dagger',1],
+    ['Claw',1],
+    ['Lance',1],
+    ['Mace',1],
+    ['Fan',1],
+    ['Broad Sword',1],
+    ['knuckles',1],
+    ['scissors',1],
+    ['Hammer',1],
+    ['sword',1],
+    ['fists',1]
+    ['sai',1]
+];
+
+
+//IRON FAN, FURRY FAN, EDGE FAN, etc
+weaponName = [iron,furry,edge,snoose,holy,dragon];
+
+var warrior = {
+  
+  HP: ",
+  MP: 1,
+  STR: ,
+  INT:,
+  DEF,
+  SPD:,
+  uselessWeapon: ['Staff'],
+  bonusWeapon: ['Axe','Broad Sword']
+};
+
+
+sayingthing(){
+ "x has classed into y. Base: ⚔️: num 🔮: num"
+ Check to see if person can use weapon
+"Holding x with damage of x" or "holding x but it cna't be used. Defeat is ineviable"
+}
+
