@@ -1,0 +1,10 @@
+like of games
+
+var ps2 = {
+  "Jak & Daxter": "Is a fantstic atmosphere platformer",
+  "Ratchet & Clank": "Is a cool game"
+}
+
+var pc = {
+   "Fall Giuys": "Is colorful"
+}
