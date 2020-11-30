@@ -205,4 +205,4 @@ function rr(user) {
     return "/me still testing " + "heroRole ❤️:" + health + " class " + charClass[0].attributeBuff;  
 }
 
-rr(args);
+rr(arg);
