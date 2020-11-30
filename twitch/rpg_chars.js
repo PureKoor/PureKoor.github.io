@@ -183,6 +183,10 @@ function sayingthing(){
 
 function rr(user) {  
 
+   //COMMENTS CAN NOT BE IN FINAL CODE FOR THE GAME. YOU'll NEED TO HAVE AN EXTRA FILE THAT EXPLAINS ALL OF THE CODE!!!
+	// use https://jsfiddle.net/q1Ljg2fp/21/ to check code!
+	
+	
   //array selects class which then puts numbers to said variables
     //var heroRole = Math.floor(Math.random()*charClass.length);
     var heroRole = 0;
