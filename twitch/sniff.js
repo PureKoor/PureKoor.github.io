@@ -31,7 +31,7 @@ function choose(arr){
 }
 
 function sniff(user) {
-  if (user == "") return "/me sniffs nearby... smells of" + choose(smell);      
+  if (user == "") return "/me sniffs nearby... smells of " + choose(smell);      
          
   return "/me sniffs " + user + "... smells of " + choose(smell);
 }
