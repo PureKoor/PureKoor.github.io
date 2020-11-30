@@ -29,6 +29,15 @@ let weapons = [
 weaponName = [iron,furry,edge,snoose,holy,dragon];
 
 
+function warriorExperience(hp,mp,etc)
+{
+
+}
+
+function mageExperience(hp,mp,etc)
+{
+ do experience stat for next level make a random number between the max emxperience and subtract +1 that to find the person amount of exp needed for the next level
+}
 
 //array of classes to make so that they can hold the values for the final function
 let charClass = [
@@ -64,14 +73,27 @@ var Warrior = {
 
 sayingthing(){
  "x has classed into y. Base: ⚔️: num 🔮: num"
+ // output for save
+ !fight [N:ZaszTheCroc The Magically C:W ⚔️11 🔮18]
  Check to see if person can use weapon
 "Holding x with damage of x" or "holding x but it cna't be used. Defeat is ineviable"
 }
 
 function rpg_char(user) {  
+
 //array selects class which then puts numbers to said variables
     health = charClass[Random Number].hp ;   
+    
+    
+    give random level between char base level thru 100
+    If user getts level 100, tell them they maxed out in levels in their stats callback  
+    
+   //Maybe make rpgCharStatsDecoderFile for future things that can be done with the rpg. Like fighting other monsters
+   
+   //use  $(query) to see if string is empty for sniff, monsterfight, etc
+    
     return "/me still testing" + health;
+
 
   
 }
