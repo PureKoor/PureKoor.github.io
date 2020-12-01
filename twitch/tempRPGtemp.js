@@ -135,14 +135,19 @@ function rr(user) {
    var newline = " | ";
    
    message += "/me forges " + user + " into " + user + " the X(Great/Holy/Fluff/etc)! [ | ";
-   message += ":" + h_class + newline;
+   message += "💼" + ":" + h_class + newline;
+   if (lvl >= (Math.floor(GM.g_LVL_max / 2))){   
+   		message += "🌱";   
+      }else{
+      message += "🌲";
+      }
    message += ":" + lvl + newline;   
-   message += ":" + hp + newline;
-   message += ":" + mp + newline;
-   message += ":" + int + newline;
-   message += ":" + def + newline;
-   message += ":" + spd + newline;
-   message += ":" + luk + newline;
+   message += "❤️" + ":" + hp + newline;
+   message += "⚔️" + ":" + mp + newline;
+   message += "🎓" + ":" + int + newline;
+   message += "🛡" + ":" + def + newline;
+   message += "💨" + ":" + spd + newline;
+   message += "☘️" + ":" + luk + newline;
    message += "]";
     
     return message; 
