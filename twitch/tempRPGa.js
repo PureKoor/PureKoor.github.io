@@ -113,25 +113,9 @@ function levelingUP(lvl,stat,s_varience){
     var min = GM.g_varience_min;
     var max = s_varience;
     for (i = 0; i < lvl; i++) {    		    
-				tempStat = tempStat +  Math.floor( Math.random()*(max - min)+min);
+	tempStat = tempStat +  Math.floor( Math.random()*(max - min)+min);
 		} 
     return tempStat;
-}
-var e = {
-		"suitcase" : 0x1F4BC,
-    "seed" : 0x1F331,
-    "tree" : 0x1F332,
-    "heart" : 0x2764,
-    "crystalBall" : 0x1F52E,
-    "swords" : 0x2694,
-    "gradCap" : 0x1F393,
-    "sheild" : 0x1F6E1,
-    "dustCloud" : 0x1F4A8,
-    "fourleaf" : 0x2618,    
-}
-
-function emojiOut(emojiNum){
-    return String.fromCodePoint(emojiNum);
 }
 
 function rr(user) {  
@@ -151,19 +135,14 @@ function rr(user) {
    var newline = " | ";
    
    message += "/me forges " + user + " into " + user + " the X(Great/Holy/Fluff/etc)! [ | ";
-   message += emojiOut(e.suitcase) + ":" + h_class + newline;
-   if (lvl >= (Math.floor(GM.g_LVL_max / 2))){   
-   		message += emojiOut(e.seed);   
-      }else{
-      message += emojiOut(e.tree);
-      }
+   message += ":" + h_class + newline;
    message += ":" + lvl + newline;   
-   message += emojiOut(e.heart) + ":" + hp + newline;
-   message += emojiOut(e.swords) + ":" + mp + newline;
-   message += emojiOut(e.gradCap) + ":" + int + newline;
-   message += emojiOut(e.sheild) + ":" + def + newline;
-   message += emojiOut(e.dustCloud) + ":" + spd + newline;
-   message += emojiOut(e.fourleaf) + ":" + luk + newline;
+   message += ":" + hp + newline;
+   message += ":" + mp + newline;
+   message += ":" + int + newline;
+   message += ":" + def + newline;
+   message += ":" + spd + newline;
+   message += ":" + luk + newline;
    message += "]";
     
     return message; 
