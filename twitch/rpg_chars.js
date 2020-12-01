@@ -360,22 +360,22 @@ function rr(user) {
    var newline = " | ";
    
    message += "/me forges " + user + " into " + user + " the X(Great/Holy/Fluff/etc)! [ | ";
-   message += emojiOut(e.suitcase) + ":" + h_class + newline;
+   message += "👤" + ":" + h_class + newline;
    if (lvl >= (Math.floor(GM.g_LVL_max / 2))){   
-   		message += emojiOut(e.seed);   
+   		message += "🌱";   
       }else{
-      message += emojiOut(e.tree);
+      message += "🌲";
       }
    message += ":" + lvl + newline;   
-   message += emojiOut(e.heart) + ":" + hp + newline;
-   message += emojiOut(e.swords) + ":" + mp + newline;
-   message += emojiOut(e.gradCap) + ":" + int + newline;
-   message += emojiOut(e.sheild) + ":" + def + newline;
-   message += emojiOut(e.dustCloud) + ":" + spd + newline;
-   message += emojiOut(e.fourleaf) + ":" + luk + newline;
+   message += "❤️" + ":" + hp + newline;
+   message += "⚔️" + ":" + mp + newline;
+   message += "🎓" + ":" + int + newline;
+   message += "🛡" + ":" + def + newline;
+   message += "💨" + ":" + spd + newline;
+   message += "☘️" + ":" + luk + newline;
    message += "]";
     
-    return message; 
+    return message; ; 
 }
 
 rr(arg);
