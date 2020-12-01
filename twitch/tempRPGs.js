@@ -153,7 +153,6 @@ var charClass = [
         "s_DEF":8,
         "s_SPD":3,
         "s_LUK":1,
-        //stat varience per stat
 				"v_HP": 4,
         "v_MP": 8,
         "v_STR":2,
@@ -175,7 +174,6 @@ var charClass = [
         "s_DEF":4,
         "s_SPD":11,
         "s_LUK": 1,
-        //stat varience per stat
 				"v_HP": 4,
         "v_MP": 8,
         "v_STR":2,
@@ -197,7 +195,6 @@ var charClass = [
         "s_DEF":8,
         "s_SPD":3,
         "s_LUK":1,
-        //stat varience per stat
 				"v_HP": 4,
         "v_MP": 8,
         "v_STR":2,
@@ -219,7 +216,6 @@ var charClass = [
         "s_DEF":8,
         "s_SPD":3,
         "s_LUK":1,
-        //stat varience per stat
 				"v_HP": 4,
         "v_MP": 8,
         "v_STR":2,
