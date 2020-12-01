@@ -9,123 +9,8 @@ var weapons = [
     {
         "name": "Axe",
         "weaponType": ATTRIBUTE[0],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Blade",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Boomerang",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-		{
-        "name": "Broad Sword",
-        "weaponType": ATTRIBUTE[0],
-        "weaponATK" : 5,
-    }, 
-    {
-        "name": "Club",
-        "weaponType": ATTRIBUTE[0],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Claw",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Dart",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Dagger",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Fan",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Fist",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Hammer",
-        "weaponType": ATTRIBUTE[0],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Knife",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Knuckles",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Lance",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Mace",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Needle",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Sword",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Wand",
-        "weaponType": ATTRIBUTE[1],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Staff",
-        "weaponType": ATTRIBUTE[1],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Rod",
-        "weaponType": ATTRIBUTE[1],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Stick",
-        "weaponType": ATTRIBUTE[1],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Scissors",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-    {
-        "name": "Whip",
-        "weaponType": ATTRIBUTE[3],
-        "weaponATK" : 5,
-    },
-		{
-        "name": "Sai",
-        "weaponType": ATTRIBUTE[2],
-        "weaponATK" : 5,
-    }
+        "weaponATK" : 5
+     }
 ];
 
 var weaponType = [
@@ -133,12 +18,7 @@ var weaponType = [
     		"name": "Iron",
         "bonus": ATTRIBUTE[0],
         "bonus_num": 5,
-    },
-    {
-    
-    },
-   
-    'iron','furry','edge','snoose','holy','dragon','Legendary','Vtuber','Popufur','Digital','Friendship'
+    }
 ];
 
 var charClass = [
@@ -232,13 +112,9 @@ function levelingUP(lvl,stat,s_varience){
 		var tempStat = stat;
     var min = GM.g_varience_min;
     var max = s_varience;
-    console.log("Tis the start: " + tempStat);
-    for (i = 0; i < lvl; i++) {
-    		    
+    for (i = 0; i < lvl; i++) {    		    
 				tempStat = tempStat +  Math.floor( Math.random()*(max - min)+min);
-        console.log(i+"#: "+tempStat);
 		} 
-    
     return tempStat;
 }
 var e = {
@@ -255,25 +131,21 @@ var e = {
 }
 
 function emojiOut(emojiNum){
-    console.log("new emoji activated")
     return String.fromCodePoint(emojiNum);
 }
 
 function rr(user) {  
  		var hc = Math.floor(Math.random()*charClass.length);
-    console.log("hc equals: "+ hc);
     var cc = charClass[hc];
-    console.log("cc is equal to: " + cc.class); 
-    var h_class = 	cc.class;
-    var lvl =				Math.floor((Math.random()*GM.g_LVL_max) + GM.g_LVL_min);
-    console.log("lvl is: " + lvl);
-		var hp =		 		levelingUP(lvl,cc.s_HP,cc.v_HP);
-    var mp =		 		levelingUP(lvl,cc.s_MP,cc.v_MP);
-    var str=				levelingUP(lvl,cc.s_STR,cc.v_STR);
-    var int=				levelingUP(lvl,cc.s_INT,cc.v_INT);
-    var def=				levelingUP(lvl,cc.s_DEF,cc.v_DEF);
-    var spd=				levelingUP(lvl,cc.s_SPD,cc.v_SPD);
-    var luk=				levelingUP(lvl,cc.s_LUK,cc.v_LUK);
+    var h_class = cc.class;
+    var lvl = Math.floor((Math.random()*GM.g_LVL_max) + GM.g_LVL_min);
+		var hp = levelingUP(lvl,cc.s_HP,cc.v_HP);
+    var mp = levelingUP(lvl,cc.s_MP,cc.v_MP);
+    var str= levelingUP(lvl,cc.s_STR,cc.v_STR);
+    var int= levelingUP(lvl,cc.s_INT,cc.v_INT);
+    var def= levelingUP(lvl,cc.s_DEF,cc.v_DEF);
+    var spd= levelingUP(lvl,cc.s_SPD,cc.v_SPD);
+    var luk= levelingUP(lvl,cc.s_LUK,cc.v_LUK);
  
    var message = "";
    var newline = " | ";
