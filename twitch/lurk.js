@@ -6,9 +6,9 @@ function choose(arr){
 
 function lurk(user) {
 
-  var picker = Math.floor(Math.random()*2);
+  var picker = Math.floor(Math.random()*7);
 
-  if(picker % 0){
+  if(picker % 2 != 0){
       return "/me sees that " + user + " is currently lurking...";
   }
   else {
