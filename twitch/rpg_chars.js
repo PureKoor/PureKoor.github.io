@@ -11,6 +11,7 @@ Agility = Speed based actions
 Prayer = Healing based actions
 */
 const ATTRIBUTE = ['power','wisdom','agility','prayer'];
+const ATTRIBUTE_EMOJI = ["🌋","🌟","👟","✝️"]
 //Game Master
 const GM = {
 		"g_LVL_max": 10,
@@ -25,6 +26,7 @@ weaponMGK = action done with magic
 */
 var weapons = [
     {
+	"ID": 1,
         "name": "Axe",
         "weaponType": ATTRIBUTE[0],
         "weaponATK" : 5,
@@ -322,32 +324,28 @@ function emojiOut(emojiNum){
 
 function rr(user) {  
 // hero class
- 		var hc = Math.floor(Math.random()*charClass.length);
-    console.log("hc equals: "+ hc);
+    var hc = Math.floor(Math.random()*charClass.length);
     var cc = charClass[hc];
-    console.log("cc is equal to: " + cc.class);
-// temp hero    
-    var h_class = 	cc.class;
-    var lvl =				Math.floor((Math.random()*GM.g_LVL_max) + GM.g_LVL_min);
-    console.log("lvl is: " + lvl);
-		var hp =		 		levelingUP(lvl,cc.s_HP,cc.v_HP);
-    var mp =		 		levelingUP(lvl,cc.s_MP,cc.v_MP);
-    var str=				levelingUP(lvl,cc.s_STR,cc.v_STR);
-    var int=				levelingUP(lvl,cc.s_INT,cc.v_INT);
-    var def=				levelingUP(lvl,cc.s_DEF,cc.v_DEF);
-    var spd=				levelingUP(lvl,cc.s_SPD,cc.v_SPD);
-    var luk=				levelingUP(lvl,cc.s_LUK,cc.v_LUK);
+// temp stats   
+    var h_class = cc.class;
+    var lvl = Math.floor((Math.random()*GM.g_LVL_max) + GM.g_LVL_min);
+    var hp = levelingUP(lvl,cc.s_HP,cc.v_HP);
+    var mp = levelingUP(lvl,cc.s_MP,cc.v_MP);
+    var str= levelingUP(lvl,cc.s_STR,cc.v_STR);
+    var int= levelingUP(lvl,cc.s_INT,cc.v_INT);
+    var def= levelingUP(lvl,cc.s_DEF,cc.v_DEF);
+    var spd= levelingUP(lvl,cc.s_SPD,cc.v_SPD);
+    var luk= levelingUP(lvl,cc.s_LUK,cc.v_LUK);
+//
+   var hero_weapon = weapons[Math.floor(Math.random()*weapons.length)]
+   	"ID": 1,
+        "name": "Axe",
+        "weaponType": ATTRIBUTE[0],
+        "weaponATK" : 5,
  
  //COMMENTS CAN NOT BE IN FINAL CODE FOR THE GAME. YOU'll NEED TO HAVE AN EXTRA FILE THAT EXPLAINS ALL OF THE CODE!!!
 	// use https://jsfiddle.net/q1Ljg2fp/21/ to check code!
-		
-  //array selects class which then puts numbers to said variables
-    //var heroRole = Math.floor(Math.random()*charClass.length);
-    
-  // Max level is 100, the minLVL will always add 1
-
-    //var magicPoints = charClass[heroRole].s_mp ; 
-    //charClass[heroRole].s_LVL = Math.floor(Math.random()*maxLVL) + minLVL; 	
+	
         
     //give random level between char base level thru 100
     //If user getts level 100, tell them they maxed out in levels in their stats callback  
@@ -355,13 +353,13 @@ function rr(user) {
    //Maybe make rpgCharStatsDecoderFile for future things that can be done with the rpg. Like fighting other monsters
    
    //use  $(query) to see if string is empty for sniff, monsterfight, etc
-   
+   //Final Message
    var message = "";
    var newline = " | ";
    
    message += "/me forges " + user + " into " + user + " the X(Great/Holy/Fluff/etc)! [ | ";
    message += "👤" + ":" + h_class + newline;
-   if (lvl >= (Math.floor(GM.g_LVL_max / 2))){   
+   if (lvl <= (Math.floor(GM.g_LVL_max / 2))){   
    		message += "🌱";   
       }else{
       message += "🌲";
