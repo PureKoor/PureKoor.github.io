@@ -10,7 +10,7 @@ function mm(user) {
     var tempNum = 5;
   
    if (user == "") {
-      return "/me changes the size of the world to the " + choose(smell) + " size!!!";  
+      return "/me changes the size of the world to the " + choose(size) + " size!!!";  
    }
          
    if(Math.floor(Math.random()*tempNum) % tempNum != 0){
