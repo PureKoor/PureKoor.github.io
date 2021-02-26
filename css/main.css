@@ -160,3 +160,13 @@ footer ul li {
 .content {
 	z-index: 2;
 }
+
+.flex-logobox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 0;
+	justify-content: space-around;
+}
+.flex-item {
+ padding-bottom: 24px;
+}
