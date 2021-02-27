@@ -1,4 +1,4 @@
-import {GAME_EMOJI} from 'https://purekoor.com/twitch/rpgGameSymbols.js';
+import {GAME_EMOJI} from './rpgGameSymbols.js';
 
 
 GAME_EMOJI.hp + "hewwooooooooo";
