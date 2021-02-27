@@ -145,7 +145,7 @@ function rr(user) {
    message += "❤️" + ":" + hp + newline;
    message += "⚔️" + ":" + mp + newline;
    message += "🎓" + ":" + int + newline;
-   message += "🛡" + ":" + def + newline;
+   message += "🛡️" + ":" + def + newline;
    message += "💨" + ":" + spd + newline;
    message += "☘️" + ":" + luk + newline;
    message += "]";
