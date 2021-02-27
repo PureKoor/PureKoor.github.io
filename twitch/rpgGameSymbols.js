@@ -1,3 +1,5 @@
+//For one to copy into other files if need be
+
 const GAME_EMOJI = {
     class: "💼",
     hp: "❤️",
@@ -11,5 +13,3 @@ const GAME_EMOJI = {
     agility: "👟",
     "prayedr": "✝️"
 }
-
-export (GAME_EMOJI);
