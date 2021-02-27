@@ -11,5 +11,5 @@ const GAME_EMOJI = {
     power: "🌋",
     wisdom: "🌟",
     agility: "👟",
-    "prayedr": "✝️"
-}
+    "prayer": "✝️"
+};
