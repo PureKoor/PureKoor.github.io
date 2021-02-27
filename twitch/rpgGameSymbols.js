@@ -1,4 +1,4 @@
-const GAME_EMOJI = {
+export const GAME_EMOJI = {
     class: "💼",
     hp: "❤️",
     atk: "⚔️",
@@ -10,5 +10,4 @@ const GAME_EMOJI = {
     wisdom: "🌟",
     agility: "👟",
     "prayedr": "✝️"
-   
-};
+}
