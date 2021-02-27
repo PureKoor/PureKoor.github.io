@@ -170,3 +170,13 @@ footer ul li {
 .flex-item {
  padding-bottom: 24px;
 }
+
+.a-logo{
+	height: 128px;
+	display: block;
+}
+
+.flex-img-logo {
+	border-radius: .5em;
+	border:.2em solid var(--borderColor);
+}
