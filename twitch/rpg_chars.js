@@ -12,7 +12,7 @@ Mythic = Magic based actions
 Purity = Healing based actions
 */
 const ATTRIBUTE = ['power', 'mythic', 'purity'];
-const ATTRIBUTE_EMOJI = ["🌋", "🌟", "👟", "✝️"]
+const ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
 //Game Master
 const GM = {
   "g_LVL_max": 10,
@@ -22,14 +22,14 @@ const GM = {
 
 //Titles for char creation's name
 var charNameTitle = [
-'Fluffy','Furry',
-'Great',
-'Holy',
-'Noble',
-'Popular',
-'Transformative',
-'Vicious',
-'Wary'
+  'Fluffy', 'Furry',
+  'Great',
+  'Holy',
+  'Noble',
+  'Popular',
+  'Transformative',
+  'Vicious',
+  'Wary'
 ];
 
 // Make into array like charClass
@@ -199,13 +199,13 @@ Mage = High MP & INT. ++ Wisdom --Power
 Thief = High SPD & LUK. ++Agility --Power
 Cleric = HIGH INT & DEF. ++Prayer --Wisdom
 */
-var charClass = [ {
+var charClass = [{
     "id": 0,
     "class": "Error",
     "title": "null",
     "s_LVL": -999,
-    "s_HP":  -999,
-    "s_MP":  -999,
+    "s_HP": -999,
+    "s_MP": -999,
     "s_STR": -999,
     "s_INT": -999,
     "s_DEF": -999,
@@ -222,7 +222,7 @@ var charClass = [ {
     "attributeBuff": ATTRIBUTE[0],
     "attributeDebuff": ATTRIBUTE[1],
   },
-{
+  {
     "id": 1,
     "class": "Warrior",
     "title": "null",
@@ -316,9 +316,9 @@ var charClass = [ {
   }
 ];
 
-var heroObj= {
-	hc : charClass[0],
-  ht : "null title",
+var heroObj = {
+  class: charClass[0],
+  title: "null title",
   lvl: -999,
   ht: -999,
   hp: -999,
@@ -330,10 +330,29 @@ var heroObj= {
   luk: -999
 };
 
-function heroCreate(hero){
+function setupHero(hero) {
+  var heroClassRNG = Math.floor((Math.random() * charClass.length) + 1);
+  //console.log(heroClassRNG);
+  hero.class = charClass[heroClassRNG];
+  //console.log("RNGHero: " + hero.class.class);
+  hero.title = charNameTitle[Math.floor(Math.random() * charNameTitle.length)]
+  //console.log("RNGHero: " + hero.title);
+}
 
-var hero = new heroObj();
-return hero;
+function setRandomHero(hero) {
+
+
+  hero.lvl = Math.floor((Math.random() * GM.g_LVL_max) + GM.g_LVL_min);
+  //console.log("RNGHero: " + hero.lvl);
+  var lvl = hero.lvl;
+  hero.hp = levelingUP(lvl, hero.class.s_HP, hero.class.v_HP);
+  hero.mp = levelingUP(lvl, hero.class.s_MP, hero.class.v_MP);
+  hero.str = levelingUP(lvl, hero.class.s_STR, hero.class.v_STR);
+  hero.int = levelingUP(lvl, hero.class.s_INT, hero.class.v_INT);
+  hero.def = levelingUP(lvl, hero.class.s_DEF, hero.class.v_DEF);
+  hero.spd = levelingUP(lvl, hero.class.s_SPD, hero.class.v_SPD);
+  hero.luk = levelingUP(lvl, hero.class.s_LUK, hero.class.v_SPD);
+
 }
 
 function sayingthing() {
@@ -345,27 +364,10 @@ function sayingthing() {
   
   For the levels ranges they get different emoji, 0-10🌱 11-49 🌸 ?-100 🌲, 100 should be seen as MAX
   */
-    // hero class
-    
-    		// MAKE HERO OBJECT THE FUNCTION TO BE CALLED
-       var hero;
-       heroCreate(hero);
-       aaaaaaa
-        
-    
-  var hc = Math.floor(Math.random() * charClass.length);
-  var cc = charClass[hc];
-  // temp stats   
-  var h_class = cc.class;
-  var lvl = Math.floor((Math.random() * GM.g_LVL_max) + GM.g_LVL_min);
-  var ht = charNameTitle[Math.floor(Math.random() * charNameTitle.length)]
-  var hp = levelingUP(lvl, cc.s_HP, cc.v_HP);
-  var mp = levelingUP(lvl, cc.s_MP, cc.v_MP);
-  var str = levelingUP(lvl, cc.s_STR, cc.v_STR);
-  var int = levelingUP(lvl, cc.s_INT, cc.v_INT);
-  var def = levelingUP(lvl, cc.s_DEF, cc.v_DEF);
-  var spd = levelingUP(lvl, cc.s_SPD, cc.v_SPD);
-  var luk = levelingUP(lvl, cc.s_LUK, cc.v_LUK);
+  // hero class
+
+  // MAKE HERO OBJECT THE FUNCTION TO BE CALLED
+  var hero;
 
 }
 
@@ -373,11 +375,11 @@ function levelingUP(lvl, stat, s_varience) {
   var tempStat = stat;
   var min = GM.g_varience_min;
   var max = s_varience;
-  console.log("Tis the start: " + tempStat);
+  //console.log("Tis the start: " + tempStat);
   for (i = 0; i < lvl; i++) {
 
     tempStat = tempStat + Math.floor(Math.random() * (max - min) + min);
-    console.log(i + "#: " + tempStat);
+    //console.log(i + "#: " + tempStat);
   }
 
   return tempStat;
@@ -405,39 +407,43 @@ function rr(user) {
 
   //
   var hero_weapon = weapons[Math.floor(Math.random() * weapons.length)]
- // "ID": 1,
- // "name": "Axe",
- // "weaponType": ATTRIBUTE[0],
-   // "weaponATK": 5,
+  // "ID": 1,
+  // "name": "Axe",
+  // "weaponType": ATTRIBUTE[0],
+  // "weaponATK": 5,
 
-    //COMMENTS CAN NOT BE IN FINAL CODE FOR THE GAME. YOU'll NEED TO HAVE AN EXTRA FILE THAT EXPLAINS ALL OF THE CODE!!!
-    // use https://jsfiddle.net/q1Ljg2fp/21/ to check code!
+  //COMMENTS CAN NOT BE IN FINAL CODE FOR THE GAME. YOU'll NEED TO HAVE AN EXTRA FILE THAT EXPLAINS ALL OF THE CODE!!!
+  // use https://jsfiddle.net/q1Ljg2fp/21/ to check code!
 
 
-    //give random level between char base level thru 100
-    //If user getts level 100, tell them they maxed out in levels in their stats callback  
+  //give random level between char base level thru 100
+  //If user getts level 100, tell them they maxed out in levels in their stats callback  
 
-    //Maybe make rpgCharStatsDecoderFile for future things that can be done with the rpg. Like fighting other monsters
+  //Maybe make rpgCharStatsDecoderFile for future things that can be done with the rpg. Like fighting other monsters
 
-    //use  $(query) to see if string is empty for sniff, monsterfight, etc
-    //Final Message
-    var message = "";
+  //use  $(query) to see if string is empty for sniff, monsterfight, etc
+  //Final Message
+  var hero = heroObj;
+  setupHero(hero);
+  setRandomHero(hero);
+
+  var message = "";
   var newline = " | ";
 
-  message += "/me forges " + user + " into " + user + " the " + ht + "! [ | ";
-  message += "👤" + ":" + h_class + newline;
-  if (lvl <= (Math.floor(GM.g_LVL_max / 2))) {
+  message += "/me forges " + user + " into " + user + " the " + hero.title + "! [ | ";
+  message += "👤" + ":" + hero.class.class + newline;
+  if (hero.lvl <= (Math.floor(GM.g_LVL_max / 2))) {
     message += "🌱";
   } else {
     message += "🌲";
   }
-  message += ":" + lvl + newline;
-  message += "❤️" + ":" + hp + newline;
-  message += "⚔️" + ":" + mp + newline;
-  message += "🎓" + ":" + int + newline;
-  message += "🛡️" + ":" + def + newline;
-  message += "💨" + ":" + spd + newline;
-  message += "☘️" + ":" + luk + newline;
+  message += ":" + hero.lvl + newline;
+  message += "❤️" + ":" + hero.hp + newline;
+  message += "⚔️" + ":" + hero.mp + newline;
+  message += "🎓" + ":" + hero.int + newline;
+  message += "🛡️" + ":" + hero.def + newline;
+  message += "💨" + ":" + hero.spd + newline;
+  message += "☘️" + ":" + hero.luk + newline;
   message += "]";
 
   return message;
