@@ -142,12 +142,7 @@ var weaponType = [{
     "name": "Iron",
     "bonus": ATTRIBUTE[0],
     "bonus_num": 5,
-  },
-  {
-
-  },
-
-  'iron', 'furry', 'edge', 'snoose', 'holy', 'dragon', 'Legendary', 'Vtuber', 'Popufur', 'Digital', 'Friendship'
+  }
 ];
 function warriorExperience(lvl, hp, mp, str, int, def, spd, luk) {
 }
@@ -300,7 +295,7 @@ function setRandomHero(hero) {
 }
 
 function sayingthing() {
-  var hero;
+  var hero ]= "ah";
 }
 
 function levelingUP(lvl, stat, s_varience) {
