@@ -1,7 +1,7 @@
 var r = "koor";
-const ATTRIBUTE = ['power', 'mythic', 'purity'];
-const ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
-const GM = {
+var ATTRIBUTE = ['power', 'mythic', 'purity'];
+var ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
+var GM = {
   "g_LVL_max": 10,
   "g_LVL_min": 1,
   "g_varience_min": 1,
