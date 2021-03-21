@@ -152,7 +152,6 @@ var weaponType = [{
 function warriorExperience(lvl, hp, mp, str, int, def, spd, luk) {
 }
 function mageExperience(hp, mp, etc) {
-  //do experience stat for next level make a random number between the max emxperience and subtract +1 that to find the person amount of exp needed for the next level
 }
 function thiefExperience(hp, mp, etc) {
 }
@@ -170,7 +169,6 @@ var charClass = [{
     "s_DEF": -999,
     "s_SPD": -999,
     "s_LUK": -999,
-    //stat varience per stat
     "v_HP": 4,
     "v_MP": 8,
     "v_STR": 2,
@@ -193,7 +191,6 @@ var charClass = [{
     "s_DEF": 8,
     "s_SPD": 3,
     "s_LUK": 1,
-    //stat varience per stat
     "v_HP": 4,
     "v_MP": 8,
     "v_STR": 2,
@@ -216,7 +213,6 @@ var charClass = [{
     "s_DEF": 4,
     "s_SPD": 11,
     "s_LUK": 1,
-    //stat varience per stat
     "v_HP": 4,
     "v_MP": 8,
     "v_STR": 2,
@@ -239,7 +235,6 @@ var charClass = [{
     "s_DEF": 8,
     "s_SPD": 3,
     "s_LUK": 1,
-    //stat varience per stat
     "v_HP": 4,
     "v_MP": 8,
     "v_STR": 2,
@@ -262,7 +257,6 @@ var charClass = [{
     "s_DEF": 8,
     "s_SPD": 3,
     "s_LUK": 1,
-    //stat varience per stat
     "v_HP": 4,
     "v_MP": 8,
     "v_STR": 2,
