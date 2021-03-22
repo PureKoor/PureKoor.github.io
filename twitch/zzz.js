@@ -1,5 +1,4 @@
 ATTRIBUTE = ['power', 'mythic', 'purity'];
-ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"];
 GM = {
   "g_LVL_max": 10,
   "g_LVL_min": 1,
@@ -15,138 +14,41 @@ charNameTitle = [
   'Vicious',
   'Wary'
 ];
-weapons = [{
-    "ID": 1,
-    "name": "Axe",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  }
-];
-weaponType = [{
-    "name": "Iron",
-    "bonus": ATTRIBUTE[0],
-    "bonus_num": 5,
-  }
-];
-function warriorExperience(lvl, hp, mp, str, int, def, spd, luk) {
+function stats4Hero(){
+temp = "Create stats object instead of having everyting spread out!";
 }
-function mageExperience(hp, mp, etc) {
+
+function heroCreateStats(_id,_class,_title,_sLVL,_sHP,_sMP,_sSTR,_sINT,_sDEF,_sSPD,_sLUK,_vHP,_vMP,_vSTR,_vINT,_vDEF,_vSPD,_vLUK) {
+  this.id = _id,
+  this.class = _class,
+  this.s_LVL = _sLVL,
+  this.s_HP = _sHP,
+  this.s_MP = _sMP,
+  this.s_STR = _sSTR,
+  this.s_INT = _sINT,
+  this.s_DEF = _sDEF,
+  this.s_SPD = _sSPD,
+  this.s_LUK = _sLUK,
+  this.v_HP = _vHP,
+  this.v_MP = _vMP,
+  this.v_STR = _vSTR,
+  this.v_INT = _vINT,
+  this.v_DEF = _vDEF,
+  this.v_SPD = _vSPD,
+  this.v_LUK = _vLUK,
+  this.attributeBuff = ATTRIBUTE[0],
+  this.attriuteDebuff = ATTRIBUTE[1]
+  
 }
-function thiefExperience(hp, mp, etc) {
-}
-function clericExperience(hp, mp, etc) {
-}
-charClass = [{
-    "id": 0,
-    "class": "Error",
-    "title": "null",
-    "s_LVL": -999,
-    "s_HP": -999,
-    "s_MP": -999,
-    "s_STR": -999,
-    "s_INT": -999,
-    "s_DEF": -999,
-    "s_SPD": -999,
-    "s_LUK": -999,
-    "v_HP": 4,
-    "v_MP": 8,
-    "v_STR": 2,
-    "v_INT": 10,
-    "v_DEF": 5,
-    "v_SPD": 2,
-    "v_LUK": 2,
-    "attributeBuff": ATTRIBUTE[0],
-    "attributeDebuff": ATTRIBUTE[1],
-  },
-  {
-    "id": 1,
-    "class": "Warrior",
-    "title": "null",
-    "s_LVL": 6,
-    "s_HP": 1,
-    "s_MP": 0,
-    "s_STR": 20,
-    "s_INT": 5,
-    "s_DEF": 8,
-    "s_SPD": 3,
-    "s_LUK": 1,
-    "v_HP": 4,
-    "v_MP": 8,
-    "v_STR": 2,
-    "v_INT": 10,
-    "v_DEF": 5,
-    "v_SPD": 2,
-    "v_LUK": 2,
-    "attributeBuff": ATTRIBUTE[0],
-    "attributeDebuff": ATTRIBUTE[1],
-  },
-  {
-    "id": 2,
-    "class": "Mage",
-    "title": "null",
-    "s_LVL": 7,
-    "s_HP": 2,
-    "s_MP": 0,
-    "s_STR": 3,
-    "s_INT": 15,
-    "s_DEF": 4,
-    "s_SPD": 11,
-    "s_LUK": 1,
-    "v_HP": 4,
-    "v_MP": 8,
-    "v_STR": 2,
-    "v_INT": 10,
-    "v_DEF": 5,
-    "v_SPD": 2,
-    "v_LUK": 2,
-    "attributeBuff": ATTRIBUTE[1],
-    "attributeDebuff": ATTRIBUTE[0],
-  },
-  {
-    "id": 3,
-    "class": "Thief",
-    "title": "null",
-    "s_LVL": 6,
-    "s_HP": 3,
-    "s_MP": 0,
-    "s_STR": 20,
-    "s_INT": 5,
-    "s_DEF": 8,
-    "s_SPD": 3,
-    "s_LUK": 1,
-    "v_HP": 4,
-    "v_MP": 8,
-    "v_STR": 2,
-    "v_INT": 10,
-    "v_DEF": 5,
-    "v_SPD": 2,
-    "v_LUK": 2,
-    "attributeBuff": ATTRIBUTE[0],
-    "attributeDebuff": ATTRIBUTE[0],
-  },
-  {
-    "id": 4,
-    "class": "Cleric",
-    "title": "null",
-    "s_LVL": 6,
-    "s_HP": 4,
-    "s_MP": 0,
-    "s_STR": 20,
-    "s_INT": 5,
-    "s_DEF": 8,
-    "s_SPD": 3,
-    "s_LUK": 1,
-    "v_HP": 4,
-    "v_MP": 8,
-    "v_STR": 2,
-    "v_INT": 10,
-    "v_DEF": 5,
-    "v_SPD": 2,
-    "v_LUK": 2,
-    "attributeBuff": ATTRIBUTE[0],
-    "attributeDebuff": ATTRIBUTE[0],
-  }
-];
+
+h_error = new heroCreateStats(0,"ERROR","null",-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999)
+h_warrior = new heroCreateStats(1,"Warrior","null",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+h_mage = new heroCreateStats(2,"Mage","null",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+h_error = new heroCreateStats(3,"Thief","null",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+h_error = new heroCreateStats(4,"Cleric","null",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+h_error = new heroCreateStats(5,"Fighter","null",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+
+
 heroObj = {
   class: charClass[0],
   title: "null title",
@@ -178,10 +80,6 @@ function setRandomHero(hero) {
   hero.luk = levelingUP(lvl, hero.class.s_LUK, hero.class.v_SPD);
 }
 
-function sayingthing() {
-  hero ]= "ah";
-}
-
 function levelingUP(lvl, stat, s_varience) {
    tempStat = stat;
    min = GM.g_varience_min;
@@ -193,25 +91,8 @@ function levelingUP(lvl, stat, s_varience) {
 
   return tempStat;
 }
-e = {
-  "suitcase": 0x1F4BC,
-  "seed": 0x1F331,
-  "tree": 0x1F332,
-  "heart": 0x2764,
-  "crystalBall": 0x1F52E,
-  "swords": 0x2694,
-  "gradCap": 0x1F393,
-  "sheild": 0x1F6E1,
-  "dustCloud": 0x1F4A8,
-  "fourleaf": 0x2618,
-}
-
-function emojiOut(emojiNum) {
-  return String.fromCodePoint(emojiNum);
-}
 
 function rr(user) {
-  hero_weapon = weapons[Math.floor(Math.random() * weapons.length)];
   hero = heroObj;
   setupHero(hero);
   setRandomHero(hero);
