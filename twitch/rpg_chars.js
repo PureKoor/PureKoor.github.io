@@ -423,6 +423,10 @@ function rr(user) {
 
   //use  $(query) to see if string is empty for sniff, monsterfight, etc
   //Final Message
+  
+  // see zzz.js for extra info about contrusctors and to set up stats object to edit instead of making each indivual var in objects!
+  aaaaaaaaa
+  
   var hero = heroObj;
   setupHero(hero);
   setRandomHero(hero);
