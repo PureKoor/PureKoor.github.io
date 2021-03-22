@@ -1,6 +1,5 @@
-r = "koor";
 ATTRIBUTE = ['power', 'mythic', 'purity'];
-ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
+ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"];
 GM = {
   "g_LVL_max": 10,
   "g_LVL_min": 1,
@@ -21,124 +20,9 @@ weapons = [{
     "name": "Axe",
     "weaponType": ATTRIBUTE[0],
     "weaponATK": 5,
-  },
-  {
-    "name": "Blade",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Boomerang",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Broad Sword",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Club",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Claw",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Dart",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Dagger",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Fan",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Fist",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Hammer",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Knife",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Knuckles",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Lance",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Mace",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Needle",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Sword",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Wand",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Staff",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Rod",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Stick",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Scissors",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Whip",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  },
-  {
-    "name": "Sai",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
   }
 ];
-var weaponType = [{
+weaponType = [{
     "name": "Iron",
     "bonus": ATTRIBUTE[0],
     "bonus_num": 5,
@@ -152,7 +36,7 @@ function thiefExperience(hp, mp, etc) {
 }
 function clericExperience(hp, mp, etc) {
 }
-var charClass = [{
+charClass = [{
     "id": 0,
     "class": "Error",
     "title": "null",
@@ -279,7 +163,7 @@ heroObj = {
 function setupHero(hero) {
   heroClassRNG = Math.floor((Math.random() * charClass.length) + 1);
   hero.class = charClass[heroClassRNG];
-  hero.title = charNameTitle[Math.floor(Math.random() * charNameTitle.length)]
+  hero.title = charNameTitle[Math.floor(Math.random() * charNameTitle.length)];
 }
 
 function setRandomHero(hero) {
@@ -327,13 +211,13 @@ function emojiOut(emojiNum) {
 }
 
 function rr(user) {
-  var hero_weapon = weapons[Math.floor(Math.random() * weapons.length)]
-  var hero = heroObj;
+  hero_weapon = weapons[Math.floor(Math.random() * weapons.length)];
+  hero = heroObj;
   setupHero(hero);
   setRandomHero(hero);
 
-  var message = "";
-  var newline = " | ";
+  message = "";
+  newline = " | ";
 
   message += "/me forges " + user + " into " + user + " the " + hero.title + "! [ | ";
   message += "👤" + ":" + hero.class.class + newline;
