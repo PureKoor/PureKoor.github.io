@@ -169,7 +169,6 @@ function levelingUP(lvl, stat, s_varience) {
 }
 
 function rr(user) {
-  hero_weapon = weapons[Math.floor(Math.random() * weapons.length)];
   hero = heroObj;
   setupHero(hero);
   setRandomHero(hero);
