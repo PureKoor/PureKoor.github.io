@@ -167,22 +167,6 @@ function levelingUP(lvl, stat, s_varience) {
 
   return tempStat;
 }
-e = {
-  "suitcase": 0x1F4BC,
-  "seed": 0x1F331,
-  "tree": 0x1F332,
-  "heart": 0x2764,
-  "crystalBall": 0x1F52E,
-  "swords": 0x2694,
-  "gradCap": 0x1F393,
-  "sheild": 0x1F6E1,
-  "dustCloud": 0x1F4A8,
-  "fourleaf": 0x2618,
-}
-
-function emojiOut(emojiNum) {
-  return String.fromCodePoint(emojiNum);
-}
 
 function rr(user) {
   hero_weapon = weapons[Math.floor(Math.random() * weapons.length)];
