@@ -1,12 +1,12 @@
-var r = "koor";
-var ATTRIBUTE = ['power', 'mythic', 'purity'];
-var ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
-var GM = {
+r = "koor";
+ATTRIBUTE = ['power', 'mythic', 'purity'];
+ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"]
+GM = {
   "g_LVL_max": 10,
   "g_LVL_min": 1,
   "g_varience_min": 1,
 };
-var charNameTitle = [
+charNameTitle = [
   'Fluffy', 'Furry',
   'Great',
   'Holy',
@@ -16,7 +16,7 @@ var charNameTitle = [
   'Vicious',
   'Wary'
 ];
-var weapons = [{
+weapons = [{
     "ID": 1,
     "name": "Axe",
     "weaponType": ATTRIBUTE[0],
@@ -263,7 +263,7 @@ var charClass = [{
     "attributeDebuff": ATTRIBUTE[0],
   }
 ];
-var heroObj = {
+heroObj = {
   class: charClass[0],
   title: "null title",
   lvl: -999,
@@ -277,14 +277,14 @@ var heroObj = {
   luk: -999
 };
 function setupHero(hero) {
-  var heroClassRNG = Math.floor((Math.random() * charClass.length) + 1);
+  heroClassRNG = Math.floor((Math.random() * charClass.length) + 1);
   hero.class = charClass[heroClassRNG];
   hero.title = charNameTitle[Math.floor(Math.random() * charNameTitle.length)]
 }
 
 function setRandomHero(hero) {
   hero.lvl = Math.floor((Math.random() * GM.g_LVL_max) + GM.g_LVL_min);
-  var lvl = hero.lvl;
+  lvl = hero.lvl;
   hero.hp = levelingUP(lvl, hero.class.s_HP, hero.class.v_HP);
   hero.mp = levelingUP(lvl, hero.class.s_MP, hero.class.v_MP);
   hero.str = levelingUP(lvl, hero.class.s_STR, hero.class.v_STR);
@@ -295,13 +295,13 @@ function setRandomHero(hero) {
 }
 
 function sayingthing() {
-  var hero ]= "ah";
+  hero ]= "ah";
 }
 
 function levelingUP(lvl, stat, s_varience) {
-  var tempStat = stat;
-  var min = GM.g_varience_min;
-  var max = s_varience;
+   tempStat = stat;
+   min = GM.g_varience_min;
+   max = s_varience;
   for (i = 0; i < lvl; i++) {
 
     tempStat = tempStat + Math.floor(Math.random() * (max - min) + min);
@@ -309,7 +309,7 @@ function levelingUP(lvl, stat, s_varience) {
 
   return tempStat;
 }
-var e = {
+e = {
   "suitcase": 0x1F4BC,
   "seed": 0x1F331,
   "tree": 0x1F332,
