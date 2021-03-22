@@ -1,5 +1,4 @@
 ATTRIBUTE = ['power', 'mythic', 'purity'];
-ATTRIBUTE_EMOJI = ["🌋", "🌟", "✝️"];
 GM = {
   "g_LVL_max": 10,
   "g_LVL_min": 1,
@@ -15,27 +14,6 @@ charNameTitle = [
   'Vicious',
   'Wary'
 ];
-weapons = [{
-    "ID": 1,
-    "name": "Axe",
-    "weaponType": ATTRIBUTE[0],
-    "weaponATK": 5,
-  }
-];
-weaponType = [{
-    "name": "Iron",
-    "bonus": ATTRIBUTE[0],
-    "bonus_num": 5,
-  }
-];
-function warriorExperience(lvl, hp, mp, str, int, def, spd, luk) {
-}
-function mageExperience(hp, mp, etc) {
-}
-function thiefExperience(hp, mp, etc) {
-}
-function clericExperience(hp, mp, etc) {
-}
 charClass = [{
     "id": 0,
     "class": "Error",
@@ -176,10 +154,6 @@ function setRandomHero(hero) {
   hero.def = levelingUP(lvl, hero.class.s_DEF, hero.class.v_DEF);
   hero.spd = levelingUP(lvl, hero.class.s_SPD, hero.class.v_SPD);
   hero.luk = levelingUP(lvl, hero.class.s_LUK, hero.class.v_SPD);
-}
-
-function sayingthing() {
-  hero ]= "ah";
 }
 
 function levelingUP(lvl, stat, s_varience) {
