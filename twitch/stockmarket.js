@@ -1,6 +1,7 @@
 stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
 wordChanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
-size = [`LARGE`,`greatly, making you big and round`,`beyond compare`];
+size = [`LARGE!`,`greatly, making you big and round!`,`beyond compare!`,`ˢᵐᵒˡ`,`normally?`,`normally.`,`to an undefinded amount.`,`very purely!`,`very impurely`,`...can't connect to network. Another bot beat you to the servers. Please ask again later`,
+        `like it normally would under captialism`,`LIKE IT WOULD IN SOCIALISM???`];
 whyCapBad = [`With poor distribution and local food production, over producing food on farms can lead to destroying food to keep market prices up or avoiding high distribution costs. This problem becomes worse during pandemic, where more people are starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`,
           `Money is actually just paper we say has value. It's hard to carry around paper though, so one day we'll probably just have points in an account to spend. Like in a videogame!!!`,
           `There are more vaccant homes than houseless people https://www.self.inc/info/empty-homes/ There are many ways to end houselessness, the easiest way is to give people a house, such as what Findland did along with other tactics https://www.huffpost.com/entry/homelessness-finland-housing-first_n_5c503844e4b0f43e410ad8b6`,
@@ -45,7 +46,7 @@ function capitalismBad(){
 function bullMarket(){
   message = "You're in a Bull Market! ";
   message += choose(stockNames);
-  message += " has inflated ";
+  message += " have inflated ";
   message += choose(wordChanges);
   message += "! Your porfolio has grown ";
   message += choose(size);
@@ -57,7 +58,7 @@ function bullMarket(){
 function bearMarket(){
   message = "You're in a Bear Market! ";
   message += choose(stockNames);
-  message += " has deflated ";
+  message += " have deflated ";
   message += choose(wordChanges);
   message += "Your porfolio has shrunk ";
   message += choose(size);
