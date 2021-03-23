@@ -8,7 +8,8 @@ whyCapBad[`Without better distribution systems or local food production for the 
           `We can transport goods in less than 2 days via mail, shoot robots through space to land on a moving planet in space, and in 2018 around 11.1% of USA households were food insecure! https://en.wikipedia.org/wiki/Hunger_in_the_United_States`,
           `In 2019, a videogame company's CEO made $40 million dollars as some employees couldn't afford food https://www.businessinsider.com/activision-blizzard-salary-disparity-issues-2020-8`,
           `Around the world some people starve... BUT WE CAN PRODUCE GOLDEN DONUTS!!! Worth it? https://spoonuniversity.com/how-to/where-to-get-cheese-in-edinburgh`,
-          `Here in the USA there are around 100,000 people who die due to not receiving needed healthcare https://en.wikipedia.org/wiki/Health_insurance_coverage_in_the_United_States`];
+          `Here in the USA there are around 100,000 people who die due to not receiving needed healthcare https://en.wikipedia.org/wiki/Health_insurance_coverage_in_the_United_States`
+         ];
 
 options = {
     capbad:8,
