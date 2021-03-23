@@ -45,7 +45,7 @@ function capitalismBad(){
 }
 
 function bullMarket(user){
-  message = "/me connects to Fur Street " + user + " is in a Bull Market! ";
+  message = "/me connects to Fur Street. Loading ▨▨▨▨▨▨▨▨▨▨ - Loaded: " + user + " is in a Bull Market! ";
   message += choose(stockNames);
   message += " have inflated ";
   message += choose(wordChanges);
@@ -57,7 +57,7 @@ function bullMarket(user){
 }
 
 function bearMarket(user){
-  message = "/me connects to Fur Street " + user + " is in a Bear Market! ";
+  message = "/me connects to Fur Street. Loading ▨▨▨▨▨▨▨▨▨▨ - Loaded: " + user + " is in a Bear Market! ";
   message += choose(stockNames);
   message += " have deflated ";
   message += choose(wordChanges);
@@ -68,7 +68,7 @@ function bearMarket(user){
 }
 
 function stagMarket(user){
-  message = "/me connects to Fur Street " + user + " is in a Stagnated Market! ";
+  message = "/me connects to Fur Street. Loading ▨▨▨▨▨▨▨▨▨▨ - Loaded: " + user + " is in a Stagnated Market! ";
   message += choose(stockNames);
   message += " stayed the same ";
   message += choose(wordChanges);
