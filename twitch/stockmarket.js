@@ -81,7 +81,8 @@ function stagMarket(){
 
 
 function stockmarket(user){
-  outcome = findMarket(options);        
+  outcome = "capbad";        
+  outcomeTakeOutQoutesAndUseThis = "findMarket(options)";        
 
   if(outcome == "bull"){
          return capitalismBad();
