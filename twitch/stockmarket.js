@@ -1,7 +1,7 @@
-stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
-wordChanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
+stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock friend`,`VIDGAM`,`WEREWULF`,`WATER`,`DIGI`,`PLANTI`,`PURE`];
+wordChanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vauge way...`,`largely`,`sort of`];
 size = [`LARGE!`,`greatly, making you big and round!`,`beyond compare!`,`ˢᵐᵒˡ`,`normally?`,`normally.`,`to an undefinded amount.`,`very purely!`,`very impurely`,`...can't connect to network. Another bot beat you to the servers. Please ask again later`,
-        `like it normally would under captialism`,`LIKE IT WOULD IN SOCIALISM???`];
+        `like it normally would under captialism`,`LIKE IT WOULD IN SOCIALISM???`,`in an NFT sort of way...`, `in a doge coin sort of way...`,`deinflated-ly!`, `inflated-ly!`];
 whyCapBad = [`With poor distribution and local food production, over producing food on farms can lead to destroying food to keep market prices up or avoiding high distribution costs. This problem becomes worse during pandemic, where more people are starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`,
           `Money is actually just paper we say has value. It's hard to carry around paper though, so one day we'll probably just have points in an account to spend. Like in a videogame!!!`,
           `There are more vaccant homes than houseless people https://www.self.inc/info/empty-homes/ There are many ways to end houselessness, the easiest way is to give people a house, such as what Findland did along with other tactics https://www.huffpost.com/entry/homelessness-finland-housing-first_n_5c503844e4b0f43e410ad8b6`,
@@ -43,7 +43,7 @@ function capitalismBad(){
   return message; 
 }
 
-function bullMarket(){
+function bullMarket(user){
   message = "/me " + user + " in a Bull Market! ";
   message += choose(stockNames);
   message += " have inflated ";
@@ -55,7 +55,7 @@ function bullMarket(){
   return message; 
 }
 
-function bearMarket(){
+function bearMarket(user){
   message = "/me " + user + " in a Bear Market! ";
   message += choose(stockNames);
   message += " have deflated ";
@@ -66,7 +66,7 @@ function bearMarket(){
   return message; 
 }
 
-function stagMarket(){
+function stagMarket(user){
   message = "/me " + user + " is in a Stagnated Market! ";
   message += choose(stockNames);
   message += " stayed the same ";
