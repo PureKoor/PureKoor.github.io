@@ -1,11 +1,11 @@
 stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
 wordchanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
-size = [`Large`,`Greatly, making you big and round`];
+size = [`LARGE`,`greatly, making you big and round`,`beyond compare`];
 whyCapBad = [`With poor distribution and local food production, over producing food on farms can lead to destroying food to keep market prices up or avoiding high distribution costs. This problem becomes worse during pandemic, where more people are starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`,
           `Money is actually just paper we say has value. It's hard to carry around paper though, so one day we'll probably just have points in an account to spend. Like in a videogame!!!`,
           `There are more vaccant homes than houseless people https://www.self.inc/info/empty-homes/ There are many ways to end houselessness, the easiest way is to give people a house, such as what Findland did along with other tactics https://www.huffpost.com/entry/homelessness-finland-housing-first_n_5c503844e4b0f43e410ad8b6`,
           `Wealth Inequality in the USA between the rich and everyone else is massive. Such hoarding of wealth by the few restricts how much money is useable by everyone https://en.wikipedia.org/wiki/Wealth_inequality_in_the_United_States`,
-          `We can transport goods in less than 2 days via mail, shoot robots through space to land on a moving planet in space, and in 2018 around 11.1% of USA households were food insecure! https://en.wikipedia.org/wiki/Hunger_in_the_United_States`,
+          `We can transport goods in less than 2 days via mail, shoot robots through space to land on a moving planet in speeding through a vast void, and in 2018 around 11.1% of USA households were food insecure! https://en.wikipedia.org/wiki/Hunger_in_the_United_States`,
           `In 2019, a videogame company's CEO made $40 million dollars as some employees couldn't afford food https://www.businessinsider.com/activision-blizzard-salary-disparity-issues-2020-8`,
           `Around the world some people starve... BUT WE CAN PRODUCE GOLDEN DONUTS!!! Worth it? https://spoonuniversity.com/how-to/where-to-get-cheese-in-edinburgh`,
           `Here in the USA there are around 100,000 people who die due to not receiving needed healthcare https://en.wikipedia.org/wiki/Health_insurance_coverage_in_the_United_States`
@@ -35,7 +35,7 @@ function findMarket(input) {
 }
 
 function capitalismBad(){
-  message = "You're outside the stock market. An anti-capitalist next to you whispers. \"";
+  message = "You're outside the stock market. An anti-capitalist next to you whispers, \"";
   message += choose(whyCapBad);
   message += "\"";
           
@@ -43,11 +43,11 @@ function capitalismBad(){
 }
 
 function bullMarket(){
-  message = "You're in a bear market! ";
+  message = "You're in a Bull Market! ";
   message += choose(stockNames);
-  message += " has gone x ";
+  message += " has inflated ";
   message += choose(wordChanges);
-  message += "Your porfolio has x ";
+  message += "! Your porfolio has grown ";
   message += choose(size);
           
           
@@ -55,25 +55,22 @@ function bullMarket(){
 }
 
 function bearMarket(){
-  message = "You're in a bear market! ";
+  message = "You're in a Bear Market! ";
   message += choose(stockNames);
-  message += " has gone x ";
+  message += " has deflated ";
   message += choose(wordChanges);
-  message += "Your porfolio has x ";
+  message += "Your porfolio has shrunk ";
   message += choose(size);
-          
-  message += "it a bull market (?), x has/have deflated by percent x is basically y now";
-  message += "The market stays steady the same. you are still x.";
           
   return message; 
 }
 
 function stagMarket(){
-  message = "You're in a bear market! ";
+  message = "You're in a Stagnated Market! ";
   message += choose(stockNames);
-  message += " has gone x ";
+  message += " stayed the same ";
   message += choose(wordChanges);
-  message += "Your porfolio has x ";
+  message += "Your porfolio still stands ";
   message += choose(size);     
           
   return message; 
@@ -81,19 +78,19 @@ function stagMarket(){
 
 
 function stockmarket(user){
-  outcome = "capbad";        
-  outcomeTakeOutQoutesAndUseThis = "findMarket(options)";        
+      
+  outcome = findMarket(options);        
 
   if(outcome == "bull"){
-         tem = capitalismBad();
+         tem = bullMarket();
          return tem;
   }    
   if(outcome == "bear"){
-         tem = capitalismBad();
+         tem = bearMarket();
          return tem;
   }    
   if(outcome == "stag"){
-         tem = capitalismBad();
+         tem = stagMarket();
          return tem;
   }    
   if(outcome == "capbad"){
