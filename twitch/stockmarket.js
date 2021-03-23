@@ -1,4 +1,4 @@
-stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU``Your personal stock`];
+stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
 wordchanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
 size = [`Large`,`Greatly, making you big and round`];
 whyCapBad[`Without better distribution systems or local food production for the goal of feeding everyone, over producing food on farms can lead to destroying food to keep market prices higher or to avoid high distribution costs. This becomes more apparent during certain times such as the pandemic, where more people were starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`
