@@ -1,6 +1,6 @@
-stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`.`Your personal stock`];
+stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU``Your personal stock`];
 wordchanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
-Size = [`Large`,`Greatly, making you big and round`];
+size = [`Large`,`Greatly, making you big and round`];
 whyCapBad[`Without better distribution systems or local food production for the goal of feeding everyone, over producing food on farms can lead to destroying food to keep market prices higher or to avoid high distribution costs. This becomes more apparent during certain times such as the pandemic, where more people were starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`
           `Money is actually just paper we say has value. It's hard to carry around paper though, so one day we'll probably just have points in an account to spend. Like in a videogame!!!`,
           `There are more vaccant homes then there are houseless people. https://www.self.inc/info/empty-homes/ There are many ways to end houseless-ness, the easiest way is to give people a house, such as what Findland did along with other tactics https://www.huffpost.com/entry/homelessness-finland-housing-first_n_5c503844e4b0f43e410ad8b6`
@@ -19,7 +19,7 @@ options = {
 };
 
 function choose(arr){
-  return arr[Math.floor(Math.random()*arr.length)] + " get rid of maybe ";
+  return arr[Math.floor(Math.random()*arr.length)] + " ";
 }
 
 function findMarket(input) {
