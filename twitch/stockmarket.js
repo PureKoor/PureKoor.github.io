@@ -1,4 +1,4 @@
-stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock friend`,`VIDGAM`,`WEREWULF`,`WATER`,`DIGI`,`PLANTI`,`PURE`];
+stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`GME`,`AMC`,`GOO`,`Your personal stock friend`,`VIDGAM`,`WEREWULF`,`WATER`,`DIGI`,`PLANTI`,`PURE`];
 wordChanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vauge way...`,`largely`,`sort of`];
 size = [`LARGE!`,`greatly, making you big and round!`,`beyond compare!`,`ˢᵐᵒˡ`,`normally?`,`normally.`,`to an undefinded amount.`,`very purely!`,`very impurely`,`...can't connect to network. Another bot beat you to the servers. Please ask again later`,
         `like it normally would under captialism`,`LIKE IT WOULD IN SOCIALISM???`,`in an NFT sort of way...`, `in a doge coin sort of way...`,`deinflated-ly!`, `inflated-ly!`];
@@ -49,7 +49,7 @@ function bullMarket(user){
   message += choose(stockNames);
   message += " have inflated ";
   message += choose(wordChanges);
-  message += "! Your portfolio has grown ";
+  message += "! " + user + "\'sportfolio has grown ";
   message += choose(size);
           
           
@@ -61,7 +61,7 @@ function bearMarket(user){
   message += choose(stockNames);
   message += " have deflated ";
   message += choose(wordChanges);
-  message += "... Your portfolio has shrunk ";
+  message += "... " + user + "\'s portfolio has shrunk ";
   message += choose(size);
           
   return message; 
@@ -72,7 +72,7 @@ function stagMarket(user){
   message += choose(stockNames);
   message += " stayed the same ";
   message += choose(wordChanges);
-  message += ". Your portfolio still stands ";
+  message += ". " + user + "\'s portfolio still stands ";
   message += choose(size);     
           
   return message; 
