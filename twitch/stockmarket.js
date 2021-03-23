@@ -63,7 +63,7 @@ function bearMarket(){
   message += choose(size);
           
   message += "it a bull market (?), x has/have deflated by percent x is basically y now";
-  message += "The market stays steady the same. you are still x."
+  message += "The market stays steady the same. you are still x.";
           
   return message; 
 }
