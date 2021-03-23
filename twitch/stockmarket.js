@@ -35,9 +35,9 @@ function findMarket(input) {
 }
 
 function capitalismBad(){
-  message = "You're outside the stock market. An anti-capitalist next to you whispers.  ";
+  message = "You're outside the stock market. An anti-capitalist next to you whispers. \"";
   message += choose(whyCapBad);
-  message += " ";
+  message += "\"";
           
   return message; 
 }
