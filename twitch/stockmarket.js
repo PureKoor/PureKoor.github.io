@@ -49,7 +49,7 @@ function bullMarket(user){
   message += choose(stockNames);
   message += " have inflated ";
   message += choose(wordChanges);
-  message += "! Your porfolio has grown ";
+  message += "! Your portfolio has grown ";
   message += choose(size);
           
           
@@ -61,7 +61,7 @@ function bearMarket(user){
   message += choose(stockNames);
   message += " have deflated ";
   message += choose(wordChanges);
-  message += "Your porfolio has shrunk ";
+  message += "Your portfolio has shrunk ";
   message += choose(size);
           
   return message; 
@@ -72,7 +72,7 @@ function stagMarket(user){
   message += choose(stockNames);
   message += " stayed the same ";
   message += choose(wordChanges);
-  message += "Your porfolio still stands ";
+  message += "Your portfolio still stands ";
   message += choose(size);     
           
   return message; 
