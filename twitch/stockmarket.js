@@ -44,7 +44,7 @@ function capitalismBad(){
 }
 
 function bullMarket(){
-  message = "You're in a Bull Market! ";
+  message = "/me " + user + " in a Bull Market! ";
   message += choose(stockNames);
   message += " have inflated ";
   message += choose(wordChanges);
@@ -56,7 +56,7 @@ function bullMarket(){
 }
 
 function bearMarket(){
-  message = "You're in a Bear Market! ";
+  message = "/me " + user + " in a Bear Market! ";
   message += choose(stockNames);
   message += " have deflated ";
   message += choose(wordChanges);
@@ -67,7 +67,7 @@ function bearMarket(){
 }
 
 function stagMarket(){
-  message = "You're in a Stagnated Market! ";
+  message = "/me " + user + " is in a Stagnated Market! ";
   message += choose(stockNames);
   message += " stayed the same ";
   message += choose(wordChanges);
