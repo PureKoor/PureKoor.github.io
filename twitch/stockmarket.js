@@ -35,9 +35,9 @@ function findMarket(input) {
 }
 
 function capitalismBad(){
-  message = "You're outside the stock market. An anti-capitalist next to you whispers, " ";
+  message = "You're outside the stock market. An anti-capitalist next to you whispers,  ";
   message += choose(whyCapBad);
-  message += " "";
+  message += " ";
           
   return message; 
 }
@@ -62,7 +62,7 @@ function bearMarket(){
   message += "Your porfolio has x ";
   message += choose(size);
           
-  message += "it a bull market (?), x has/have deflated by %/ x is basically y now";
+  message += "it a bull market (?), x has/have deflated by percent x is basically y now";
   message += "The market stays steady the same. you are still x."
           
   return message; 
