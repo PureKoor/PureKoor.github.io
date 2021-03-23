@@ -58,13 +58,15 @@ function heroCreateStats(_id,_class,_title,_LVL,_sHP,_sMP,_sSTR,_sINT,_sDEF,_sSP
   
 }
 
+//(_id,_class,_title,_LVL,_sHP,_sMP,_sSTR,_sINT,_sDEF,_sSPD,_sLUK,_vHP,_vMP,_vSTR,_vINT,_vDEF,_vSPD,_vLUK)
+
 var charClass = {
 	error: new heroCreateStats(0,"ERROR","null",-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999),
-	warrior: new heroCreateStats(1,"Warrior","null",2,1,1,1,1,1,1,1,2,2,2,2,2,2,2),
-	mage: new heroCreateStats(2,"Mage","null",2,1,1,1,1,1,1,1,2,2,2,2,2,2,2),
-	thief: new heroCreateStats(3,"Thief","null",2,1,1,1,1,1,1,1,2,2,2,2,2,2,2),
-	cleric: new heroCreateStats(4,"Cleric","null",2,1,1,1,1,1,1,1,2,2,2,2,2,2,2),
-	fighter: new heroCreateStats(5,"Fighter","null",2,1,1,1,1,1,1,1,2,2,2,2,2,2,2),
+	warrior: new heroCreateStats(1,"Warrior","null",1,1,0,9,2,9,2,3,99,99,99,99,99,99,99),
+	mage: new heroCreateStats(2,"Mage","null",1,1,2,3,7,4,6,3,99,99,99,99,99,99,99),
+	thief: new heroCreateStats(3,"Thief","null",1,1,1,6,5,5,10,8,99,99,99,99,99,99,99),
+	cleric: new heroCreateStats(4,"Cleric","null",1,1,1,4,6,4,5,4,99,99,99,99,99,99,99),
+	fighter: new heroCreateStats(5,"Fighter","null",1,1,0,14,3,7,9,2,99,99,99,99,99,99,99),
 }
 
 function randomCharClass(){
@@ -91,19 +93,17 @@ var heroObj = {
   luk: -999,
   battle : battleStats
 };
+
 function setupHero(hero) {
-  console.log("returns " + randomCharClass())
-  hero.stats = randomCharClass();
-  
+  hero.stats = randomCharClass();  
   hero.class = hero.stats.class;
   hero.title = charNameTitle[Math.floor(Math.random() * charNameTitle.length)];
-  
-  console.log(hero.stats.scr.hp + " next part " + hero.stats.list.hp);
 }
 
 function setRandomHero(hero) {
   hero.lvl = Math.floor((Math.random() * GM.g_LVL_max) + GM.g_LVL_min);
   var lvl = hero.lvl;
+
   hero.hp = levelingUP(lvl, hero.stats.list.hp, hero.stats.scr.hp);
   hero.mp = levelingUP(lvl, hero.stats.list.mp, hero.stats.scr.mp);
   hero.str = levelingUP(lvl, hero.stats.list.str, hero.stats.scr.str);
@@ -137,10 +137,10 @@ function rr(user) {
   setupHero(hero);
   setRandomHero(hero);
 
+console.log("hello");
+
   var message = "";
   var newline = " | ";
-
- console.log ("||battle stats|| hp:" + hero.battle.hp + " mp:" + hero.battle.mp + " str: " + hero.battle.str + " int:" + hero.battle.int + " def:" + hero.battle.def + " spd:" + hero.battle.spd + " luk:" + hero.battle.luk );
 
   message += "/me forges " + user + " into " + user + " the " + hero.title + "! [ | ";
   message += "👤" + ":" + hero.stats.class + newline;
@@ -160,6 +160,7 @@ function rr(user) {
   message += "]";
 
   return message;
+
 }
 
 //rr(arg);
