@@ -85,16 +85,20 @@ function stockmarket(user){
   outcomeTakeOutQoutesAndUseThis = "findMarket(options)";        
 
   if(outcome == "bull"){
-         return capitalismBad();
+         tem = capitalismBad();
+         return tem;
   }    
   if(outcome == "bear"){
-         return capitalismBad();
+         tem = capitalismBad();
+         return tem;
   }    
   if(outcome == "stag"){
-         return capitalismBad();
+         tem = capitalismBad();
+         return tem;
   }    
   if(outcome == "capbad"){
-         return capitalismBad();
+         tem = capitalismBad();
+         return tem;
   }    
 }
    
