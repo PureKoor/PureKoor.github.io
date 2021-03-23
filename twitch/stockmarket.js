@@ -1,4 +1,4 @@
-stocksNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
+stockNames = [`MAW`,`PAW`,`BEANS`,`FLUFF`,`FLOOF`,`TAIL`,`HORN`,`YOU`,`Your personal stock`];
 wordchanges = [`slightly`,`very`,`kinda`,`somewhat`,`...in a vwey vig way...`,`largely`];
 size = [`LARGE`,`greatly, making you big and round`,`beyond compare`];
 whyCapBad = [`With poor distribution and local food production, over producing food on farms can lead to destroying food to keep market prices up or avoiding high distribution costs. This problem becomes worse during pandemic, where more people are starving https://www.nytimes.com/2020/04/11/business/coronavirus-destroying-food.html`,
