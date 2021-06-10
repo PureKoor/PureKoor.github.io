@@ -55,8 +55,8 @@ function choose(arr){
 }
 
 function transformation(user) {
- species_combine = choose(tf);
- species_combine += choose(tx);
+ species_combine = choose(tx);
+ species_combine += choose(tf);
  species_result = species_combine.trim(); 
 
  which_A = "";
