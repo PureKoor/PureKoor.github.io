@@ -1,0 +1,15 @@
+function credit() {
+   space = ", "; 
+
+  str = "The following commands by PureKoor: ";
+  str += "transformation.js";
+  str += space;
+  str += "size.js";
+  str += space;
+  str += "and more!";
+  str += "Check out PureKoor.com\/Twitch for more information!";
+
+  return str;
+}
+
+credit(arg);
