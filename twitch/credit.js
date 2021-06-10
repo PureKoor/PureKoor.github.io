@@ -7,7 +7,7 @@ function credit(user) {
   str += "size.js";
   str += space;
   str += "and more! ";
-  str += "Check out PureKoor.com/Twitch for more information!";
+  str += "Check out purekoor.com/twitch/ for more information!";
 
   return str;
 }
