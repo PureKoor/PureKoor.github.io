@@ -30,6 +30,11 @@ function hug(user, touser) {
   } else {
     which_A = " a ";
   }
+ 
+if (touser.toUpperCase() == "UNDEFINDED"){
+   touser = "everyone";
+}
+   
     
   str = "/me " + user + " ";
   str += choose(ra);
@@ -40,4 +45,4 @@ function hug(user, touser) {
 
   return str;
 }
-hug(arg);
+hug(arg1,arg2);
