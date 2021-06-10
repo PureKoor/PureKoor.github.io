@@ -45,4 +45,4 @@ if (touser.toUpperCase() == "UNDEFINDED"){
 
   return str;
 }
-hug(arg1,arg2);
+hug(arg);
