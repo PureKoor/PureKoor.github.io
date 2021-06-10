@@ -17,7 +17,7 @@ function choose(arr){
   return arr[Math.floor(Math.random()*arr.length)] + " ";
 }
 
-function hug(user) {
+function hug(user,touser) {
  hug_combine = choose(ts);
  hug_combine += choose(tx);
  hug_combine += choose(tf);
