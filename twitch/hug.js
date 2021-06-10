@@ -31,9 +31,7 @@ function hug(user, touser) {
     which_A = " a ";
   }
  
-if (touser.toUpperCase() == "UNDEFINDED"){
-   touser = "everyone";
-}
+UNDEFINDED = "do if statement latter for everyone";
    
     
   str = "/me " + user + " ";
