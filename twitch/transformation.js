@@ -17,10 +17,11 @@ tx=[`Airy`,`Awkward`,`Angular`,
     `Rubber`,`Reflective`,`Redstone`,`Rough`,`Rested`,
     `ˢᵐᵒˡ`,`Stone`,`Skinny`,`Soft`,`Scaly`,`Snarling`,`Silky`,`Strong`,`Snarling`,`Saturated`,`Smooth`,
     `THICK`,`Thin`,`Taur`,
+    `Undefined`,
     `Pool Toy`,`Pure`,
     `Watery`,`Wholesome`,`Wooden`,
     `Velvety`,
-    ,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``];
+    ,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
 
 tf=[`Alligator`,`Alpaca`,`Antelope`,`Ape`,`Armadillo`,
     `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`,`Beaver`,`Binturong`,`Bison`,`Boar`,
