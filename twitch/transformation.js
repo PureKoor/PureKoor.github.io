@@ -60,7 +60,8 @@ function transformation(user) {
  species_result = species_combine.trim(); 
 
  which_A = "";
- if (species_result.charAt(0).toUpperCase() == ('A' || 'E' || 'I' || 'O' || 'U')) {
+ x = species_result.charAt(0).toUpperCase();
+ if (x == 'A' || x ==  'E' || x ==  'I' || x ==  'O' || x ==  'U') {
     which_A = " an ";
   } else {
     which_A = " a ";
