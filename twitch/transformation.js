@@ -21,7 +21,7 @@ tx=[`Airy`,`Awkward`,`Angular`,
     `Pool Toy`,`Pure`,
     `Watery`,`Wholesome`,`Wooden`,
     `Velvety`,
-    ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
+    " "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "];
 
 tf=[`Alligator`,`Alpaca`,`Antelope`,`Ape`,`Armadillo`,
     `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`,`Beaver`,`Binturong`,`Bison`,`Boar`,
