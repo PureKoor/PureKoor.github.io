@@ -21,7 +21,7 @@ tx=[`Airy`,`Awkward`,`Angular`,
     `Pool Toy`,`Pure`,
     `Watery`,`Wholesome`,`Wooden`,
     `Velvety`,
-    " "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "];
+    ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
 
 tf=[`Alligator`,`Alpaca`,`Antelope`,`Ape`,`Armadillo`,
     `Bear`,`Buffalo`,`Badger`,`Bat`,`Bull`,`Beaver`,`Binturong`,`Bison`,`Boar`,
@@ -56,7 +56,7 @@ function choose(arr){
 
 function transformation(user) {
  species_combine = choose(tf);
- species_combine += choose(tx)
+ species_combine += choose(tx);
  species_result = species_combine.trim(); 
 
  which_A = "";
@@ -72,7 +72,6 @@ function transformation(user) {
   str += which_A;
   str += species_result;
 
-  
   return str;
 }
 transformation(arg);
