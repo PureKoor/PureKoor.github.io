@@ -66,11 +66,13 @@ function transformation(user) {
     which_A = " a ";
   }
     
-  str = "/me now ";
+  str = "/me 💨 now ";
   str += choose(ra);
   str += "transforms " + user + " into";
   str += which_A;
+  str += "✨";
   str += species_result;
+  str += "✨";
 
   return str;
 }
