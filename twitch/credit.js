@@ -1,7 +1,7 @@
 function credit(user) {
    space = ", "; 
 
-  str = "The following commands by PureKoor: ";
+  str = "The following puiblic commands are by PureKoor: ";
   str += "transformation.js";
   str += space;
   str += "size.js";
