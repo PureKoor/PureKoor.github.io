@@ -40,8 +40,11 @@
 			<h2 class="koorText">PureKoor</h2>
 			<h3>"Public Twitch Functions"</h3>
 			
-	<b>"To add this to your nightbot commands put in message and replace the ***** with the function name (THIS IS CASE SENSITIVE):/n"</b>
+	<b>"To add this to your nightbot commands put in message and replace the ***** with the function name (THIS IS CASE SENSITIVE):"</b>
+	<br>		
         <i> $(eval arg=decodeURIComponent(`$(touser)`);$(urlfetch json https://purekoor.com/twitch/*******))</i>
+	<br>
+	<u>Please give credit via some command that goes to: $(eval arg=decodeURIComponent(`$(touser)`);$(urlfetch json https://purekoor.com/twitch/credit.js))</u>
 
       <ul>
         <li>transformation.js</li>
