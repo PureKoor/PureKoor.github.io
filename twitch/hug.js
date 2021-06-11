@@ -3,11 +3,11 @@ ra = [`walks`,`runs`,`jogs`,`darts`,`scampers`,`saunters`,`staggers`,`struts`,`t
 
 ts = [`Big`,`Heavy`,`Light`,`Hyper`,`Sizeable`,`Kind`,`Enthusiastic`,`Lively`,`Amusing`,`Fantastic`,`Quirky`,`Calming`,`Gentle`,
    `Smol`,`ˢᵐᵒˡ`,`Large`,`Substanital`,`Long`,`Defined`,`Undefined`,`Quick`,`Delightful`,`Enchanting`,`Cute`,
-   ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
+   ``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``];
 
 tx = [`Bear`,`Taur`,`Dog`,`Ghost`,`Lite`,`Friend`,`Side`,`Furry`,`Robotic`,`Pure`,`Tycoon`,`Behind`,`Waist`,`Heart to Heart`,
       `VTuber`,`Bathtub Meta`,
-    ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
+    ``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``,``];
 
 tf = [`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,
       `Double-Hug`,`Tripple-Hug`,`Quad-Hug`,`OMEGA-HUG`,`TF-Hug`,`Taur-Hug`];
@@ -17,7 +17,11 @@ everyoneList = [`everyone`,`everyone`,`everyone`,`everyone`,`everyone`,`chat`,`c
 
 
 function choose(arr){
-  return arr[Math.floor(Math.random()*arr.length)] + " ";
+  temps = arr[Math.floor(Math.random()*arr.length)];
+  if (temps != ``){
+   temps += " ";
+  }
+   return temps;
 }
 
 function hug(user, touser) {
