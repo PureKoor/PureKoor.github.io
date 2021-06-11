@@ -43,13 +43,13 @@ function hug(user, touser) {
   hugee = "everyone";
   }
     
-  str = "/me " + user + " ";
+  str = "/me ❗️❗️❗️ " + user + " ";
   str += choose(rs);
   str += choose(ra);
   str += "to give " + hugee;
   str += which_A;
   str += hug_result;
-  str += "🤗 ";
+  str += " 🤗";
 
   return str;
 }
