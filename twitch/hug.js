@@ -43,4 +43,4 @@ UNDEFINDED = "do if statement latter for everyone";
 
   return str;
 }
-hug(arg);
+hug(arg,arg1);
