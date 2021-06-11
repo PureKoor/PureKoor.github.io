@@ -1,16 +1,19 @@
-ra=[`walks`,`runs`,`teleports`,`rolls`,`slides`,`swiftly runs`,`poofs`,`quickly turns`];
+rs = [`slowly`,`meticulously`,`casually`,`sluggishly`,`rapidly`,`swiftly`,`quickly`,`kinda`];
+ra = [`walks`,`runs`,`jogs`,`darts`,`scampers`,`saunters`,`staggers`,`struts`,`tiptoes`,`teleports`,`rolls`,`slides`,`spins`,`bounces`,`runs`,`poofs`,`turns`];
 
-ts=[`Big`,
-   `Smol`,
-   ` `,` `,` `,` `];
+ts = [`Big`,`Heavy`,`Light`,`Hyper`,`Sizeable`,`Kind`,`Enthusiastic`,`Lively`,`Amusing`,`Fantastic`,`Quirky`,`Calming`,`Gentle`,
+   `Smol`,`ˢᵐᵒˡ`,`Large`,`Substanital`,`Long`,`Defined`,`Undefined`,`Quick`,`Delightful`,`Enchanting`,`Cute`,
+   ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
 
-tx=[`Bear`
-    ,`Ghost`
-    ,`Lightly`,
-    `Friend`,`Side`,`Furry`,
-    ` `,` `,` `,` `,` `];
+tx = [`Bear`,`Taur`,`Dog`,`Ghost`,`Lite`,`Friend`,`Side`,`Furry`,`Robotic`,`Pure`,`Tycoon`,`Behind`,`Waist`,`Heart to Heart`,
+      `VTuber`,`Bathtub Meta`,
+    ` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `];
 
-tf=[`hugs`,`double hugs`,`tripple hugs`];
+tf = [`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,
+      `Double-Hug`,`Tripple-Hug`,`Quad-Hug`,`OMEGA-HUG`,`TF-Hug`,`Taur-Hug`];
+
+everyoneList = [`everyone`,`everyone`,`everyone`,`everyone`,`everyone`,`chat`,`chat`,`chat`,`chat`,`chat`,`chat`,
+                `y'all`,`every-fur`,`all you folks`,`the masses`,`us`,`the collective`,`the workers`];
 
 
 function choose(arr){
@@ -37,11 +40,12 @@ function hug(user, touser) {
   }
     
   str = "/me " + user + " ";
+  str += choose(rs);
   str += choose(ra);
   str += "to give " + hugee;
   str += which_A;
-  str += "🤗 ";
   str += hug_result;
+  str += "🤗 ";
 
   return str;
 }
