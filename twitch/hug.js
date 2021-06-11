@@ -31,12 +31,14 @@ function hug(user, touser) {
     which_A = " a ";
   }
  
-UNDEFINDED = "do if statement latter for everyone";
-   
+  hugee = touser;
+  if (user == touser){
+  hugee = "everyone";
+  }
     
   str = "/me " + user + " ";
   str += choose(ra);
-  str += "to give " + touser;
+  str += "to give " + hugee;
   str += which_A;
   str += "🤗 ";
   str += hug_result;
