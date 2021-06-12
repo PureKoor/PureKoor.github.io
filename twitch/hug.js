@@ -32,7 +32,7 @@ function pickA_An(arr){
   } else {
     temp = " a ";
   }
-   return temps;
+   return temp;
 }
 
 function hug(user, touser) {
