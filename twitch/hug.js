@@ -24,20 +24,23 @@ function choose(arr){
    return temps;
 }
 
+function pickA_An(arr){
+ x = arr.charAt(0).toUpperCase();
+ temp = "";
+ if (x == 'A' || x ==  'E' || x ==  'I' || x ==  'O' || x ==  'U') {
+    temp = " an ";
+  } else {
+    temp = " a ";
+  }
+   return temps;
+}
+
 function hug(user, touser) {
  hug_combine = choose(ts);
  hug_combine += choose(tx);
  hug_combine += choose(tf);
  hug_result = hug_combine.trim(); 
 
- which_A = "";
- x = hug_result.charAt(0).toUpperCase();
- if (x == 'A' || x ==  'E' || x ==  'I' || x ==  'O' || x ==  'U') {
-    which_A = " an ";
-  } else {
-    which_A = " a ";
-  }
- 
   hugee = touser;
   if (user == touser){
   hugee = "everyone";
@@ -47,7 +50,7 @@ function hug(user, touser) {
   str += choose(rs);
   str += choose(ra);
   str += "to give " + hugee;
-  str += which_A;
+  str += pickA_An(hug_result);
   str += hug_result;
   str += " 🤗";
 
