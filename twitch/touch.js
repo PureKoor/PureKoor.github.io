@@ -1,5 +1,6 @@
-amt=[`slightly`,`very`,`kinda`,`somewhat`,`...in a way...`,`largely`,`deeply`,`viscerally`,`firmly`,``,``,``,``];
-poke=[`like a musky husky`,`...uh...`,`...Error: Scan could not detect texture`,
+amt = [`slightly`,`very`,`kinda`,`somewhat`,`...in a way...`,`largely`,`deeply`,`viscerally`,`firmly`,``,``,``,``];
+
+poke = [`like a musky husky`,`...uh...`,`...Error: Scan could not detect texture`,
       `ashy`,
       `bumpy`,`boiling`,
       `cute`,`cozy`,`cool`,
@@ -32,7 +33,12 @@ function choose(arr){
 }
 
 function touch(user) {
-  return "/me scans " + user + "... feels " + choose(amt) + " " + choose(poke);
+      
+  str = "/me 📡 scans " + user + "... feels ";
+  str += choose(amt);
+  str += choose(poke);
+      
+  return str;
 }
 touch(arg);
 
