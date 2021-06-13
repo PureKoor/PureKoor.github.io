@@ -39,13 +39,13 @@ function rockPaperScissors(user, touser) {
   } else{
        fighter = touser;
   }
-    
-  userDraw = rps[Math.random() * rps.length];
-  touserDraw = rps[Math.random() * rps.length];
+  
+  userDraw = Math.random() * rps.length;
+  touserDraw = Math.random() * rps.length;
   
   winner = user;
-  if (userDraw.ATK != touserDraw.ATK){
-    if(userDraw.DED == touserDraw.ATK){
+  if (rps[userDraw].ATK != rps[touserDraw].ATK){
+    if(rps[userDraw].DED == rps[touserDraw].ATK){
       winner = fighter;
     }
   } else {
@@ -53,8 +53,8 @@ function rockPaperScissors(user, touser) {
   }
   
   str = "/me 👊ROCK⛰️/✋PAPER📄/✌SCISSORS✂️!!! ⚔️🟦➜" + user + " vs ⚔️🟠➜" + fighter + " !!! ";
-  str += "⚔️🟦 plays " + userDraw.ATK + ". ";
-  str += "⚔️🟠 plays " + touserDraw.ATK + ". ";
+  str += "⚔️🟦 plays " + rps[userDraw].ATK + ". ";
+  str += "⚔️🟠 plays " + rps[touserDraw].ATK + ". ";
   str += "THE BATTLE HEATS UP... then... ";
   if(winner == draw){
        str += "a " + draw + "... " ;
