@@ -4,9 +4,9 @@ scissors = `✌ SCISSORS ✂️`;
 fighter = `error`;
 
 draw = "✏️DRAW✏️";
-rps = [{"ATK": rock, "DED": scissors},
-       {"ATK": paper, "DED": rock},
-       {"ATK": scissors, "DED": paper}];
+rps = [{"ATK": rock, "DED": paper},
+       {"ATK": paper, "DED": scissors},
+       {"ATK": scissors, "DED": rock}];
 
 randos = [`Everyone`,`Chat`,`Y'all`,`Werewolves`,`Tycoons`,`Raccoons`,`Tigers`,`All Vtubers`,`The Furry Fandom`];
 
@@ -43,10 +43,10 @@ function rockPaperScissors(user, touser) {
        fighter = touser;
   }
   
-  winner = user;
+  winner = "⚔️🟦➜" + user;
   if (userDraw.ATK != touserDraw.ATK){
     if(userDraw.DED == touserDraw.ATK){
-      winner = fighter;
+      winner = "⚔️🟠➜" + fighter;
     }
   } else {
       winner = draw;
