@@ -61,7 +61,7 @@ function rockPaperScissors(user, touser) {
        str += "Both live for another battle yet";
   } else {
        str += winner + " " + choose(winPhrase);
-       str += "Congratz on your victory";
+       str += "~Congratz on your victory";
   }
   return str;
 }
