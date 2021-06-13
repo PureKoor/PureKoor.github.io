@@ -8,7 +8,7 @@ rps = [{"ATK": rock, "DED": scissors},
        {"ATK": paper, "DED": rock},
        {"ATK": scissors, "DED": paper}];
 
-randos = [`everyone`,`werewolves`,`tycoons`,`raccoons`,`tigers`,`all Vtubers`,`the Furry Fandom`];
+randos = [`Everyone`,`Chat`,`Y'all`,`Werewolves`,`Tycoons`,`Raccoons`,`Tigers`,`All Vtubers`,`The Furry Fandom`];
 
 winPhrase = [`comes out victorious!!!`, `r iz winnar`,`has won!`];
 
@@ -22,14 +22,14 @@ function choose(arr){
 
 function pickFighter(){
   picker = Math.floor((Math.random() * 100) + 1);
-  if(picker > 80){
+  if(picker > 60){
     if(picker % 2 != 0){
         return "Koor";
     } else {
         return choose(randos);
     }
   } else {
-      return "themselves ";
+      return "themselves";
   }
 }
 
@@ -38,7 +38,7 @@ function rockPaperScissors(user, touser) {
   touserDraw = rps[Math.floor(Math.random() * rps.length)];
        
   if (user == touser){
-       fighter = choose(randos);
+       fighter = pickFighter();
   } else{
        fighter = touser;
   }
@@ -52,7 +52,7 @@ function rockPaperScissors(user, touser) {
       winner = draw;
   }
   
-  str = "/me 👊ROCK⛰️/✋PAPER📄/✌SCISSORS✂️!!! ⚔️🟦➜" + user + " vs ⚔️🟠➜" + fighter + " !!! ";
+  str = "/me ---ROCK-PAPER-SCISSORS--- ⚔️🟦➜" + user + " vs ⚔️🟠➜" + fighter + " !!! ";
   str += "⚔️🟦 plays " + userDraw.ATK + ". ";
   str += "⚔️🟠 plays " + touserDraw.ATK + ". ";
   str += "THE BATTLE HEATS UP... then... ";
