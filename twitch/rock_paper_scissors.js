@@ -1,12 +1,16 @@
 rock = `👊 ROCK ⛰️`;
 paper = `✋ PAPER 📄`;
 scissors = `✌ SCISSORS ✂️`;
+fighter = `error`;
 
-
+draw = "draw";
 rps = [{"ATK": rock, "DED": scissors}
        {"ATK": paper, "DED": rock},
        {"ATK": scissors, "DED": paper}];
-randos = [`everyone`,`werewolves`,`tycoons`,`raccoons`,`tigers`];
+
+randos = [`everyone`,`werewolves`,`tycoons`,`raccoons`,`tigers`,`all Vtubers`,`the Furry Fandom`];
+
+winPhrase = [`comes out victorious!!!`, `r iz winnar`,`has won!`];
 
 function choose(arr){
   temps = arr[Math.floor(Math.random()*arr.length)];
@@ -14,17 +18,6 @@ function choose(arr){
    temps += " ";
   }
    return temps;
-}
-
-function pickA_An(arr){
- x = arr.charAt(0).toUpperCase();
- temp = "";
- if (x == 'A' || x ==  'E' || x ==  'I' || x ==  'O' || x ==  'U') {
-    temp = " an ";
-  } else {
-    temp = " a ";
-  }
-   return temp;
 }
 
 function pickFighter(){
@@ -40,11 +33,11 @@ function pickFighter(){
   }
 }
 
-function hug(user, touser) {
-
-
+function rockPaperScissors(user, touser) {
   if (user == touser){
-  hugee = "everyone";
+       fighter = choose(randos);
+  } else{
+       fighter = touser;
   }
     
   userDraw = rps[Math.random() * rps.length];
@@ -54,21 +47,23 @@ function hug(user, touser) {
   if (userDraw.ATK != touserDraw.ATK)
   {
     if(userDraw.DED == touserDraw.ATK){
-      winner = touser;
+      winner = fighter;
     }
   } else {
-      winner = "draw";
+      winner = draw;
   }
   
-  str = "/me 👊ROCK⛰️/✋PAPER📄/✌SCISSORS✂️!!! ⚔️🟦➜" + user + " vs ⚔️🟠➜" + touser + " !!! ";
-  str += "⚔️🟦 plays " + userDraw.ATK;
-  str += "⚔️🟠 plays " + touserDraw.ATK;
-  str += choose(ra);
-  str += "to give " + hugee;
-  str += pickA_An(hug_result);
-  str += hug_result;
-  str += " 🤗";
-
+  str = "/me 👊ROCK⛰️/✋PAPER📄/✌SCISSORS✂️!!! ⚔️🟦➜" + user + " vs ⚔️🟠➜" + fighter + " !!! ";
+  str += "⚔️🟦 plays " + userDraw.ATK + ". ";
+  str += "⚔️🟠 plays " + touserDraw.ATK + ". ";
+  str += "THE BATTLE HEATS UP... then... ";
+  if(winner == draw){
+       str += "a " + draw + "... " ;
+       str += "Both live for another battle yet.";
+  } else {
+       str += winner + " " + choose(winPhrase);
+       str += "Congratz on your victory.";
+  }
   return str;
 }
-hug(arg,arg1);
+rockPaperScissors(arg,arg1);
