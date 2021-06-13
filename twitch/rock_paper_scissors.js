@@ -10,7 +10,7 @@ rps = [{"ATK": rock, "DED": scissors},
 
 randos = [`Everyone`,`Chat`,`Y'all`,`Werewolves`,`Tycoons`,`Raccoons`,`Tigers`,`All Vtubers`,`The Furry Fandom`];
 
-winPhrase = [`comes out victorious!!!`, `r iz winnar`,`has won!`];
+winPhrase = [`comes out victorious!!!`, `r iz winnar`,`won!`,`is the winner`,`is standing`];
 
 function choose(arr){
   temps = arr[Math.floor(Math.random()*arr.length)];
