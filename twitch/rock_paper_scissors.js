@@ -3,7 +3,7 @@ paper = `✋ PAPER 📄`;
 scissors = `✌ SCISSORS ✂️`;
 fighter = `error`;
 
-draw = "draw";
+draw = "✏️DRAW✏️";
 rps = [{"ATK": rock, "DED": scissors},
        {"ATK": paper, "DED": rock},
        {"ATK": scissors, "DED": paper}];
