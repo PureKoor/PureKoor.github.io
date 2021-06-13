@@ -52,16 +52,16 @@ function rockPaperScissors(user, touser) {
       winner = draw;
   }
   
-  str = "/me ---ROCK-PAPER-SCISSORS--- ⚔️🟦➜" + user + " ❗️VS❗️ ⚔️🟠➜" + fighter + " !!! ";
+  str = "/me ----ROCK-PAPER-SCISSORS---- ⚔️🟦➜" + user + " ❗️VS❗️ ⚔️🟠➜" + fighter + " !!! ";
   str += "⚔️🟦 plays " + userDraw.ATK + ". ";
   str += "⚔️🟠 plays " + touserDraw.ATK + ". ";
-  str += "THE BATTLE HEATS UP... then... ";
+  str += "...THE BATTLE HEATS UP...then... ";
   if(winner == draw){
        str += "a " + draw + "... " ;
-       str += "Both live for another battle yet.";
+       str += "Both live for another battle yet";
   } else {
        str += winner + " " + choose(winPhrase);
-       str += "Congratz on your victory.";
+       str += "Congratz on your victory";
   }
   return str;
 }
