@@ -52,7 +52,7 @@ function rockPaperScissors(user, touser) {
       winner = draw;
   }
   
-  str = "/me ----ROCK-PAPER-SCISSORS---- ⚔️🟦➜" + user + " ❗️VS❗️ ⚔️🟠➜" + fighter + " !!! ";
+  str = "/me ----ROCK-PAPER-SCISSORS---- ⚔️🟦➜ " + user + " 🆚 ⚔️🟠➜ " + fighter + "!!! ";
   str += "⚔️🟦 plays " + userDraw.ATK + " ";
   str += " ↔️ ";
   str += "⚔️🟠 plays " + touserDraw.ATK + " ";
