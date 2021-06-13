@@ -53,8 +53,9 @@ function rockPaperScissors(user, touser) {
   }
   
   str = "/me ----ROCK-PAPER-SCISSORS---- ⚔️🟦➜" + user + " ❗️VS❗️ ⚔️🟠➜" + fighter + " !!! ";
-  str += "⚔️🟦 plays " + userDraw.ATK + ". ";
-  str += "⚔️🟠 plays " + touserDraw.ATK + ". ";
+  str += "⚔️🟦 plays " + userDraw.ATK + " ";
+  str += " ↔️ ";
+  str += "⚔️🟠 plays " + touserDraw.ATK + " ";
   str += "...THE BATTLE HEATS UP...then... ";
   if(winner == draw){
        str += "a " + draw + "... " ;
