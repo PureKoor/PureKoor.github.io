@@ -4,7 +4,7 @@ scissors = `✌ SCISSORS ✂️`;
 fighter = `error`;
 
 draw = "draw";
-rps = [{"ATK": rock, "DED": scissors}
+rps = [{"ATK": rock, "DED": scissors},
        {"ATK": paper, "DED": rock},
        {"ATK": scissors, "DED": paper}];
 
@@ -44,8 +44,7 @@ function rockPaperScissors(user, touser) {
   touserDraw = rps[Math.random() * rps.length];
   
   winner = user;
-  if (userDraw.ATK != touserDraw.ATK)
-  {
+  if (userDraw.ATK != touserDraw.ATK){
     if(userDraw.DED == touserDraw.ATK){
       winner = fighter;
     }
