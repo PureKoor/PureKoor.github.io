@@ -4,9 +4,9 @@ scissors = `✌ SCISSORS ✂️`;
 fighter = `error`;
 
 draw = "draw";
-rps = [{"ATK": `rock`, "DED": `scissors`},
-       {"ATK": `paper`, "DED": `rock`},
-       {"ATK": `scissors`, "DED": `paper`}];
+rps = [{"ATK": rock, "DED": scissors},
+       {"ATK": paper, "DED": rock},
+       {"ATK": scissors, "DED": paper}];
 
 randos = [`everyone`,`werewolves`,`tycoons`,`raccoons`,`tigers`,`all Vtubers`,`the Furry Fandom`];
 
@@ -21,7 +21,7 @@ function choose(arr){
 }
 
 function pickFighter(){
-  var picker = Math.floor((Math.random() * 100) + 1);
+  picker = Math.floor((Math.random() * 100) + 1);
   if(picker > 80){
     if(picker % 2 != 0){
         return "Koor";
@@ -34,14 +34,14 @@ function pickFighter(){
 }
 
 function rockPaperScissors(user, touser) {
+  userDraw = rps[Math.floor(Math.random() * rps.length)];
+  touserDraw = rps[Math.floor(Math.random() * rps.length)];
+       
   if (user == touser){
        fighter = choose(randos);
   } else{
        fighter = touser;
   }
-  
-  userDraw = rps[Math.random() * rps.length];
-  touserDraw = rps[Math.random() * rps.length];
   
   winner = user;
   if (userDraw.ATK != touserDraw.ATK){
