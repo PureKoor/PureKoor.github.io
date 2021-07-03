@@ -15,6 +15,8 @@ tf = [`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,`Hug`,
 everyoneList = [`everyone`,`everyone`,`everyone`,`everyone`,`everyone`,`chat`,`chat`,`chat`,`chat`,`chat`,`chat`,
                 `y'all`,`every-fur`,`all you folks`,`the masses`,`us`,`the collective`,`the workers`];
 
+toDoLater = [`User Hugs other user in x animal, such as Hugs in donk as a variant for this hug command`]
+
 
 function choose(arr){
   temps = arr[Math.floor(Math.random()*arr.length)];
