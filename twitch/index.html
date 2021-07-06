@@ -40,11 +40,23 @@
 			<h2 class="koorText">PureKoor</h2>
 			<a href="https://PureKoor.com">Go Back to Main Website</a>
 			<h3>"Public Twitch Functions"</h3>
+	<p>Put links to jump to spot on page. Commands/ Games played/ etc</p>	
 			
-	<b>"To add this to your nightbot commands put in message and replace the ***** with the function name (THIS IS CASE SENSITIVE):"</b>
-	<br>		
-        <i> $(eval arg=decodeURIComponent(`$(touser)`);$(urlfetch json https://purekoor.com/twitch/*******))</i>
+	<b>When adding commands to nightbot, remember this is CASE SENSITIVE:. Also, you can suggest ideas for upgrading the commands on my discord</b>
+	<br>
+	<p>Transformation command</p>
+	<br>
+	<p>Copy to nightbot's message section </p>
+	<br>
+	<i>$(eval arg=decodeURIComponent(`$(touser)`);$(urlfetch json https://purekoor.com/twitch/transformation.js))</i>	
+	<br> <br> <br>
 
+	<p>Hug command</p>
+	<br>
+	<p>Copy to nightbot's message section </p>
+	<br>
+	<i>$(eval arg=decodeURIComponent(`$(user)`), arg1=decodeURIComponent(`$(touser)`);$(urlfetch json https://purekoor.com/twitch/hug.js))</i>	
+	<br>
 
       <ul>
         <li>transformation.js</li>
