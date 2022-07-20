@@ -20,6 +20,8 @@
         <div class = "footer-container">
           <center><p id = "pp"> owo </p></center>
           <p id = "ppDebug"> owo </p>
+          <p id = "ppControls"> owo </p>
+          <p id = "ppRules"> owo </p>
         </div>
     </footer>
 </html>
@@ -39,36 +41,40 @@
     var pawList = {};
             // The track the player will play
     var stage = [];
-    var maxStageLevel = 30;
+    var maxStageLevel = 256;
     var maxStagePaws = 4;
     var stageIndex = -1;
     var isKeyChanged = false;
-    var inactivePawColor = '#5d6070';
+    var pawSpacerX = 100;
+    var pawSpacerY = -120;
+    var inactivePawColor = '#c0b2d6';
+    var upComingPawColor = '#f7bf8d';
+    var pawColor = '#ff8000';
             //Changeable settings for inputs 
     var keyMapSettings = {
-        set1: 49, // 1
-        set2: 50, // 2
-        set3: 51, // 3
-        set4: 52, // 4
-        set5: 53, // 5
-        set6: 54, // 6
-        set7: 55, // 7
-        set8: 56, // 8
-        set9: 57, // 9
-        set10: 48 // 0
+        set1: 49, name1: "num 1",
+        set2: 50, name2: "num 2",
+        set3: 51, name3: "num 3",
+        set4: 52, name4: "num 4",
+        set5: 53, name5: "num 5",
+        set6: 54, name6: "num 6",
+        set7: 55, name7: "num 7",
+        set8: 56, name8: "num 8",
+        set9: 57, name9: "num 9",
+        set10: 48, name10: "num 10"
     }
             // Keys players can press
     var keyMap = {
-        key0: {code:keyMapSettings.set1, output:0, desc: keyMapSettings.set1 + " has an output of 0"},
-        key1: {code:keyMapSettings.set2, output:1, desc: keyMapSettings.set2 + " has an output of 1"},
-        key2: {code:keyMapSettings.set3, output:2, desc: keyMapSettings.set3 + " has an output of 2"},
-        key3: {code:keyMapSettings.set4, output:3, desc: keyMapSettings.set4 + " has an output of 3"},
-        key4: {code:keyMapSettings.set5, output:4, desc: keyMapSettings.set5 + " has an output of 4"},
-        key5: {code:keyMapSettings.set6, output:5, desc: keyMapSettings.set6 + " has an output of 5"},
-        key6: {code:keyMapSettings.set7, output:6, desc: keyMapSettings.set7 + " has an output of 6"},
-        key7: {code:keyMapSettings.set8, output:7, desc: keyMapSettings.set8 + " has an output of 7"},
-        key8: {code:keyMapSettings.set9, output:8, desc: keyMapSettings.set9 + " has an output of 8"},
-        key9: {code:keyMapSettings.set10, output:9, desc: keyMapSettings.set10 + " has an output of 9"}
+        key0: {code:keyMapSettings.set1, humanName: keyMapSettings.name1, output:0, desc: keyMapSettings.set1 + " has an output of 0"},
+        key1: {code:keyMapSettings.set2, humanName: keyMapSettings.name2, output:1, desc: keyMapSettings.set2 + " has an output of 1"},
+        key2: {code:keyMapSettings.set3, humanName: keyMapSettings.name3, output:2, desc: keyMapSettings.set3 + " has an output of 2"},
+        key3: {code:keyMapSettings.set4, humanName: keyMapSettings.name4, output:3, desc: keyMapSettings.set4 + " has an output of 3"},
+        key4: {code:keyMapSettings.set5, humanName: keyMapSettings.name5, output:4, desc: keyMapSettings.set5 + " has an output of 4"},
+        key5: {code:keyMapSettings.set6, humanName: keyMapSettings.name6, output:5, desc: keyMapSettings.set6 + " has an output of 5"},
+        key6: {code:keyMapSettings.set7, humanName: keyMapSettings.name7, output:6, desc: keyMapSettings.set7 + " has an output of 6"},
+        key7: {code:keyMapSettings.set8, humanName: keyMapSettings.name8, output:7, desc: keyMapSettings.set8 + " has an output of 7"},
+        key8: {code:keyMapSettings.set9, humanName: keyMapSettings.name9, output:8, desc: keyMapSettings.set9 + " has an output of 8"},
+        key9: {code:keyMapSettings.set10, humanName: keyMapSettings.name10, output:9, desc: keyMapSettings.set10 + " has an output of 9"}
     };
 
     function Paw (id,x,y,key,width,height,color){
@@ -143,7 +149,7 @@
 
     function makeLevel (max, paws, stage) {
         for (let i = 0; i < max; i++) {
-            stage[i] = Math.floor(Math.random() * (paws - 1));
+            stage[i] = Math.floor(Math.random() * (paws));
             console.log("Stage " + i + " is " + stage[i]);
         }
     }
@@ -226,10 +232,7 @@
         makeLevel(maxStageLevel,maxStagePaws,stage);
         stageIndex = 0;
 
-        var pawSpacerX = 100;
-        var pawSpacerY = -120;
-        var upComingPawColor = '#826856';
-        var pawColor = '#fa7416';
+
             //// Needs Corrected for varied levels
         Paw(0,pawStart.x,pawStart.y,keyMap.key0.output,70,100,pawColor);
         Paw(1,pawList[0].x + pawSpacerX,pawStart.y,keyMap.key1.output,70,100,pawColor);
@@ -281,6 +284,8 @@
         ctx.fillRect(player.x * 0,(f_Width/maxStageLevel) * (stageIndex),player.width,player.height);
        
         // Real Game
+        document.getElementById("ppControls").innerHTML = "Controls: " + keyMap.key0.humanName + " // " + keyMap.key1.humanName + " // " + keyMap.key2.humanName + " // " + keyMap.key3.humanName + " // ";
+        document.getElementById("ppRules").innerHTML = "Click all " + maxStageLevel +" square paws correctly to win. Highest Scores go to those without misclicks :3"
         ui_Score.font = "30px serif";
         ui_Score.innerHTML = "Score: " + scoreCounter.getScoreInt();
         if (scoreCounter.hasMisclicked()) {
