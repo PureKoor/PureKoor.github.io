@@ -26,8 +26,24 @@
     </footer>
 </html>
 
+
+
 <script type='text/javascript'>
-        // vars
+     /*
+     Game Ideas
+
+    - Starting Level should be 2 columns with hooves "Cause you can't hurt hooves like ya can beans"
+
+    Topics to try and impliment [goo, hyper, taur, pool toy/leather, transformation,]
+
+    Probably should have camero paws in there
+
+    User created paws allowed?
+
+     */
+         
+     
+     // vars
             // Creates canvas
     var canvas = document.getElementById('ctx'); 
     var ui_Score = document.getElementById('pp');
@@ -37,6 +53,10 @@
     var ctx = canvas.getContext('2d');
     var f_Width = 500;
     var f_Height = 500;
+
+    var timer_start;
+    var timer_end;
+    var timer_delta;
             //How many "paws" the player has to contend with
     var pawList = {};
             // The track the player will play
@@ -232,6 +252,8 @@
         makeLevel(maxStageLevel,maxStagePaws,stage);
         stageIndex = 0;
 
+        timer_start = Date.now();
+
 
             //// Needs Corrected for varied levels
         Paw(0,pawStart.x,pawStart.y,keyMap.key0.output,70,100,pawColor);
@@ -269,8 +291,10 @@
     }
     
     function main() {
-        clearScreen();
 
+        clearScreen();
+        timer_delta = Date.now() - timer_start;
+        timer_end = Math.floor(timer_delta/1000);
         //TO DO
         /*
             Fix Input for receiing data
@@ -284,7 +308,7 @@
         ctx.fillRect(player.x * 0,(f_Width/maxStageLevel) * (stageIndex),player.width,player.height);
        
         // Real Game
-        document.getElementById("ppControls").innerHTML = "Controls: " + keyMap.key0.humanName + " // " + keyMap.key1.humanName + " // " + keyMap.key2.humanName + " // " + keyMap.key3.humanName + " // ";
+        document.getElementById("ppControls").innerHTML = "Controls: " + keyMap.key0.humanName + " // " + keyMap.key1.humanName + " // " + keyMap.key2.humanName + " // " + keyMap.key3.humanName + " // Timer: " + timer_end + " seconds";
         document.getElementById("ppRules").innerHTML = "Click all " + maxStageLevel +" square paws correctly to win. Highest Scores go to those without misclicks :3"
         ui_Score.font = "30px serif";
         ui_Score.innerHTML = "Score: " + scoreCounter.getScoreInt();
@@ -334,7 +358,8 @@
         if (stageIndex > stage.length - 1){
             ctx.fillText("Finished",0, f_Width-10);
             ui_Score.innerHTML = "FINAL SCORE: " + scoreCounter.getScoreInt();
-            alert("you win!");
+            var temp = timer_end;
+            alert("You Win! Final time is: " + temp);
             throw new Error("program finished");
         }
 
