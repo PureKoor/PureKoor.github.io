@@ -1,4 +1,4 @@
-[{
+{
     "ROOM_DICTIONARY": {
         "0": {"name": "RM_NULL"},
         "1": {"name": "RM_TEST"},
@@ -172,4 +172,4 @@
             "items": ""
         }
     ]
-}]
+}
