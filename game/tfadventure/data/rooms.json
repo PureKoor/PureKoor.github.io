@@ -30,6 +30,7 @@
 
     "rooms": [
         {
+            "id": 0,
             "nameID": "RM_NULL",
             "name": "NULL Room",
             "desc": "This room is set when error has occured",
@@ -41,6 +42,7 @@
         },
 
         {
+            "id": 1,
             "nameID": "RM_HS_BEDROOM",
             "name": "Bedroom",
             "desc": "A comfy beedroom you call home",
@@ -52,6 +54,7 @@
         },
 
         {
+            "id": 2,
             "nameID": "RM_HS_BATHROOM",
             "name": "BATHROOM",
             "desc": "A recently cleaned bathroom",
@@ -63,6 +66,7 @@
         },
 
         {
+            "id": 3,
             "nameID": "RM_HS_COZY_HALLWAY",
             "name": "Cozy Hallway",
             "desc": "A softly lit cozy hallway. One end is a door that goes downstairs, the other end is your bedroom. The third door is the bathroom",
@@ -74,6 +78,7 @@
         },
 
         {
+            "id": 4,
             "nameID": "RM_HS_STAIRS",
             "name": "Cozy Hallway Stairs",
             "desc": "A dim glow eminates from utop the stairs. A twist goes down to a dark void you know to be the common area before the kitchen, living room, bathroom, and front door hallway",
@@ -85,6 +90,7 @@
         },
 
         {
+            "id": 5,
             "nameID": "RM_CS_MIRROR_CLO",
             "name": "Mirror Closet",
             "desc": "A dim glow eminates from utop the stairs. A twist goes down to a dark void you know to be the common area before the kitchen, living room, bathroom, and front door hallway",
@@ -96,6 +102,7 @@
         },
 
         {
+            "id": 6,
             "nameID": "RM_CS_FIREPLACE",
             "name": "Fireplace Room",
             "desc": "Needs Desc - Fireplace room",
@@ -107,6 +114,7 @@
         },
 
         {
+            "id": 7,
             "nameID": "RM_CS_PADIO_LN",
             "name": "Padio Landing",
             "desc": "Needs Desc - Padio Landing",
@@ -118,6 +126,7 @@
         },
 
         {
+            "id": 8,
             "nameID": "RM_CS_CRAMP_HW",
             "name": "Cramp Castle Hallway",
             "desc": "Needs Desc - Cramp Castle Hallway",
@@ -129,6 +138,7 @@
         },
 
         {
+            "id": 9,
             "nameID": "RM_CS_KITCHEN",
             "name": "Kitchen",
             "desc": "Needs Desc - Cramp Castle Hallway",
@@ -140,6 +150,7 @@
         },
 
         {
+            "id": 10,
             "nameID": "RM_CS_DRAGON_LAIR",
             "name": "Gold Room",
             "desc": "Needs Desc - Gold Room",
@@ -151,6 +162,7 @@
         },
 
         {
+            "id": 11,
             "nameID": "RM_CS_TOOLS_CLO",
             "name": "Tools Closet",
             "desc": "Needs Desc - Tools Closet",
@@ -162,6 +174,7 @@
         },
 
         {
+            "id": 12,
             "nameID": "RM_CS_CAVE",
             "name": "Cramp Castle Hallway",
             "desc": "Needs Desc - Cave",
