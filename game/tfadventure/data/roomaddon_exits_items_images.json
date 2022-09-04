@@ -11,10 +11,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "NULL_ITEM"
         ],
         "images": [
-
+            "https://purekoor.com//game/tfadventure/img/1.gif"
         ]
     },
 
@@ -38,10 +38,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "APPLE", "WATER_BOTTLE"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/4.jpg"
         ]
     },
 
@@ -57,10 +57,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "LEAF"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a1.jpg"
         ]
     },
 
@@ -92,10 +92,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a2.jpg"
         ]
     },
 
@@ -119,10 +119,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+           
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a3.jpg"
         ]
     },
 
@@ -146,10 +146,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "POTION_VIAL", "LEAF"
         ],
         "images": [
-
+            "https://purekoor.com//game/tfadventure/img/a4.jpg"
         ]
     },
 
@@ -181,10 +181,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "DRAGON_ORB"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a1.jpg"
         ]
     },
 
@@ -200,10 +200,10 @@
             }
         ],
         "items": [
-            "APPLE", "SWORD"
+            "LEAF"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a2.jpg"
         ]
     },
 
@@ -212,10 +212,10 @@
 
         ],
         "items": [
-            "APPLE", "SWORD"
+           
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a3.jpg"
         ]
     },
 
@@ -224,10 +224,10 @@
 
         ],
         "items": [
-            "APPLE", "SWORD"
+            "APPLE", "LONGSWORD"
         ],
         "images": [
-
+            "https://purekoor.com//game/tfadventure/img/a4.jpg"
         ]
     },
 
@@ -236,10 +236,10 @@
 
         ],
         "items": [
-            "APPLE", "SWORD"
+            
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/3.png"
         ]
     },
 
@@ -248,10 +248,10 @@
 
         ],
         "items": [
-            "APPLE", "SWORD"
+            "LONGSWORD", "SWORD", "POTION_VIAL"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a1.jpg"
         ]
     },
 
@@ -260,10 +260,10 @@
 
         ],
         "items": [
-            "APPLE", "SWORD"
+            "SWORD"
         ],
         "images": [
-
+            "https://purekoor.com/game/tfadventure/img/a2.jpg"
         ]
     }
 }
