@@ -4,8 +4,6 @@ PureKoor Website's Directory
 /*secondary*/	
 	→ about : Talks about me
 	→ directory: shows all website list
-	→ commissions
-	→ faq
 /*Error*/
 	→ 404
 	→ 418
@@ -15,7 +13,7 @@ PureKoor Website's Directory
 	→ info : talks about commissions
 	→ twitch : !!! DO NOT TOUCH LIGHTLY, WILL MESS UP PEOPLE'S STUFF> JS IS IMPORTANT FOR THEM helps people implement my twitch function
 	→ games : links people to my games
-
+	→ commissions
 
 
 /*NEED TO ADD*/
@@ -24,3 +22,4 @@ PureKoor Website's Directory
 	→ Youtube: Allows people to watch my videos
 	→ art : shows off my art
 	→ Other errors ~Need to add any error my site would have to deal with
+	→ faq
