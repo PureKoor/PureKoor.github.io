@@ -1,0 +1,26 @@
+PureKoor Website's Directory
+/*main*/
+	→ index.html
+/*secondary*/	
+	→ about : Talks about me
+	→ directory: shows all website list
+	→ commissions
+	→ faq
+/*Error*/
+	→ 404
+	→ 418
+
+
+/*NEEDS UPDATED*/
+	→ info : talks about commissions
+	→ twitch : !!! DO NOT TOUCH LIGHTLY, WILL MESS UP PEOPLE'S STUFF> JS IS IMPORTANT FOR THEM helps people implement my twitch function
+	→ games : links people to my games
+
+
+
+/*NEED TO ADD*/
+	→ VRchat : shows people my worlds
+	→ Support: goes into detail about how to support me and why
+	→ Youtube: Allows people to watch my videos
+	→ art : shows off my art
+	→ Other errors ~Need to add any error my site would have to deal with
