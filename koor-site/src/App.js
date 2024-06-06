@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <div className="h-fit bg-gradient-to-b from-[#47a2ed] to-[#323384] overflow-hidden">
-      <img loading="lazy" className="w-screen" src="assets/IMG_0604.png" />
+      <img loading="lazy" className="w-screen" src="assets/IMG_0604.PNG" />
       <div className="flex flex-col flex-start items-center mx-auto max-w-screen-xl gap-2">
         <div className="max-w-screen-xl w-full">
           <div className="flex flex-wrap items-stretch gap-6 mx-auto w-full justify-center bg-gradient-to-b from-transparent to-50% from-50% to-[#ffb44a]">
@@ -78,7 +78,7 @@ export default function App() {
                 <div className="row-span-3 col-span-2">
                   <a href="https://patreon.com/purekoor">
                     <div className="w-44 h-44 mx-auto rounded-xl border-red-600 border-4">
-                      <img loading="lazy" className="object-fill" src="assets/base_3.png" />
+                      <img loading="lazy" className="object-fill" src="assets/base_3.PNG" />
                     </div>
                   </a>
                 </div>
@@ -153,7 +153,7 @@ export default function App() {
                 >
                   <img loading="lazy"
                     className="h-full object-cover"
-                    src="assets/base_2.png"
+                    src="assets/base_2.PNG"
                   />
                 </a>
               </div>
