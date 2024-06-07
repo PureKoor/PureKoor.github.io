@@ -129,7 +129,7 @@ export default function App() {
                 </span>
               </p>
               <br />
-              <p className="font-black text-4xl">Price range: Free - $5</p>
+              <p className="font-black text-4xl underline"><a href="https://purekoor.gumroad.com/">Check out my Gumroad</a></p>
             </div>
             <div className="grow-0">
               <div className="grid grid-rows- grid-cols-4 gap-3 w-80 h-60">
