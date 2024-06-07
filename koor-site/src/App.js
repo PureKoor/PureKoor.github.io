@@ -381,7 +381,7 @@ export default function App() {
         <div className="max-w-screen-xl w-full">
           <div className="grid w-2/3 grid-rows-2 grid-cols-1 mx-auto gap-1">
             <div className="text-right m-auto mb-1 font-bold text-white">
-              All Websites • <a className="underline" href="mailto:contact@purekoor.com">contact@purekoor.com</a>
+            <a className="underline" href="/links">All Websites</a> • <a className="underline" href="mailto:contact@purekoor.com">contact@purekoor.com</a>
             </div>
             <div className="col-span-full mx-auto flex items-center gap-2 mb-4">
               <img loading="lazy" className="h-8 object-scale-down" src="assets/logo.png" />
