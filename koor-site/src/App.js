@@ -4,27 +4,27 @@ export default function App() {
       <img loading="lazy" className="w-screen" src="assets/IMG_0604.PNG" />
       <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
         <div className="max-w-screen-xl w-full">
-          <div className="flex flex-wrap items-stretch gap-6 mx-auto w-full justify-center bg-gradient-to-b from-transparent to-50% from-50% to-[#ffb44a]">
-            <div className="bg-white lg:basis-64 basis-16 h-16 rounded-lg align-middle border-[#4c1a1e] border-4">
-              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5">
+          <div className="flex flex-wrap items-stretch gap-3 md:gap-6 mx-auto w-full justify-center bg-gradient-to-b from-transparent to-50% from-50% to-[#ffb44a]">
+            <a href="#avatar" className="bg-[url('../public/assets/pagebutton_avatar.jpg')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg align-middle border-[#4c1a1e] border-4">
+              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
                 Avatar
               </span>
-            </div>
-            <div className="bg-white lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
-              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5">
+            </a>
+            <a href="#video" className="bg-[url('../public/assets/pagebutton_video.jpg')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
+              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
                 Video
               </span>
-            </div>
-            <div className="overflow-hidden bg-white min-w-20 lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
-              <span className="text-3xl lg:ml-0 -ml-1 leading-loose font-serif align-middle text-left pl-2.5">
+            </a>
+            <a href="#icon" className="bg-[url('../public/assets/pagebutton_iconbase.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden min-w-20 lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
+              <span className="text-3xl lg:ml-0 -ml-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
                 Icon Base
               </span>
-            </div>
-            <div className="bg-white lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
-              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5">
+            </a>
+            <a href="#art" className="bg-[url('../public/assets/pagebutton_art.jpg')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4">
+              <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
                 Art
               </span>
-            </div>
+            </a>
           </div>
           <div className="bg-[#ffb44a] min-h-[17rem] overflow-visible">
             <div className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center mr-3">
@@ -67,10 +67,10 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="grow shrink-0 grid grid-cols-5 grid-rows-4 gap-3">
+              <div className="grow shrink-0 grid grid-cols-5 grid-rows-4 gap-3 mt-3">
                 <div className="col-span-full row-span-1">
                   <div className="text-white font-serif text-center">
-                    <span className="text-6xl align-middle text-stroke-1">
+                    <span className="text-6xl align-middle text-stroke-sm">
                       INCLUDES THIS
                     </span>
                   </div>
@@ -96,10 +96,10 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="m-auto grow-0 shrink-0 rounded-2xl border-4 bg-indigo-950 border-indigo-950">
+              <div className="md:m-auto mx-auto mb-3 grow-0 shrink-0 rounded-2xl border-4 bg-indigo-950 border-indigo-950 ">
                 <a
                   href="https://patreon.com/purekoor"
-                  className="h-48 w-48 flex"
+                  className="h-48 w-48 flex mb-"
                 >
                   <img loading="lazy"
                     className="object-contain h-40 m-auto"
@@ -110,31 +110,31 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#ffb44a] w-full">
-          <h1 className="text-slate-50 font-serif text-6xl text-center text-stroke-1 mt-2">
+        <div id="icon" className="bg-[#ffb44a] w-full">
+          <h1 className="text-slate-50 font-serif text-6xl text-center text-stroke-sm mt-2">
             {" "}
             ʕ ᵔᴥᵔʔ✨ TRANSFORM YOUR SONA
           </h1>
           <div className="flex gap-5 flex-wrap justify-center items-center md:flex-nowrap m-5">
-            <div className="text-4xl grow-0 shrink inline text-white font-extrabold text-stroke-1">
+            <div className="text-4xl grow-0 shrink inline text-white font-extrabold text-stroke-sm">
               <p className="">
                 <span className="inline-block">
                   Color in these PSD files to
                 </span>
                 <span className="inline-block">
-                  make yourself a new icon! :3
+                  make yourself a new icon or 
                 </span>
                 <span className="inline-block">
-                  Or maybe find yourself a new species
+                  maybe find yourself a new species!
                 </span>
               </p>
               <br />
-              <p className="font-black text-4xl">Price range: free - $5</p>
+              <p className="font-black text-4xl">Price range: Free - $5</p>
             </div>
             <div className="grow-0">
               <div className="grid grid-rows- grid-cols-4 gap-3 w-80 h-60">
                 <div className="col-span-full m-auto">
-                  <h2 className="w-full text-center font-serif text-5xl align-middle inline-block text-stroke-1 text-white h-10">
+                  <h2 className="w-full text-center font-serif text-5xl align-middle inline-block text-stroke-sm text-white h-10">
                     <a href="https://purekoor.gumroad.com/">NEW BASES</a>
                   </h2>
                 </div>
@@ -216,7 +216,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#ffb44a] max-w-screen-xl flex flex-row justify-between h-full items-center gap-5 flex-wrap lg:flex-nowrap w-full">
+        <div id="video" className="bg-[#ffb44a] max-w-screen-xl flex flex-row justify-between h-full items-center gap-5 flex-wrap lg:flex-nowrap w-full">
           <a
             href="https://www.youtube.com/watch?v=mvi4YNuRhiY"
             className="rounded-xl border-4 border-white m-3 overflow-hidden shrink-0  mx-auto"
@@ -276,19 +276,19 @@ export default function App() {
           </div>
         </div>
 
-        <div className="bg-[#ffb44a] w-full">
+        <div id="avatar" className="bg-[#ffb44a] w-full">
           <div className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center">
-            <a href="https://purekoor.gumroad.com/" className="mx-auto md:mx-3">
+            <a href="https://purekoor.gumroad.com/" className="mx-auto md:mx-3 md:mt-0 mt-3">
               <img loading="lazy" className="h-72" src="assets/boing.webp" />
             </a>
 
             <div className="grow shrink-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mb-5 mt-2">
               <div className="col-span-full row-span-1 my-auto">
                 <div className="text-white font-serif text-center">
-                  <p className="text-6xl align-middle text-stroke-1 hover:underline">
+                  <p className="text-6xl align-middle text-stroke-sm hover:underline">
                     <a href="https://purekoor.gumroad.com/">TANUKI FELLA</a>
                   </p>
-                  <p className="text-3xl align-middle text-stroke-1">
+                  <p className="text-3xl align-middle text-stroke-sm">
                     My First Ever Avatar
                   </p>
                 </div>
@@ -342,7 +342,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="bg-[url('../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat">
+        <div id="art" className="bg-[url('../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat">
           <div className="flex flex-row justify-between items-start gap-5 my-5 flex-wrap w-full">
             <div className="shrink-0 grow-0 grid grid-cols-2 grid-rows-2 h-80 w-80 gap-5 mx-5">
               <a href="https://bsky.app/profile/purekoor.art" className="border-4 rounded-xl border-white bg-white overflow-hidden">

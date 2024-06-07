@@ -17,18 +17,18 @@ code {
 }
 
 .text-stroke-1 {
-  -webkit-text-stroke: 1.2px #4c1a1e;
+  -webkit-text-stroke: 1.2px #30619b;
 }
 
-.text-stroke-2 {
-  -webkit-text-stroke: 2.4px #4c1a1e;
+.text-stroke-icon {
+  -webkit-text-stroke: 1.1px #000000;
 }
 
 .text-stroke-sm {
   text-shadow:
-    1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    1.2px 1.2px 0 #000000,
+    -1px -1.2px 0 #000000,
+    .21px -1.2px 0 #000000,
+    -1.2px 1.2px 0 #000000,
+    1.2px 1.2px 0 #000000;
 }
