@@ -1,7 +1,9 @@
+//import {KoorMetaTags} from "./components/KoorMetaTags";
+
 export default function App() {
   return (
     <div className="h-fit bg-gradient-to-b from-[#47a2ed] to-[#323384] overflow-hidden">
-      <img loading="lazy" className="w-screen" src="assets/IMG_0604.PNG" />
+      <img loading="lazy" className="w-screen" src="assets/Banner_Main_Transparent.png" />
       <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
         <div className="max-w-screen-xl w-full">
           <div className="flex flex-wrap items-stretch gap-3 md:gap-6 mx-auto w-full justify-center bg-gradient-to-b from-transparent to-50% from-50% to-[#ffb44a]">
@@ -110,6 +112,8 @@ export default function App() {
             </div>
           </div>
         </div>
+        
+        {/* */}        
         <div id="icon" className="bg-[#ffb44a] w-full">
           <h1 className="text-slate-50 font-serif text-6xl text-center text-stroke-sm mt-2">
             {" "}
