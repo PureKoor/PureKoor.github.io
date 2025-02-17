@@ -1,6 +1,15 @@
+import KoorMetaTags from "./components/KoorMetaTags";
+
 export default function App() {
   return (
-    <div className="h-fit bg-gradient-to-b from-[#47a2ed] to-[#323384] overflow-hidden">
+    <>
+    <KoorMetaTags
+        title="PureKoor"
+        description="Pure Tycoon creating artwork, videos, and more!"
+        image="https://purekoor.com/assets/img/main/SocialPreview.png"
+        name="furry,art,artwork,freelance,purekoor,streaming,video,creator,digital,3D,Avatar"
+      />
+        <div className="h-fit bg-gradient-to-b from-[#47a2ed] to-[#323384] overflow-hidden">
       <img loading="lazy" className="w-screen" src="assets/IMG_0604.PNG" />
       <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
         <div className="max-w-screen-xl w-full">
@@ -393,5 +402,6 @@ export default function App() {
         </div>
       </div>
     </div>
+    </>
   );
 }
