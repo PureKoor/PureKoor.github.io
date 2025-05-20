@@ -6,7 +6,6 @@
 [Follow my Artwork on Bluesky](https://bsky.purekoor.com)
 
 **Help Support my work at:**
-
 [Via Patreon](https://patreon.purekoor.com) or [Via Youtube](https://yt.purekoor.com)
 
 
