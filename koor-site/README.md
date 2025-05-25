@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+(If switched folders)
+
+### `npm install`
+
+### `npm install react-helmet`
+
+then
+
 ### `npm start`
 
 Runs the app in the development mode.\
