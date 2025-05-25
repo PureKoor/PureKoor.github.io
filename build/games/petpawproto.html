@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta name = "Paws" charset="utf-8" content = "A fun furry game">
+        <title>🐾Pet Paw🐾</title>
+    </head>
+
+    <body>
+        <div class="titlecard-container">
+            <center><p>🐾Pet Paw🐾</p></center>
+        </div>
+        
+        <div class = "game-container">
+            <center><canvas id="ctx" width="500" height="500" style="border:1px solid #000000;"></canvas></center>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class = "footer-container">
+          <center><p id = "pp"> owo </p></center>
+          <p id = "ppDebug"> owo </p>
+          <p id = "ppControls"> owo </p>
+          <p id = "ppRules"> owo </p>
+        </div>
+    </footer>
+</html>
+
+
+
+<script type='text/javascript'>
+     /*
+     Game Ideas
+
+    - Starting Level should be 2 columns with hooves "Cause you can't hurt hooves like ya can beans"
+
+    Topics to try and impliment [goo, hyper, taur, pool toy/leather, transformation,]
+
+    Probably should have camero paws in there
+
+    User created paws allowed?
+
+     */
+         
+     
+     // vars
+            // Creates canvas
+    var canvas = document.getElementById('ctx'); 
+    var ui_Score = document.getElementById('pp');
+    var ui_debug = document.getElementById('ppDebug');
+    var scoreErrors = 0;
+    var scoreCounter = 0;
+    var ctx = canvas.getContext('2d');
+    var f_Width = 500;
+    var f_Height = 500;
+
+    var timer_start;
+    var timer_end;
+    var timer_delta;
+            //How many "paws" the player has to contend with
+    var pawList = {};
+            // The track the player will play
+    var stage = [];
+    var maxStageLevel = 256;
+    var maxStagePaws = 4;
+    var stageIndex = -1;
+    var isKeyChanged = false;
+    var pawSpacerX = 100;
+    var pawSpacerY = -120;
+    var inactivePawColor = '#c0b2d6';
+    var upComingPawColor = '#f7bf8d';
+    var pawColor = '#ff8000';
+            //Changeable settings for inputs 
+    var keyMapSettings = {
+        set1: 49, name1: "num 1",
+        set2: 50, name2: "num 2",
+        set3: 51, name3: "num 3",
+        set4: 52, name4: "num 4",
+        set5: 53, name5: "num 5",
+        set6: 54, name6: "num 6",
+        set7: 55, name7: "num 7",
+        set8: 56, name8: "num 8",
+        set9: 57, name9: "num 9",
+        set10: 48, name10: "num 10"
+    }
+            // Keys players can press
+    var keyMap = {
+        key0: {code:keyMapSettings.set1, humanName: keyMapSettings.name1, output:0, desc: keyMapSettings.set1 + " has an output of 0"},
+        key1: {code:keyMapSettings.set2, humanName: keyMapSettings.name2, output:1, desc: keyMapSettings.set2 + " has an output of 1"},
+        key2: {code:keyMapSettings.set3, humanName: keyMapSettings.name3, output:2, desc: keyMapSettings.set3 + " has an output of 2"},
+        key3: {code:keyMapSettings.set4, humanName: keyMapSettings.name4, output:3, desc: keyMapSettings.set4 + " has an output of 3"},
+        key4: {code:keyMapSettings.set5, humanName: keyMapSettings.name5, output:4, desc: keyMapSettings.set5 + " has an output of 4"},
+        key5: {code:keyMapSettings.set6, humanName: keyMapSettings.name6, output:5, desc: keyMapSettings.set6 + " has an output of 5"},
+        key6: {code:keyMapSettings.set7, humanName: keyMapSettings.name7, output:6, desc: keyMapSettings.set7 + " has an output of 6"},
+        key7: {code:keyMapSettings.set8, humanName: keyMapSettings.name8, output:7, desc: keyMapSettings.set8 + " has an output of 7"},
+        key8: {code:keyMapSettings.set9, humanName: keyMapSettings.name9, output:8, desc: keyMapSettings.set9 + " has an output of 8"},
+        key9: {code:keyMapSettings.set10, humanName: keyMapSettings.name10, output:9, desc: keyMapSettings.set10 + " has an output of 9"}
+    };
+
+    function Paw (id,x,y,key,width,height,color){
+        var paws = {
+            id:id,
+            x:x,
+            y:y,
+            key:key,
+            name:"paw #" + id,
+            width:width,
+            height:height,
+            color:color
+        };
+        pawList[id] = paws;
+    }
+
+        //objects
+            // Paw's starting position
+    var pawStart = {
+        x:f_Width * .14,
+        y:f_Height * .78
+    };
+        // Needs rewords to just keep track of buttons pressed 
+    var player = {
+        id:-1,
+        name:"null",
+        lastKeyPressed: -1,
+        keyPressed:-1,
+        x:50,
+        y:50,
+        height:25,
+        width:25,
+    };
+
+    // Functions
+        //Tests
+    function changeKey (input, setKey) {
+        console.log("Changing Key : " + input);
+        var message = "Key changed -> ";
+        var tempInput = input;
+        isKeyChanged = true;
+        switch (input){
+            case keyMap.key0.code:
+                setKey.keyPressed = keyMap.key0.output;
+                setKey.lastKeyPressed = setKey.keyPressed;
+                console.log (message + keyMap.key0.output)
+                break;           
+            case keyMap.key1.code:
+                setKey.keyPressed = keyMap.key1.output;
+                setKey.lastKeyPressed = setKey.keyPressed;
+                console.log (message + keyMap.key1.output)
+                break;
+            case keyMap.key2.code:
+                 setKey.keyPressed = keyMap.key2.output;
+                 setKey.lastKeyPressed = setKey.keyPressed;
+                console.log (message + keyMap.key2.output)
+                break;
+            case keyMap.key3.code:
+                setKey.keyPressed = keyMap.key3.output;
+                setKey.lastKeyPressed = setKey.keyPressed;
+                console.log (message + keyMap.key3.output)
+                break;
+            case keyMap.key4.code:
+                setKey.keyPressed = keyMap.key4.output;
+                setKey.lastKeyPressed = setKey.keyPressed;
+                console.log (message + keyMap.key4.output)
+            default:
+                console.log("Key " + tempInput +" Unchanged");
+                setKey.lastKeyPressed = input;                
+        }
+    }
+
+    function makeLevel (max, paws, stage) {
+        for (let i = 0; i < max; i++) {
+            stage[i] = Math.floor(Math.random() * (paws));
+            console.log("Stage " + i + " is " + stage[i]);
+        }
+    }
+
+    function stageIndexer(i) {
+        return Math.floor(i / 4);
+    }
+
+    function isCorrectlyPressed(stageC, playerC){ 
+        return stageC == playerC.lastKeyPressed && playerC.lastKeyPressed != -1 && isKeyChanged;
+    }
+    
+    function clearScreen () {
+        ctx.clearRect(0, 0, f_Width, f_Height);
+    }
+
+    function isPawMessaged (rub,paw) {
+        var r = rub;
+        var p = paw;
+    }
+
+    function drawEntity(ent, color) {
+        ctx.save();
+    	ctx.fillStyle = color;
+        ctx.fillRect(ent.x,ent.y,ent.width,ent.height);
+	    ctx.restore();
+    }
+        //Classes
+    
+    class Score {
+        scoreRun;
+
+        constructor(int_counter) {
+            this.int_counter = int_counter;
+            this.scoreRun = false;
+        }
+        getScoreInt() {
+            return this.int_counter;
+        }
+        getScoreString() {
+            return this.int_counter + "";
+        }
+        setScore(newScore) {
+            this.int_counter = newScore;
+        }
+        incrementScore() {
+            if(this.scoreRun){
+                this.int_counter = this.int_counter + (Math.floor(this.int_counter * .07));
+            }
+            ++this.int_counter;
+            this.scoreRun = true;
+        }
+        misclick() {
+            this.scoreRun = false;
+            ++scoreErrors;
+        }
+        hasMisclicked() {
+
+            return (!this.scoreRun);
+        }
+        incrementScoreCustom(int) {
+            this.int_counter = this.int_counter + int;
+        }
+    }
+
+        // Mains
+    function init() {
+        console.log("loading...");
+            // Key listeners
+        document.addEventListener('keydown', function(event) {        
+            changeKey(event.keyCode, player) 
+        });
+
+        // document.addEventListener('keyup',   function(event) { 
+        //     player.keyPressed = -1; 
+        // });
+
+        scoreCounter = new Score(0);
+
+        makeLevel(maxStageLevel,maxStagePaws,stage);
+        stageIndex = 0;
+
+        timer_start = Date.now();
+
+
+            //// Needs Corrected for varied levels
+        Paw(0,pawStart.x,pawStart.y,keyMap.key0.output,70,100,pawColor);
+        Paw(1,pawList[0].x + pawSpacerX,pawStart.y,keyMap.key1.output,70,100,pawColor);
+        Paw(2,pawList[1].x + pawSpacerX,pawStart.y,keyMap.key2.output,70,100,pawColor);
+        Paw(3,pawList[2].x + pawSpacerX,pawStart.y,keyMap.key3.output,70,100,pawColor);
+        
+        Paw(4,pawList[0].x, pawStart.y + pawSpacerY, keyMap.key0.output,70,100,upComingPawColor);
+        Paw(5,pawList[1].x, pawStart.y + pawSpacerY, keyMap.key1.output,70,100,upComingPawColor);
+        Paw(6,pawList[2].x, pawStart.y + pawSpacerY, keyMap.key2.output,70,100,upComingPawColor);
+        Paw(7,pawList[3].x, pawStart.y + pawSpacerY, keyMap.key3.output,70,100,upComingPawColor);
+
+        Paw(8,pawList[0].x, pawStart.y + (pawSpacerY * 2),keyMap.key0.output,70,100,upComingPawColor);
+        Paw(9,pawList[1].x, pawStart.y + (pawSpacerY * 2),keyMap.key1.output,70,100,upComingPawColor);
+        Paw(10,pawList[2].x, pawStart.y + (pawSpacerY * 2),keyMap.key2.output,70,100,upComingPawColor);
+        Paw(11,pawList[3].x, pawStart.y + (pawSpacerY * 2),keyMap.key3.output,70,100,upComingPawColor);
+
+        Paw(12,pawList[0].x, pawStart.y + (pawSpacerY * 3),keyMap.key0.output,70,100,upComingPawColor); 
+        Paw(13,pawList[1].x, pawStart.y + (pawSpacerY * 3),keyMap.key1.output,70,100,upComingPawColor);
+        Paw(14,pawList[2].x, pawStart.y + (pawSpacerY * 3),keyMap.key2.output,70,100,upComingPawColor);
+        Paw(15,pawList[3].x, pawStart.y + (pawSpacerY * 3),keyMap.key3.output,70,100,upComingPawColor);
+
+        Paw(16,pawList[0].x, pawStart.y + (pawSpacerY * 4),keyMap.key0.output,70,100,upComingPawColor);
+        Paw(17,pawList[1].x, pawStart.y + (pawSpacerY * 4),keyMap.key1.output,70,100,upComingPawColor);
+        Paw(18,pawList[2].x, pawStart.y + (pawSpacerY * 4),keyMap.key2.output,70,100,upComingPawColor);
+        Paw(19,pawList[3].x, pawStart.y + (pawSpacerY * 4),keyMap.key3.output,70,100,upComingPawColor);
+            ////
+
+        //character.src = 'images/character.png';
+        player.x = 100;
+        player.y = 100;
+        
+        console.log("...loaded");
+        
+    }
+    
+    function main() {
+
+        clearScreen();
+        timer_delta = Date.now() - timer_start;
+        timer_end = Math.floor(timer_delta/1000);
+        //TO DO
+        /*
+            Fix Input for receiing data
+            Standardize sizes of paws
+
+            Clean up in general
+        */
+       // 
+             // Progress Bar
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(player.x * 0,(f_Width/maxStageLevel) * (stageIndex),player.width,player.height);
+       
+        // Real Game
+        document.getElementById("ppControls").innerHTML = "Controls: " + keyMap.key0.humanName + " // " + keyMap.key1.humanName + " // " + keyMap.key2.humanName + " // " + keyMap.key3.humanName + " // Timer: " + timer_end + " seconds";
+        document.getElementById("ppRules").innerHTML = "Click all " + maxStageLevel +" square paws correctly to win. Highest Scores go to those without misclicks :3"
+        ui_Score.font = "30px serif";
+        ui_Score.innerHTML = "Score: " + scoreCounter.getScoreInt();
+        if (scoreCounter.hasMisclicked()) {
+            ui_Score.innerHTML += "  -- OUCHY ;w;";
+        }
+        ui_debug.innerHTML = "Debug: " ;
+
+       
+        // Here's where we handle all the input, logic and drawing to the screen per frame.
+        ctx.font = "48px serif";
+
+        if(player.keyPressed == -1){
+            ui_debug.innerHTML += "User Pressed: Current(" + player.keyPressed + ") Previous(" + player.lastKeyPressed + ") || " + "Misclicks: " + scoreErrors + " || ";
+        } else if(player.keyPressed != -1){
+            ui_debug.innerHTML += "User Pressing(" + player.keyPressed + ") Previous(" + player.lastKeyPressed + ") || " + "Misclicks: " + scoreErrors + " || ";
+        }
+
+        for(var i in pawList){
+            var offset = stageIndexer(i);
+
+            if (stage[stageIndex + offset] == pawList[i].key && (stageIndex + offset) < stage.length) {
+                drawEntity(pawList[i],pawList[i].color);                
+            }
+            else
+                drawEntity(pawList[i],inactivePawColor);
+        }
+
+        if (isCorrectlyPressed(stage[stageIndex],player)) {
+            stageIndex = ++stageIndex;
+            scoreCounter.incrementScore();
+            isKeyChanged = false;
+            console.log("Stage Increased");
+        }
+        if (!isCorrectlyPressed(stage,player) && isKeyChanged){
+            scoreCounter.misclick();
+            ui_Score.innerHTML += "  -- OUCHY ;w;";
+            isKeyChanged = false;
+        }
+        if(!isCorrectlyPressed(stage,player)){
+            console.log("still here at " + stageIndex + " needing output " + stage[stageIndex]);
+        }
+      
+        ui_debug.innerHTML += "Stage Index: " + stageIndex;
+
+        //End Game
+        if (stageIndex > stage.length - 1){
+            ctx.fillText("Finished",0, f_Width-10);
+            ui_Score.innerHTML = "FINAL SCORE: " + scoreCounter.getScoreInt();
+            var temp = timer_end;
+            alert("You Win! Final time is: " + temp);
+            throw new Error("program finished");
+        }
+
+            
+        // call itself by requesting the next animation frame, and so begin the endless loop
+        requestAnimationFrame(main);
+    }
+
+// 🐾🐾🐾🐾
+//    
+//
+//
+//   
+//Main Program
+    // Initialise
+    init();    
+    // Start the loop!
+    requestAnimationFrame(main);
+    
+</script>
