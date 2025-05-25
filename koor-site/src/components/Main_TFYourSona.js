@@ -1,4 +1,7 @@
-import YouTube from "react-youtube";
+import { FaPatreon } from "react-icons/fa6";
+import { SiGumroad } from "react-icons/si";
+import { FaItchIo } from "react-icons/fa";
+import { SiKofi } from "react-icons/si";
 
 function Main_TFYourSona () {
     return (
@@ -22,7 +25,15 @@ function Main_TFYourSona () {
                 </span>
               </p>
               <br />
-              <p className="font-black text-4xl underline"><a href="https://purekoor.gumroad.com/">Check out my Gumroad</a></p>
+              <p className="font-black text-4xl underline">
+                Check out my Shops: 
+                <a href="https://gumroad.purekoor.com/"><SiGumroad /></a>
+                <a href="https://www.patreon.com/purekoor/shop"><FaPatreon /></a>
+                <a href="https://purekoor.itch.io/"><FaItchIo /></a>
+                <a href="https://kofi.purekoor.com/"><SiKofi /></a>
+
+                
+              </p>
             </div>
             <div className="grow-0">
               <div className="grid grid-rows- grid-cols-4 gap-3 w-80 h-60">

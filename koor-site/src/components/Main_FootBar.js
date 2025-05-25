@@ -10,7 +10,7 @@ function Main_FootBar () {
             <div className="col-span-full mx-auto flex items-center gap-2 mb-4">
               <img loading="lazy" className="h-8 object-scale-down" src="assets/logo.png" />
               <span className="text-xl text-center font-bold text-white text-stroke-sm">
-                PureKoor '24
+                PureKoor '25
               </span>
             </div>
           </div>

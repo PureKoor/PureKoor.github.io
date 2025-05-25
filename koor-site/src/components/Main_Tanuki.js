@@ -1,6 +1,7 @@
 import { FaPatreon } from "react-icons/fa6";
 import { SiGumroad } from "react-icons/si";
-
+import { FaItchIo } from "react-icons/fa";
+import { SiKofi } from "react-icons/si";
 
 function Main_Tanuki () {
     return (
@@ -39,7 +40,7 @@ function Main_Tanuki () {
                 </p>
                 <p className="text-2xl text-center font-extrabold text-white text-stroke-sm underline">
                   <a href="https://furality.online/explore/dealers?id=304">
-                    Get it for free at Furality Umbra Booth #304
+                    Get it for free at Furality Somna Booth #831
                   </a>
                 </p>
               </div>
@@ -58,10 +59,22 @@ function Main_Tanuki () {
                  <SiGumroad color="purple" className="m-auto h-full w-full object-cover"/>
               </a>
               <a
-                href="https://www.patreon.com/purekoor"
+                href="https://www.patreon.com/c/purekoor/shop"
                 className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
               >
                 <FaPatreon color="purple" className="m-auto h-full w-full object-cover"/>
+              </a>
+                            <a
+                href="https://purekoor.itch.io/"
+                className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              >
+                 <FaItchIo color="purple" className="m-auto h-full w-full object-cover"/>
+              </a>
+              <a
+                href="https://ko-fi.com/purekoor/shop"
+                className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              >
+                <SiKofi color="purple" className="m-auto h-full w-full object-cover"/>
               </a>
 
 

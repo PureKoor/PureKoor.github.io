@@ -6,7 +6,7 @@ function Main_Artwork () {
          <div id="art" className="bg-[url('../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat">
           <div className="flex flex-row justify-between items-start gap-5 my-5 flex-wrap w-full">
             <div className="shrink-0 grow-0 grid grid-cols-2 grid-rows-2 h-80 w-80 gap-5 mx-5">
-              <a href="https://bsky.app/profile/purekoor.art" className="border-4 rounded-xl border-white bg-white overflow-hidden">
+              <a href="https://bsky.app/profile/purekoor.art/feed/aaai3eugpcmhq" className="border-4 rounded-xl border-white bg-white overflow-hidden">
                 <FaBluesky color="#87CEEB" className="m-auto h-full w-full object-cover"/>
               </a>
               <a href="https://www.youtube.com/@PureKoor/community" className="border-4 rounded-xl border-white bg-white overflow-hidden">
@@ -20,9 +20,9 @@ function Main_Artwork () {
               </a>
             </div>
             <div className="grow-0 shrink-0 text-4xl text-white font-serif bg-black bg-opacity-25 inline">
-              <p className="mx-3 my-1">Artist for over a decade</p>
-              <p className="mx-3 my-1">Furry Illustrations</p>
-              <p className="mx-3 my-1">View my Artworks</p>
+              <p className="mx-3 my-1">Been An Artist For Over a Decade!</p>
+              <p className="mx-3 my-1">Primarily a 2D Artist</p>
+              <p className="mx-3 my-1">View my Artworks On My Sites</p>
             </div>
           </div>
         </div>

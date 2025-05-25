@@ -7,6 +7,7 @@ import Main_Youtube from "./components/Main_Youtube";
 import Main_Tanuki from "./components/Main_Tanuki";
 import Main_Artwork from "./components/Main_Artwork";
 import Main_FootBar from "./components/Main_FootBar";
+import Main_Patreon from "./components/Main_Patreon";
 
 export default function App() {
   return (
@@ -26,8 +27,9 @@ export default function App() {
           <Main_NavBar />
           <Main_UmbraDeal />
         </div>
-        <Main_TFYourSona />
         <Main_Youtube />
+        <Main_Patreon />
+        <Main_TFYourSona />
         <Main_Tanuki />
         <Main_Artwork />
         <Main_FootBar />
