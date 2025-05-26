@@ -27,7 +27,6 @@ export default function Func_AutoScrollThumbnails() {
 
     const step = (timestamp) => {
       if (!start) start = timestamp;
-      const elapsed = timestamp - start;
       start = timestamp;
 
       scrollLeft += speed;
