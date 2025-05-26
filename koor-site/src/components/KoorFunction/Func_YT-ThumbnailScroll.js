@@ -59,7 +59,7 @@ export default function Func_AutoScrollThumbnails() {
     <div className="overflow-hidden w-full py-4"
          ref={containerRef}
     >
-      <div className="flex min-w-fit gap-4 whitespace-nowrap animate-scroll">
+      <div className="flex min-w-fit gap-4 whitespace-nowrap">
         {[...videoIds, ...videoIds].map((id, idx) => (
           <a
             key={idx}
@@ -76,17 +76,6 @@ export default function Func_AutoScrollThumbnails() {
           </a>
         ))}
       </div>
-      <style>
-        {`
-          @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-scroll {
-            animation: scroll 20s linear infinite;
-          }
-        `}
-      </style>
     </div>
   );
 }
