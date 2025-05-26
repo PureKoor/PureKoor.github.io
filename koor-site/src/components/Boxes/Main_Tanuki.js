@@ -6,7 +6,7 @@ import { SiKofi } from "react-icons/si";
 function Main_Tanuki () {
     return (
          <>
-         <div id="avatar" className="bg-[#ffb44a] w-full">
+         <div id="avatar" className="bg-[#ffb600] w-full">
           <div className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center">
             <a href="https://purekoor.gumroad.com/" className="mx-auto md:mx-3 md:mt-0 mt-3">
               <img loading="lazy" className="h-72" src="assets/boing.webp" />

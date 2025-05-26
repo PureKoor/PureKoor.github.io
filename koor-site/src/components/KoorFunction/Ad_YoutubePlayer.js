@@ -1,8 +1,11 @@
-import React from 'react';
-import YouTube from 'react-youtube';
+import React from "react";
+import YouTube from "react-youtube";
 
+{
+  /* Component That Creates Youtube Player with Specfic Video ID */
+}
 const Ad_YoutubePlayer = (vidHeight = 200, vidWidth = 355) => {
-  const videoId = 'saXzXq3lXnM';
+  const videoId = "saXzXq3lXnM";
 
   const opts = {
     height: vidHeight,

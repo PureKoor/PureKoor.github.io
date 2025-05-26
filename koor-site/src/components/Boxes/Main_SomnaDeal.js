@@ -2,7 +2,7 @@ import { FaPatreon } from "react-icons/fa6";
 import { GiPawPrint } from "react-icons/gi";
 
 
-function Main_UmbraDeal () {
+function Main_SomnaDeal () {
     return (
       <>
  {/* "text-2xl [writing-mode:vertical-lr] mt-3" ,  */}
@@ -54,6 +54,6 @@ function Main_UmbraDeal () {
     );
 }
 
-export default Main_UmbraDeal;
+export default Main_SomnaDeal;
 
 
