@@ -25,9 +25,40 @@ const videoIds = [
 }
 
 export default function Func_AutoScrollThumbnails() {
+  const containerRef = useRef();
+
+  useEffect(() => {
+    const container = containerRef.current;
+
+    let start = null;
+    let scrollLeft = 0;
+    let requestId;
+
+    const speed = 0.5; // pixels per frame
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const elapsed = timestamp - start;
+      start = timestamp;
+
+      scrollLeft += speed;
+      if (scrollLeft >= container.scrollWidth / 2) {
+        scrollLeft = 0;
+      }
+
+      container.scrollLeft = scrollLeft;
+      requestId = requestAnimationFrame(step);
+    };
+
+    requestId = requestAnimationFrame(step);
+
+    return () => cancelAnimationFrame(requestId);
+  }, []);
 
   return (
-    <div className="overflow-hidden w-full py-4">
+    <div className="overflow-hidden w-full py-4"
+         ref={containerRef}
+    >
       <div className="flex min-w-fit gap-4 whitespace-nowrap animate-scroll">
         {[...videoIds, ...videoIds].map((id, idx) => (
           <a
