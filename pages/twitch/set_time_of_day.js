@@ -1,0 +1,1 @@
+- a minecraft like command that allows people to set the time of day via a word or 24-hour clock. It also tells them what the weather has changed to for that time of day
