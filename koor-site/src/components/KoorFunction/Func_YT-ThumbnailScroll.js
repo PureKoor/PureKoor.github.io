@@ -4,25 +4,14 @@ import React, { useEffect, useRef } from "react";
   /* Generated. Should be a scrolling to the right loop of clickable thumbnails in a rectangle. Atleast this got some bouncy animation to look at */
 }
 const videoIds = [
-  "rH3ijIrG1mY",
-  "saXzXq3lXnM",
-  "SrIB92dPtNc",
-  "mvi4YNuRhiY",
-  "HIedfD2_OoA",
-  "sENpc-be39I",
-  "2tbDFzhtVqc",
+  "rH3ijIrG1mY", // Coddle Crystal
+  "saXzXq3lXnM", // The Furry Fandom Is For Everyone
+  "SrIB92dPtNc", // Conservatives do NOTHING for the furry fandom
+  "mvi4YNuRhiY", // My Favorite Video Game Genre
+  "HIedfD2_OoA", // Dyslexias Your Name owo
+  "sENpc-be39I", // How I Became A Furry
+  "2tbDFzhtVqc", // How To Come Up With Ideas
 ];
-{
-  /* Videos:
-    1 Coddle Crystal
-    2 The Furry Fandom Is For Everyone
-    3 Conservatives do NOTHING fo rthe furry fandom
-    4 My Favorite Video Game Genre
-    5 Dyslexias Your Name owo
-    6 How I Became A Furry
-    7 How To Come Up With Ideas
-    */
-}
 
 export default function Func_AutoScrollThumbnails() {
   const containerRef = useRef();
