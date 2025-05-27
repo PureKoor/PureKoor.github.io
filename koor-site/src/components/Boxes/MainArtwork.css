@@ -1,0 +1,22 @@
+.bg-slice {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* First diagonal slice */
+.bg1 {
+  background-image: url('../../../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png');
+  clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
+}
+/* Second diagonal slice */
+.bg2 {
+  background-image: url('../../../public/assets/bg_box/pexels-eberhardgross-572897_mountains.webp');
+  clip-path: polygon(33% 100%, 66% 0%, 100% 0%, 66% 100%);
+}
+
+/* Third diagonal slice */
+.bg3 {
+  background-image: url('../../../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png');
+  clip-path: polygon(66% 100%, 100% 0, 100% 100%);
+}
