@@ -19,7 +19,7 @@ function Main_Tanuki() {
             />
           </a>
 
-          <div className="grow shrink-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mb-5 mt-2">
+          <div className="grow shrink-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mt-5">
             <div className="col-span-full row-span-1 my-auto">
               <div className="text-white font-serif text-center">
                 <p className="text-6xl align-middle text-stroke-sm hover:underline">
@@ -52,46 +52,42 @@ function Main_Tanuki() {
             </div>
           </div>
 
-          <div className="grow shrink-0 grid grid-cols-1 grid-rows-3 h-full gap-3 mr-3 mb-3">
-            <div className="my-auto">
+          <div className="grow shrink-0 grid grid-cols-2 grid-rows-3 h-full gap-3 mr-10 my-3">
+            <div className="my-auto col-span-2">
               <p className="text-2xl text-center font-extrabold text-white text-stroke-sm">
                 Available on
               </p>
             </div>
             <a
               href="https://purekoor.gumroad.com/"
-              className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              className="rounded-2xl h-20 w-20 m-auto"
             >
               <SiGumroad
-                color="purple"
-                className="m-auto h-full w-full object-cover"
+                className="m-auto h-full w-full object-cover fill-fuchsia-900 hover:fill-fuchsia-700 hover:scale-110 transition duration-300"
               />
             </a>
             <a
               href="https://www.patreon.com/c/purekoor/shop"
-              className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              className="rounded-2xl h-20 w-20 m-auto"
             >
               <FaPatreon
-                color="purple"
-                className="m-auto h-full w-full object-cover"
+                className="m-auto h-full w-full object-cover fill-fuchsia-900 hover:fill-fuchsia-700 hover:scale-110 transition duration-300"
               />
             </a>
             <a
               href="https://purekoor.itch.io/"
-              className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              className="rounded-2xl h-20 w-20 m-auto"
             >
               <FaItchIo
-                color="purple"
-                className="m-auto h-full w-full object-cover"
+                className="m-auto h-full w-full object-cover fill-fuchsia-900 hover:fill-fuchsia-700 hover:scale-110 transition duration-300"
               />
             </a>
             <a
               href="https://ko-fi.com/purekoor/shop"
-              className="rounded-2xl border-4 h-20 w-20 mx-auto border-[#4c1a1e] overflow-hidden"
+              className="rounded-2xl h-20 w-20 m-auto"
             >
               <SiKofi
-                color="purple"
-                className="m-auto h-full w-full object-cover"
+                className="m-auto h-full w-full object-cover fill-fuchsia-900 hover:fill-fuchsia-700 hover:scale-110 transition duration-300"
               />
             </a>
           </div>
