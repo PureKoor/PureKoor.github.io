@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 {
   /* Generated. Should be a scrolling to the right loop of clickable thumbnails in a rectangle. Atleast this got some bouncy animation to look at */
@@ -44,17 +44,17 @@ export default function Func_AutoScrollThumbnails() {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full py-4"
+    <div className="overflow-hidden w-full py-3"
          ref={containerRef}
     >
-      <div className="flex min-w-fit gap-4 whitespace-nowrap">
+      <div className="flex min-w-fit gap-2 whitespace-nowrap">
         {[...videoIds, ...videoIds].map((id, idx) => (
           <a
             key={idx}
             href={`https://www.youtube.com/watch?v=${id}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 w-64 h-36 bg-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+            className="flex-shrink-0 w-64 h-36 bg-gray-200 rounded-xl shadow-lg overflow-hidden transform hover:scale-110 hover:z-50 transition duration-300"
           >
             <img
               src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
