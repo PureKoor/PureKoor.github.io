@@ -35,7 +35,7 @@ export default function App() {
           <Main_Patreon />
           <Main_TFYourSona />
           <Main_Artwork />
-          <Main_Tiktok />
+          {/* <Main_Tiktok /> */}
           <Main_Tanuki />
           <Main_FootBar />
         </div>
