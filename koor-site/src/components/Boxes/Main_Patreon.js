@@ -35,8 +35,7 @@ function Main_Patreon() {
             className="row-start-2 row-span-2 overflow-hidden"
           >
             <FaPatreon
-              color="#black"
-              className="m-auto h-full w-auto object-cover"
+              className="m-auto h-full w-auto object-cover text-white text-stroke-sm"
             />
           </a>
         </div>
