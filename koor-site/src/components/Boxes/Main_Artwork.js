@@ -3,7 +3,7 @@ import { FaBluesky, FaYoutube, FaTelegram, FaPatreon } from "react-icons/fa6";
 
 function Main_Artwork() {
   return (
-    <div id="art" className="bg-[url('../public/assets/Patreon_FW_2021Apr29_NierReplicant_TXless_HiRes.png')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat">
+    <div id="art" className="bg-[url('../public/assets/IMG_0871.PNG')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat">
       <div className="grid grid-cols-2 grid-rows-1 gap-5 my-5 w-full">
         <div className="col-start-1 col-span-1 flex flex-col">
           <div className="grow-0 shrink-0 text-4xl text-white font-serif text-center inline">
