@@ -19,7 +19,7 @@ export default function App() {
       <KoorMetaTags
         title="PureKoor"
         description="Pure Tycoon creating artwork, videos, and more!"
-        image="https://purekoor.com/assets/img/main/SocialPreview.png"
+        image="https://purekoor.com/assets/Meta/SocialPreview.png"
         name="furry,art,artwork,freelance,purekoor,streaming,video,creator,digital,3D,Avatar"
         url="https://purekoor.com"
         author="PureKoor"
