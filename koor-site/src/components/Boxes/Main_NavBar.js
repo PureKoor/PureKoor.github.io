@@ -7,7 +7,8 @@ function Main_NavBar() {
   return (
     <>
       {/* Quick Selection To Boxes */}
-      <div className="flex flex-wrap items-stretch left-0 gap-3 md:gap-4 mx-auto w-full justify-center bg-gradient-to-b from-transparent to-80% from-10% to-[#ffb600]">
+      <div className="w-full bg-gradient-to-b from-transparent to-30% from-0% to-[#ffb600]">
+        <div className="w-[110%] translate-x-[-5%] gap-3 md:gap-4 flex flex-wrap items-scretch justify-center">
         <a
           href="#youtube"
           className="bg-[url('../public/assets/pagebutton_video.jpg')] bg-cover bg-center bg-no-repeat
@@ -127,6 +128,7 @@ function Main_NavBar() {
               />
             </a>
           </span>
+        </div>
         </div>
       </div>
     </>
