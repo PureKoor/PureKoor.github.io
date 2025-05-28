@@ -3,7 +3,24 @@ import { SiGumroad } from "react-icons/si";
 import { FaItchIo } from "react-icons/fa";
 import { SiKofi } from "react-icons/si";
 
+import { useEffect, useState } from "react";
+
+const images = [
+  "bg-[url('../public/assets/Color_Tf_Series_1.png')]",
+  "bg-[url('../public/assets/Color_Tf_Series_2.png')]",
+  "bg-[url('../public/assets/Color_Tf_Series_3.png')]",
+];
+
 function Main_TFYourSona() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div id="iconbase" className="bg-[#ffb600] w-full">
@@ -11,86 +28,76 @@ function Main_TFYourSona() {
           {" "}
           TRANSFORM YOUR SONA: ICON BASES
         </h1>
-        <div className="flex gap-5 flex-wrap justify-center items-center md:flex-nowrap m-5">
-          <div className="text-4xl grow-0 shrink inline text-white font-extrabold text-stroke-sm">
-            <p className="">
-              <span className="inline-block">
-                Color in these PSD files to ʕ ᵔᴥᵔʔ✨
-              </span>
-              <span className="inline-block">make yourself a new icon or</span>
-              <span className="inline-block">
-                maybe find yourself a new species!
-              </span>
-            </p>
-            <br />
+        <div className="grid grid-rows-1 grid-cols-3 gap-5 items-center m-5">
+          <div className="text-4xl col-start-1 grow-0 shrink inline text-white font-extrabold text-stroke-sm">
             <p>
               <span className="inline-block">
                 25% OFF Using Code "SOMNA" on many Packs
               </span>
               <span className="inline-block">Price: Free - $Max</span>
             </p>
-            <p className="font-black text-4x1 underline">
-              Check out my Shops:
-              <a
-                href="https://gumroad.purekoor.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiGumroad />
-              </a>
-              <a
-                href="https://www.patreon.com/purekoor/shop"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaPatreon />
-              </a>
-              <a
-                href="https://purekoor.itch.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaItchIo />
-              </a>
-              <a
-                href="https://kofi.purekoor.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiKofi />
-              </a>
-            </p>
           </div>
-          <div className="grow-0">
-            <div className="grid grid-rows- grid-cols-4 gap-3 w-80 h-60">
+          <div className="col-start-2 flex flex-col items-center justify-center">
+            <div className="grid grid-cols-2 grid-rows-2 h-full gap-3 my-3">
+              <div className="my-auto col-span-2">
+                <p className="text-3xl text-center font-extrabold text-white text-stroke-sm">
+                  Available on
+                </p>
+              </div>
               <a
                 href="https://purekoor.gumroad.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-4 rounded-xl border-white row-start-2 row-end-4 col-start-3 col-end-5"
+                className="rounded-2xl h-20 w-20 m-auto"
               >
-                <img
-                  loading="lazy"
-                  className="h-full object-cover"
-                  src="assets/base_2.PNG"
+                <SiGumroad
+                  className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+                transition-all  hover:scale-125 hover:-translate-y-2"
+                />
+              </a>
+              <a
+                href="https://www.patreon.com/c/purekoor/shop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl h-20 w-20 m-auto"
+              >
+                <FaPatreon
+                  className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700
+              transition-all  hover:scale-125 hover:-translate-y-2"
                 />
               </a>
             </div>
           </div>
-          <div className="grid grid-rows-3 grid-cols-3 gap-3 w-60 h-60 shrink-0">
-            <div className="h-full w-full border-4 rounded-xl border-white overflow-hidden">
-              <img
-                loading="lazy"
-                className="m-auto h-full w-full object-cover"
-                src="assets/Color_Tf_Series_Part_2(1).png"
-              />
+          <div className="grid grid-rows-2 grid-cols-3 col-start-3 w-96 h-64 gap-3">
+            <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 0) % 3 === current ? "opacity-100" : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
             </div>
-            <div className="h-full w-full border-4 rounded-xl border-white overflow-hidden">
-              <img
-                loading="lazy"
-                className="m-auto h-full w-full object-cover"
-                src="assets/Color_Tf_Series_Part_2 (1).png"
-              />
+            <div className="relative w-full h-full m-auto col-start-3 row-start-2 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 1) % 3 === current ? "opacity-100" : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
+            </div>
+            <div className="relative w-full h-full m-auto col-start-1 col-span-2 row-start-1 row-span-2 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 2) % 3 === current ? "opacity-100" : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
             </div>
           </div>
         </div>
