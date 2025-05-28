@@ -1,4 +1,6 @@
 import KoorMetaTags from "./components/KoorMetaTags";
+import KoorParticles from "./components/KoorParticles"
+
 import Main_CoverImage from "./components/Boxes/Main_CoverImage";
 import Main_NavBar from "./components/Boxes/Main_NavBar";
 import Main_SomnaDeal from "./components/Boxes/Main_SomnaDeal";
@@ -16,20 +18,26 @@ import Main_Tiktok from "./components/Boxes/Main_Tiktok";
 export default function App() {
   return (
     <>
-      <div className="h-fit bg-gradient-to-b from-[#110067]  to-[#540051] overflow-hidden">
-        <Main_CoverImage />
-        <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
-          <div className="max-w-screen-xl w-full">
-            <Main_NavBar />
-            <Main_SomnaDeal />
+  {/* bg-gradient-to-b from-[#110067] to-[#540051]  */}
+      <div className="h-fit bg-gradient-to-b from-[#110067] to-[#540051] overflow-hidden">
+        <div className="z-10">
+          <KoorParticles />
+        </div>
+        <div className="z-20 relative">
+          <Main_CoverImage />
+          <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
+            <div className="max-w-screen-xl w-full">
+              <Main_NavBar />
+              <Main_SomnaDeal />
+            </div>
+            <Main_Youtube />
+            <Main_Patreon />
+            <Main_TFYourSona />
+            <Main_Artwork />
+            {/* <Main_Tiktok /> */}
+            <Main_Tanuki />
+            <Main_FootBar />
           </div>
-          <Main_Youtube />
-          <Main_Patreon />
-          <Main_TFYourSona />
-          <Main_Artwork />
-          {/* <Main_Tiktok /> */}
-          <Main_Tanuki />
-          <Main_FootBar />
         </div>
       </div>
     </>
