@@ -24,8 +24,7 @@ function Main_Youtube() {
           href="https://www.youtube.com/@PureKoor"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-4 bg-red-600 rounded-xl flex w-3/4 h-3/4 m-auto 
-          transition-transform hover:scale-90 hover:border-[#ff0000] duration-450 ease-in-out"
+          className="border-4 bg-red-600 hover:bg-red-700 rounded-xl flex w-3/4 h-3/4 m-auto transition-all hover:scale-90 hover:border-[#ff0000] duration-450 ease-in-out"
         >
           <p className="text-6xl m-auto font-bold align-middle text-white align-right flex">
             <FaYoutube className="mr-3" />
