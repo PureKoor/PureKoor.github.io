@@ -12,7 +12,7 @@ function Main_Tanuki() {
             href="https://www.patreon.com/c/purekoor/shop"
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-auto md:mx-3 md:mt-0 mt-3"
+            className="mx-auto md:mx-3 md:mt-0 mt-3 transition-all hover:brightness-110 hover:scale-125 duration-750 ease-in-out"
           >
             <img
               loading="lazy"
