@@ -16,7 +16,7 @@ import Main_Tiktok from "./components/Boxes/Main_Tiktok";
 export default function App() {
   return (
     <>
-      <div className="h-fit bg-gradient-to-b from-[#110067] to-[#540051] overflow-hidden">
+      <div className="h-fit bg-gradient-to-b from-[#110067]  to-[#540051] overflow-hidden">
         <Main_CoverImage />
         <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
           <div className="max-w-screen-xl w-full">

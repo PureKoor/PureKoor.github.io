@@ -31,16 +31,32 @@ function Main_TFYourSona() {
             </p>
             <p className="font-black text-4x1 underline">
               Check out my Shops:
-              <a href="https://gumroad.purekoor.com/">
+              <a
+                href="https://gumroad.purekoor.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiGumroad />
               </a>
-              <a href="https://www.patreon.com/purekoor/shop">
+              <a
+                href="https://www.patreon.com/purekoor/shop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaPatreon />
               </a>
-              <a href="https://purekoor.itch.io/">
+              <a
+                href="https://purekoor.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaItchIo />
               </a>
-              <a href="https://kofi.purekoor.com/">
+              <a
+                href="https://kofi.purekoor.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiKofi />
               </a>
             </p>
@@ -49,6 +65,8 @@ function Main_TFYourSona() {
             <div className="grid grid-rows- grid-cols-4 gap-3 w-80 h-60">
               <a
                 href="https://purekoor.gumroad.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-4 rounded-xl border-white row-start-2 row-end-4 col-start-3 col-end-5"
               >
                 <img
