@@ -65,7 +65,7 @@ function Main_SomnaDeal() {
           </div>
           <div
             className="md:m-auto mx-auto mb-2 grow-0 shrink-0 rounded-2xl border-4
-          transition-transform hover:scale-y-110 hover:-translate-y-4  duration-450 ease-in-out"
+          transition-transform hover:scale-y-110 hover:-translate-y-4 overflow-hidden duration-450 ease-in-out"
           >
             <a
               href="https://furality.online/explore/dealers?id=831"
