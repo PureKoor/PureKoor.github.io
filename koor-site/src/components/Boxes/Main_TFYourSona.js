@@ -38,35 +38,57 @@ function Main_TFYourSona() {
             </p>
           </div>
           <div className="col-start-2 flex flex-col items-center justify-center">
-            <div className="grid grid-cols-2 grid-rows-2 h-full gap-3 my-3">
-              <div className="my-auto col-span-2">
-                <p className="text-3xl text-center font-extrabold text-white text-stroke-sm">
-                  Available on
-                </p>
-              </div>
-              <a
-                href="https://purekoor.gumroad.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl h-20 w-20 m-auto"
-              >
-                <SiGumroad
-                  className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
-                transition-all  hover:scale-125 hover:-translate-y-2"
-                />
-              </a>
-              <a
-                href="https://www.patreon.com/c/purekoor/shop"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl h-20 w-20 m-auto"
-              >
-                <FaPatreon
-                  className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700
-              transition-all  hover:scale-125 hover:-translate-y-2"
-                />
-              </a>
+          <div className="grow grid grid-cols-2 grid-rows-3 h-full gap-5 mr-16 my-3">
+            <div className="my-auto col-span-2">
+              <p className="text-3xl text-center font-extrabold text-white text-stroke-sm">
+                Available on
+              </p>
             </div>
+            <a
+              href="https://purekoor.gumroad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl h-20 w-20 m-auto"
+            >
+              <SiGumroad
+                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+                transition-all  hover:scale-125 hover:-translate-y-2"
+              />
+            </a>
+            <a
+              href="https://www.patreon.com/c/purekoor/shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl h-20 w-20 m-auto"
+            >
+              <FaPatreon
+                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700
+              transition-all  hover:scale-125 hover:-translate-y-2"
+              />
+            </a>
+            <a
+              href="https://purekoor.itch.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl h-20 w-20 m-auto"
+            >
+              <FaItchIo
+                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+              transition-all  hover:scale-125 hover:translate-y-2"
+              />
+            </a>
+            <a
+              href="https://ko-fi.com/purekoor/shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl h-20 w-20 m-auto"
+            >
+              <SiKofi
+                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+              transition-all  hover:scale-125 hover:translate-y-2"
+              />
+            </a>
+          </div>
           </div>
           <div className="grid grid-rows-2 grid-cols-3 col-start-3 w-96 h-64 gap-3">
             <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
