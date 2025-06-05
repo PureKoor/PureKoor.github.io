@@ -30,21 +30,25 @@ function KoorParticles() {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
+                            mode: "repulse",
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "bubble",
                         },
                         resize: true,
                     },
                     modes: {
-                        push: {
-                            quantity: 4,
-                        },
                         repulse: {
-                            distance: 200,
+                            distance: 400,
                             duration: 0.4,
+                        },
+                        bubble: {
+                            distance: 250,
+                            size: 0,
+                            duration: 2,
+                            opacity: 0,
+                            speed: 3,
                         },
                     },
                 },
@@ -52,39 +56,35 @@ function KoorParticles() {
                     color: {
                         value: "#fafafa",
                     },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
                     move: {
                         direction: "none",
                         enable: true,
-                        outModes: {
-                            default: "bounce",
-                        },
-                        random: false,
-                        speed: 6,
+                        random: true,
+                        speed: 1,
                         straight: false,
+                        bounce: false,
                     },
                     number: {
                         density: {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 160,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.9,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0,
+                            sync: false,
+                        }
                     },
                     shape: {
                         type: "circle",
                     },
-                    size: {
-                        value: { min: 1, max: 5 },
-                    },
+
                 },
                 detectRetina: true,
             }}
