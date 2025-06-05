@@ -2,10 +2,10 @@ import LazyImage from '../LazyImage.js'
 
 function Main_CoverImage() {
   return <LazyImage
-  src="assets/IMG_0604_HQ.PNG"
-  placeholder="assets/IMG_0604_LQ.PNG"
+  src="assets/Somna/Logo_PureKoorSomna.PNG"
+  placeholder="assets/Somna/Logo_PureKoorSomnaLQ.PNG"
   alt="Nice image"
-  className="w-screen"
+  className="max-w-7xl h-full"
 />
 }
 

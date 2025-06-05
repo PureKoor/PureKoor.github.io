@@ -24,7 +24,7 @@ export default function App() {
           <KoorParticles />
         </div>
         <div className="z-20 relative">
-          <Main_CoverImage />
+          <div className="flex flex-col items-center"><Main_CoverImage /></div>
           <div className="flex flex-col flex-start items-center justify-center mx-auto max-w-screen-xl gap-2">
             <div className="max-w-screen-xl w-full">
               <Main_NavBar />
