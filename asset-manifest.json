@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.1e379f0f.css",
-    "main.js": "./static/js/main.5d3c332e.js",
+    "main.css": "./static/css/main.7f032fed.css",
+    "main.js": "./static/js/main.9b63d162.js",
     "reactPlayerYouTube.js": "./static/js/reactPlayerYouTube.7b193a00.chunk.js",
     "reactPlayerSoundCloud.js": "./static/js/reactPlayerSoundCloud.9c45a02b.chunk.js",
     "reactPlayerVimeo.js": "./static/js/reactPlayerVimeo.6f4af304.chunk.js",
@@ -18,17 +18,17 @@
     "reactPlayerPreview.js": "./static/js/reactPlayerPreview.91c7b47d.chunk.js",
     "static/js/453.4d2d9b7c.chunk.js": "./static/js/453.4d2d9b7c.chunk.js",
     "static/media/Color_Tf_Series_3.png": "./static/media/Color_Tf_Series_3.7ea31c1a04734ddad774.png",
-    "static/media/Color_Tf_Series_1.png": "./static/media/Color_Tf_Series_1.256fd7ffc276ef3c7acb.png",
-    "static/media/Color_Tf_Series_2.png": "./static/media/Color_Tf_Series_2.6c5cc817412ad510cc67.png",
     "static/media/pexels-eberhardgross-572897_mountains.webp": "./static/media/pexels-eberhardgross-572897_mountains.c28d96ab7b0f55131234.webp",
     "static/media/IMG_0871.PNG": "./static/media/IMG_0871.ede45f1da1dc955fc9de.PNG",
+    "static/media/Color_Tf_Series_2.png": "./static/media/Color_Tf_Series_2.f8b0378d4a44f5e093d1.png",
+    "static/media/Color_Tf_Series_1.png": "./static/media/Color_Tf_Series_1.c4a9a4b62604877c8f2c.png",
     "static/media/pagebutton_iconbase.jpg": "./static/media/pagebutton_iconbase.7615204b05846b02a82a.jpg",
     "static/media/pagebutton_art.jpg": "./static/media/pagebutton_art.ab192a449f03968da21f.jpg",
     "static/media/pagebutton_video.jpg": "./static/media/pagebutton_video.c989af6afcbeb1f5100b.jpg",
     "static/media/pagebutton_avatar.jpg": "./static/media/pagebutton_avatar.4d683de8d279db60453f.jpg",
     "index.html": "./index.html",
-    "main.1e379f0f.css.map": "./static/css/main.1e379f0f.css.map",
-    "main.5d3c332e.js.map": "./static/js/main.5d3c332e.js.map",
+    "main.7f032fed.css.map": "./static/css/main.7f032fed.css.map",
+    "main.9b63d162.js.map": "./static/js/main.9b63d162.js.map",
     "reactPlayerYouTube.7b193a00.chunk.js.map": "./static/js/reactPlayerYouTube.7b193a00.chunk.js.map",
     "reactPlayerSoundCloud.9c45a02b.chunk.js.map": "./static/js/reactPlayerSoundCloud.9c45a02b.chunk.js.map",
     "reactPlayerVimeo.6f4af304.chunk.js.map": "./static/js/reactPlayerVimeo.6f4af304.chunk.js.map",
@@ -46,7 +46,7 @@
     "453.4d2d9b7c.chunk.js.map": "./static/js/453.4d2d9b7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e379f0f.css",
-    "static/js/main.5d3c332e.js"
+    "static/css/main.7f032fed.css",
+    "static/js/main.9b63d162.js"
   ]
 }
