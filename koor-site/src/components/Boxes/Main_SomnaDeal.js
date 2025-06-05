@@ -11,19 +11,6 @@ function Main_SomnaDeal() {
           <div className="grow shrink-0 grid grid-cols-5 grid-rows-1 gap-3 mt-3 ">
             <div className="col-span-full row-span-1">
               <div className="text-white font-serif text-center">
-                <span className="text-6xl align-middle text-stroke-sm">
-                  <a
-                    href="https://furality.online/explore/dealers?id=831"
-                    alt="Furality Booth #831"
-                  >
-                    SITE UNDER CONSTRUCTION
-                  </a>
-                </span>
-                <div className="row-span-3 col-span-3 mx-auto">
-                  <span className="text-3xl text-center font-serif font-extrabold underline text-white text-stroke-sm">
-                    COME BACK DURING FURALITY SOMNA: Jun 5th - 8th
-                  </span>
-                </div>
                 <div className="transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#FF00FF] duration-450 ease-in-out">
                   <span className="text-6xl align-middle text-stroke-sm ">
                     <a
@@ -64,7 +51,7 @@ function Main_SomnaDeal() {
             </div>
           </div>
           <div
-            className="md:m-auto mx-auto mb-2 grow-0 shrink-0 rounded-2xl border-4
+            className="m-auto mb-7 grow-0 shrink-0 rounded-2xl border-4
           transition-transform hover:scale-y-110 hover:-translate-y-4 overflow-hidden duration-450 ease-in-out"
           >
             <a
