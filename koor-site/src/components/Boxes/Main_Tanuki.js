@@ -7,19 +7,17 @@ function Main_Tanuki() {
   return (
     <>
       <div id="avatar" className="bg-[#ffb600] w-full">
-        <div className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center">
-          <a
-            href="https://www.patreon.com/c/purekoor/shop"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-auto md:mx-3 md:mt-0 mt-3 transition-all hover:brightness-110 hover:scale-125 duration-750 ease-in-out"
-          >
-            <img
-              loading="lazy"
-              className="h-72"
-              src="assets/TanukiFellaSpin.webp"
-            />
-          </a>
+        <div
+          className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center
+        bg-[url('../public/assets/bg_box/pexels-joshsorenson-386148.webp')] max-w-screen-xl w-full bg-cover bg-bottom bg-no-repeat"
+        >
+          <img
+            loading="lazy"
+            className="h-72
+              mx-auto md:mx-3 md:mt-0 mt-3 transition-all brightness-95 hover:brightness-110 hover:scale-110 select-none duration-750 ease-in-out
+            active:scale-x-[-1] "
+            src="assets/TanukiFellaSpin.webp"
+          />
 
           <div className="grow shrink-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mt-5">
             <div className="col-span-full row-span-1 my-auto">
@@ -49,7 +47,7 @@ function Main_Tanuki() {
               <p className="text-2xl text-center font-extrabold text-white text-stroke-sm">
                 Made for VRChat
               </p>
-              <p className="text-2xl text-center font-extrabold text-white text-stroke-sm">
+              <p className="text-2xl text-center font-extrabold text-white text-stroke-sm pb-3">
                 Quest & PC Compatible
               </p>
               <p className="text-3xl text-center font-extrabold text-white text-stroke-sm underline transition-transform hover:scale-110 hover:translate-y-2 duration-50 ease-in">
@@ -66,7 +64,7 @@ function Main_Tanuki() {
 
           <div className="grow shrink-0 grid grid-cols-2 grid-rows-3 h-full gap-3 mr-10 my-3">
             <div className="my-auto col-span-2">
-              <p className="text-3xl text-center font-extrabold text-white text-stroke-sm">
+              <p className="text-4xl text-center font-extrabold text-white text-stroke-sm">
                 Available on
               </p>
             </div>
@@ -77,7 +75,7 @@ function Main_Tanuki() {
               className="rounded-2xl h-20 w-20 m-auto"
             >
               <SiGumroad
-                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+                className="m-auto h-full w-full object-cover fill-[#FFFFFF] hover:fill-[#fa2f76]
                 transition-all  hover:scale-125 hover:-translate-y-2"
               />
             </a>
@@ -88,7 +86,7 @@ function Main_Tanuki() {
               className="rounded-2xl h-20 w-20 m-auto"
             >
               <FaPatreon
-                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700
+                className="m-auto h-full w-full object-cover fill-[#FFFFFF] hover:fill-[#fa2f76]
               transition-all  hover:scale-125 hover:-translate-y-2"
               />
             </a>
@@ -99,7 +97,7 @@ function Main_Tanuki() {
               className="rounded-2xl h-20 w-20 m-auto"
             >
               <FaItchIo
-                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+                className="m-auto h-full w-full object-cover fill-[#FFFFFF] hover:fill-[#fa2f76]
               transition-all  hover:scale-125 hover:translate-y-2"
               />
             </a>
@@ -110,7 +108,7 @@ function Main_Tanuki() {
               className="rounded-2xl h-20 w-20 m-auto"
             >
               <SiKofi
-                className="m-auto h-full w-full object-cover fill-[#540051] hover:fill-fuchsia-700 
+                className="m-auto h-full w-full object-cover fill-[#FFFFFF] hover:fill-[#fa2f76]
               transition-all  hover:scale-125 hover:translate-y-2"
               />
             </a>
