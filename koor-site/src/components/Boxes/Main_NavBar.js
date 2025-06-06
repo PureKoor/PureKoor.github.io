@@ -51,7 +51,7 @@ function Main_NavBar() {
           </a>
           {/* <a
           href="#tiktok"
-          className="bg-[url('../public/assets/pagebutton_video.jpg')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4"
+          className="bg-[url('../public/assets/Buttons/pagebutton_avatar.webp')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4"
         >
           <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
             Video
