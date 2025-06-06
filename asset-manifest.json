@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.7f032fed.css",
-    "main.js": "./static/js/main.1c23405c.js",
+    "main.css": "./static/css/main.0f1f958b.css",
+    "main.js": "./static/js/main.97f978ea.js",
     "reactPlayerYouTube.js": "./static/js/reactPlayerYouTube.7b193a00.chunk.js",
     "reactPlayerSoundCloud.js": "./static/js/reactPlayerSoundCloud.9c45a02b.chunk.js",
     "reactPlayerVimeo.js": "./static/js/reactPlayerVimeo.6f4af304.chunk.js",
@@ -17,18 +17,27 @@
     "reactPlayerFilePlayer.js": "./static/js/reactPlayerFilePlayer.bc9f42b6.chunk.js",
     "reactPlayerPreview.js": "./static/js/reactPlayerPreview.91c7b47d.chunk.js",
     "static/js/453.4d2d9b7c.chunk.js": "./static/js/453.4d2d9b7c.chunk.js",
-    "static/media/Color_Tf_Series_3.png": "./static/media/Color_Tf_Series_3.7ea31c1a04734ddad774.png",
+    "static/media/pexels-ignacio-pales-407380-2877375.webp": "./static/media/pexels-ignacio-pales-407380-2877375.e3a38e9fa0af5e8de014.webp",
+    "static/media/pexels-liser1227-11521734.webp": "./static/media/pexels-liser1227-11521734.c564aba66c81d4222377.webp",
     "static/media/pexels-eberhardgross-572897_mountains.webp": "./static/media/pexels-eberhardgross-572897_mountains.c28d96ab7b0f55131234.webp",
-    "static/media/IMG_0871.PNG": "./static/media/IMG_0871.ede45f1da1dc955fc9de.PNG",
-    "static/media/Color_Tf_Series_2.png": "./static/media/Color_Tf_Series_2.f8b0378d4a44f5e093d1.png",
-    "static/media/Color_Tf_Series_1.png": "./static/media/Color_Tf_Series_1.c4a9a4b62604877c8f2c.png",
-    "static/media/pagebutton_iconbase.jpg": "./static/media/pagebutton_iconbase.7615204b05846b02a82a.jpg",
-    "static/media/pagebutton_art.jpg": "./static/media/pagebutton_art.ab192a449f03968da21f.jpg",
-    "static/media/pagebutton_video.jpg": "./static/media/pagebutton_video.c989af6afcbeb1f5100b.jpg",
-    "static/media/pagebutton_avatar.jpg": "./static/media/pagebutton_avatar.4d683de8d279db60453f.jpg",
+    "static/media/IMG_ArtBG.png": "./static/media/IMG_ArtBG.ede45f1da1dc955fc9de.png",
+    "static/media/pexels-eberhardgross-1367192.webp": "./static/media/pexels-eberhardgross-1367192.087ef47c2c7e872a65a4.webp",
+    "static/media/TF2Base_Tiger.webp": "./static/media/TF2Base_Tiger.40467ba621a65d64f94b.webp",
+    "static/media/PureKoorBase_Dino.webp": "./static/media/PureKoorBase_Dino.bf8a5045be592eb50b75.webp",
+    "static/media/PureKoorBase_Bear.webp": "./static/media/PureKoorBase_Bear.a4b913228b355ef09775.webp",
+    "static/media/PureKoorBase_Tiger.webp": "./static/media/PureKoorBase_Tiger.09528c745d5dad04c6f6.webp",
+    "static/media/TF2Base_Giraffe.webp": "./static/media/TF2Base_Giraffe.726209ec980f0f5b909b.webp",
+    "static/media/PureKoorBase_Roo.webp": "./static/media/PureKoorBase_Roo.a5d07586009d13ae8f67.webp",
+    "static/media/PureKoorBase_NoodleDragon.webp": "./static/media/PureKoorBase_NoodleDragon.ccc927d308c6299885db.webp",
+    "static/media/TF2Base_Cow.webp": "./static/media/TF2Base_Cow.1b53c554fdf0fd298f1a.webp",
+    "static/media/pagebutton_video.webp": "./static/media/pagebutton_video.7a5c6485afe23d3b8442.webp",
+    "static/media/pagebutton_iconbase.webp": "./static/media/pagebutton_iconbase.cca8745b625fdd998d61.webp",
+    "static/media/pagebutton_art.webp": "./static/media/pagebutton_art.5c1858f03b5bfbecde7d.webp",
+    "static/media/pagebutton_support.webp": "./static/media/pagebutton_support.e5f23471ddbf3cf1c794.webp",
+    "static/media/pagebutton_avatar.webp": "./static/media/pagebutton_avatar.3ef3c79254412ee71e1f.webp",
     "index.html": "./index.html",
-    "main.7f032fed.css.map": "./static/css/main.7f032fed.css.map",
-    "main.1c23405c.js.map": "./static/js/main.1c23405c.js.map",
+    "main.0f1f958b.css.map": "./static/css/main.0f1f958b.css.map",
+    "main.97f978ea.js.map": "./static/js/main.97f978ea.js.map",
     "reactPlayerYouTube.7b193a00.chunk.js.map": "./static/js/reactPlayerYouTube.7b193a00.chunk.js.map",
     "reactPlayerSoundCloud.9c45a02b.chunk.js.map": "./static/js/reactPlayerSoundCloud.9c45a02b.chunk.js.map",
     "reactPlayerVimeo.6f4af304.chunk.js.map": "./static/js/reactPlayerVimeo.6f4af304.chunk.js.map",
@@ -46,7 +55,7 @@
     "453.4d2d9b7c.chunk.js.map": "./static/js/453.4d2d9b7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f032fed.css",
-    "static/js/main.1c23405c.js"
+    "static/css/main.0f1f958b.css",
+    "static/js/main.97f978ea.js"
   ]
 }
