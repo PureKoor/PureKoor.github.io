@@ -2,8 +2,8 @@ import LazyImage from '../LazyImage.js'
 
 function Main_CoverImage() {
   return <LazyImage
-  src="assets/Somna/Logo_PureKoorSomna.PNG"
-  placeholder="assets/Somna/Logo_PureKoorSomnaLQ.PNG"
+  src="assets/Somna/Logo_PureKoorSomna.webp"
+  placeholder="assets/Somna/Logo_PureKoorSomnaLQ.webp"
   alt="Nice image"
   className="max-w-7xl h-full"
 />

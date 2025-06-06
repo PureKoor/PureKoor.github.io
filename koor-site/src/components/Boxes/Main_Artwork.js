@@ -4,7 +4,7 @@ function Main_Artwork() {
   return (
     <div
       id="art"
-      className="bg-[url('../public/assets/bg_box/IMG_ArtBG.png')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat"
+      className="bg-[url('../public/assets/bg_box/IMG_ArtBG.webp')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat"
     >
       <div className="grid grid-cols-2 grid-rows-1 gap-5 my-5 w-full">
         <div className="col-start-1 col-span-1 flex flex-col">
