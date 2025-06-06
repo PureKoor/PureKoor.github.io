@@ -16,7 +16,14 @@ function Main_Youtube() {
       <div className="rounded-xl border-4 border-white my-3 ml-3 overflow-hidden shrink-0 w-2xl">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=saXzXq3lXnM"
-          config={{ youtube: { playerVars: { controls: 1 } } }}
+          config={{
+            youtube: {
+              playerVars: { controls: 1 },
+              embedOptions: {
+                host: 'https://www.youtube-nocookie.com'
+              }
+            }
+          }}
         />
       </div>
 
