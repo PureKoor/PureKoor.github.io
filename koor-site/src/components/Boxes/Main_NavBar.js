@@ -3,14 +3,17 @@ import { FaBluesky } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 
+import { Link } from 'react-scroll';
+
 function Main_NavBar() {
   return (
     <>
       {/* Quick Selection To Boxes */}
       <div className="w-full bg-gradient-to-b from-transparent to-30% from-0% to-[#ffb600]">
         <div className="w-[110%] translate-x-[-5%] gap-3 md:gap-4 flex flex-wrap items-scretch justify-center">
-          <a
-            href="#youtube"
+          <Link
+            to="youtube"
+            smooth={true} duration={500} offset={-100}
             className="bg-[url('../public/assets/Buttons/pagebutton_video.webp')] bg-cover bg-center bg-no-repeat
                       lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4 
                       transition-all hover:scale-x-110 hover:-translate-y-2 hover:border-[#ff0000] duration-450 ease-in-out"
@@ -18,9 +21,10 @@ function Main_NavBar() {
             <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm ">
               Youtube
             </span>
-          </a>
-          <a
-            href="#support"
+          </Link>
+          <Link
+            to="support"
+            smooth={true} duration={500} offset={-100}
             className="bg-[url('../public/assets/Buttons/pagebutton_support.webp')] bg-cover bg-center bg-no-repeat 
           lg:basis-64 basis-16 h-16 rounded-lg align-middle border-[#4c1a1e] border-4
           transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#00FF00] duration-450 ease-in-out"
@@ -28,9 +32,10 @@ function Main_NavBar() {
             <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
               Support
             </span>
-          </a>
-          <a
-            href="#iconbase"
+          </Link>
+          <Link
+            to="iconbase"
+            smooth={true} duration={500} offset={-100}
             className="bg-[url('../public/assets/Buttons/pagebutton_iconbase.webp')] bg-cover bg-center bg-no-repeat 
           overflow-hidden min-w-20 lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4
           transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#FFA500] duration-450 ease-in-out"
@@ -38,9 +43,10 @@ function Main_NavBar() {
             <span className="text-3xl lg:ml-0 -ml-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
               Icon Base
             </span>
-          </a>
-          <a
-            href="#art"
+          </Link>
+          <Link
+            to="art"
+            smooth={true} duration={500}
             className="bg-[url('../public/assets/Buttons/pagebutton_art.webp')] bg-cover bg-center bg-no-repeat 
           lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4
           transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#FF00FF] duration-450 ease-in-out"
@@ -48,7 +54,7 @@ function Main_NavBar() {
             <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
               Artwork
             </span>
-          </a>
+          </Link>
           {/* <a
           href="#tiktok"
           className="bg-[url('../public/assets/Buttons/pagebutton_avatar.webp')] bg-cover bg-center bg-no-repeat lg:basis-64 basis-16 h-16 rounded-lg font-serif text-3xl border-[#4c1a1e] border-4"
@@ -57,8 +63,9 @@ function Main_NavBar() {
             Video
           </span>
         </a> */}
-          <a
-            href="#avatar"
+          <Link
+            to="avatar"
+            smooth={true} duration={500}
             className="bg-[url('../public/assets/Buttons/pagebutton_avatar.webp')] bg-cover bg-center bg-no-repeat 
           lg:basis-64 basis-16 h-16 rounded-lg align-middle border-[#4c1a1e] border-4
           transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#00FFFF] duration-450 ease-in-out"
@@ -66,7 +73,7 @@ function Main_NavBar() {
             <span className="text-3xl lg:ml-0 -ml-1 mr-1 leading-loose font-serif align-middle text-left pl-2.5 text-white text-stroke-sm">
               Avatar
             </span>
-          </a>
+          </Link>
         </div>
         {/* Social Media Buttons */}
 
