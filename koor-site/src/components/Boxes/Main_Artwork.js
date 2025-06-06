@@ -17,6 +17,7 @@ function Main_Artwork() {
                 href="https://bsky.app/profile/purekoor.art/feed/aaaauebqu3eqq"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's Patreon"
                 className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#010b38] hover:bg-[#010b38] hover:bg-opacity-50 hover:border-opacity-70 duration-300 ease-in-out hover:opacity-100"
               >
@@ -29,6 +30,7 @@ function Main_Artwork() {
                 href="https://www.youtube.com/@PureKoor/community"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's YouTube"
                 className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#52072a] hover:bg-[#ffd5a6] hover:bg-opacity-60 hover:border-opacity-70 duration-300 ease-in-out hover:opacity-100"
               >
@@ -41,6 +43,7 @@ function Main_Artwork() {
                 href="https://t.purekoor.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's Telegram Channel"
                 className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#010b38] hover:bg-[#010b38] hover:border-opacity-70 hover:bg-opacity-50 duration-300 ease-in-out hover:opacity-100"
               >

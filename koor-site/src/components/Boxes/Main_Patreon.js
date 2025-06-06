@@ -11,6 +11,7 @@ function Main_Patreon() {
           href="https://www.patreon.com/purekoor/membership"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="PureKoor's Patreon"
         >
           <div
             className="text-4xl inline text-white text-stroke-sm font-serif flex items-center align-middle h-full bg-[#4d0000] bg-opacity-25 ml-5 rounded-3xl
@@ -38,6 +39,7 @@ function Main_Patreon() {
               href="https://patreon.purekoor.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="PureKoor's Patreon"
             >
               <p className="text-5xl font-regular text-center text-white text-stroke-sm font-serif ">
                 Help Support My Work
@@ -48,6 +50,7 @@ function Main_Patreon() {
             href="https://patreon.purekoor.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="PureKoor's Patreon"
             className="row-start-2 row-span-2 overflow-hidden"
           >
             <FaPatreon
@@ -60,6 +63,7 @@ function Main_Patreon() {
           href="https://www.patreon.com/purekoor/membership"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="PureKoor's Patreon"
         >
           <div
             className="text-4xl text-white font-serif text-white text-stroke-sm font-serif  inline flex items-center align-middle h-full bg-[#4d0000] bg-opacity-25 mr-5 rounded-3xl

@@ -83,6 +83,7 @@ function Main_NavBar() {
               <a
                 href="https://patreon.purekoor.com"
                 alt="PureKoor's Patreon"
+                aria-label="PureKoor's Patreon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,6 +98,7 @@ function Main_NavBar() {
               <a
                 href="https://bluesky.purekoor.com"
                 alt="PureKoor's Bluesky"
+                aria-label="PureKoor's Bluesky"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -111,6 +113,7 @@ function Main_NavBar() {
               <a
                 href="https://youtube.purekoor.com"
                 alt="PureKoor's Youtube"
+                aria-label="PureKoor's Youtube"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -125,6 +128,7 @@ function Main_NavBar() {
               <a
                 href="https://tiktok.purekoor.com"
                 alt="PureKoor's Tiktok"
+                aria-label="PureKoor's Tiktok"
                 target="_blank"
                 rel="noopener noreferrer"
               >
