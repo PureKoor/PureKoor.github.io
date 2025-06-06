@@ -11,7 +11,7 @@ function Main_Youtube() {
     <div
       id="youtube"
       className="bg-[#ffb600] max-w-screen-xl flex flex-row justify-between items-center flex-wrap lg:flex-nowrap w-full
-      bg-[url('../public/assets/bg_box/pexels-liser1227-11521734.webp')] max-w-screen-xl w-full bg-cover bg-center bg-no-repeat"
+      bg-[url('../public/assets/bg_box/pexels-liser1227-11521734.webp')] max-w-screen-xl w-full bg-cover bg-top bg-no-repeat"
     >
       <div className="rounded-xl border-4 border-white my-3 ml-3 overflow-hidden shrink-0 w-2xl">
         <ReactPlayer

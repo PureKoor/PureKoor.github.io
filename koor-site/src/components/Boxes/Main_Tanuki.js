@@ -9,7 +9,7 @@ function Main_Tanuki() {
       <div id="avatar" className="bg-[#ffb600] w-full">
         <div
           className="flex flex-row justify-between gap-5 flex-wrap lg:flex-nowrap items-center
-        bg-[url('../public/assets/bg_box/pexels-joshsorenson-386148.webp')] max-w-screen-xl w-full bg-cover bg-bottom bg-no-repeat"
+        bg-[url('../public/assets/bg_box/pexels-eberhardgross-1367192.webp')] max-w-screen-xl w-full bg-cover bg-bottom bg-no-repeat"
         >
           <img
             loading="lazy"
