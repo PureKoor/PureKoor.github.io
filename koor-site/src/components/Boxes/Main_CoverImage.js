@@ -1,11 +1,8 @@
-import LazyImage from '../LazyImage.js'
-
 function Main_CoverImage() {
-  return <LazyImage
+  return <img
   src="assets/Somna/Logo_PureKoorSomna.webp"
-  placeholder="assets/Somna/Logo_PureKoorSomnaLQ.webp"
   fetchpriority="high"
-  alt="Nice image"
+  alt="Header with sleepy PureKoor Art and Video"
   className="max-w-7xl h-full"
 />
 }
