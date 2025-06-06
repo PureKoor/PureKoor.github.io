@@ -83,6 +83,7 @@ function Main_TFYourSona() {
                 href="https://purekoor.gumroad.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's Gumroad"
                 className="rounded-2xl h-20 w-20 m-auto"
               >
                 <SiGumroad
@@ -94,6 +95,7 @@ function Main_TFYourSona() {
                 href="https://www.patreon.com/c/purekoor/shop"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's Patreon"
                 className="rounded-2xl h-20 w-20 m-auto"
               >
                 <FaPatreon
@@ -105,6 +107,7 @@ function Main_TFYourSona() {
                 href="https://purekoor.itch.io/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's Itch.io"
                 className="rounded-2xl h-20 w-20 m-auto"
               >
                 <FaItchIo
@@ -116,6 +119,7 @@ function Main_TFYourSona() {
                 href="https://ko-fi.com/purekoor/shop"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="PureKoor's KoFi"
                 className="rounded-2xl h-20 w-20 m-auto"
               >
                 <SiKofi
