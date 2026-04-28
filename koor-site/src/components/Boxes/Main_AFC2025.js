@@ -1,7 +1,7 @@
 import { FaPatreon } from "react-icons/fa6";
 import { GiPawPrint } from "react-icons/gi";
 
-function Main_SomnaDeal() {
+function Main_AFC2025() {
   return (
     <>
       {/* "text-2xl [writing-mode:vertical-lr] mt-3" ,  */}
@@ -15,18 +15,10 @@ function Main_SomnaDeal() {
                   <span className="text-2xl lg:text-4xl align-middle text-stroke-sm">
                     <a
                       href="https://furality.online/explore/dealers?id=831"
-                      alt="Furality Booth #831"
+                      aria-label="Furality Booth #831"
                     >
                       Find Me @ AFC 2025
                     </a>
-                  </span>
-                </div>
-                <div className="row-span-3 col-span-3 mx-auto pb-5">
-                  <span className="text-2xl text-center font-arial text-blue text-stroke-sm">
-                    <a
-                      href="https://furality.online/explore/dealers?id=831"
-                      alt="Furality Booth #831"
-                    ></a>
                   </span>
                 </div>
 
@@ -34,20 +26,20 @@ function Main_SomnaDeal() {
                   className="row-span-3 col-span-3 mx-auto
                 transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#FF00FF] duration-450 ease-in-out"
                 >
-                  <span className="text-2xl lg:text-4xl text-center font-arial text-blue text-stroke-sm">
+                  <span className="text-2xl lg:text-4xl text-center text-stroke-sm">
                     <a
                       href="https://furality.online/event?id=community-showcase"
-                      alt="Furality Somna Community Showcase"
+                      aria-label="Furality Somna Community Showcase"
                     >
                       Creating Your Artstyle: Where To Begin?
                     </a>
                   </span>
                 </div>
                 <div className="row-span-3 col-span-3 mx-auto pb-5">
-                  <span className="text-2xl text-center font-arial text-blue text-stroke-sm">
+                  <span className="text-2xl text-center text-stroke-sm">
                     <a
                       href="https://furality.online/event?id=community-showcase"
-                      alt="Furality Somna Community Showcase"
+                      aria-label="Furality Somna Community Showcase"
                     >
                       Friday Sept 19th, Begins 2PM @ on Second Floor in Panel
                       Room 1
@@ -59,20 +51,20 @@ function Main_SomnaDeal() {
                   className="row-span-3 col-span-3 mx-auto
                 transition-transform hover:scale-x-110 hover:-translate-y-2 hover:border-[#FF00FF] duration-450 ease-in-out"
                 >
-                  <span className="text-2xl lg:text-4xl text-center font-arial text-blue text-stroke-sm">
+                  <span className="text-2xl lg:text-4xl text-center text-stroke-sm">
                     <a
                       href="https://furality.online/event?id=lobby"
-                      alt="Furality Somna Lobby"
+                      aria-label="Furality Somna Lobby"
                     >
                       TF Meet N' Greet
                     </a>
                   </span>
                 </div>
                 <div className="row-span-3 col-span-3 mx-auto pb-6">
-                  <span className="text-2xl text-center font-arial text-blue text-stroke-sm">
+                  <span className="text-2xl text-center text-stroke-sm">
                     <a
                       href="https://furality.online/event?id=lobby"
-                      alt="Furality Somna Lobby"
+                      aria-label="Furality Somna Lobby"
                     >
                       Saturday Sept 20th, From 9PM - 10PM on First Floor in
                       Meetup Room 1
@@ -104,4 +96,4 @@ function Main_SomnaDeal() {
   );
 }
 
-export default Main_SomnaDeal;
+export default Main_AFC2025;

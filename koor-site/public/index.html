@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="preload" fetchpriority="high" href="assets/Somna/Logo_PureKoorSomna.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+      href="assets/Somna/Logo_PureKoorSomna.webp"
+      imagesrcset="assets/Somna/Logo_PureKoorSomnaLQ.webp 1028w, assets/Somna/Logo_PureKoorSomna.webp 4110w"
+      imagesizes="(min-width: 1280px) 1280px, 100vw"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fugaz+One:wght@400&family=Roboto:wght@400;700;900&display=swap" />
@@ -39,9 +47,7 @@
     <meta name="author" content="PureKoor" />
 
     <!-- Settings -->
-    <html lang="en-us" />
     <meta name="color-scheme" content="only light" />
-    <meta charset="utf-8" />
 
     <!-- Open Graph tags (OG) -->
     <meta property="og:url" content="https://purekoor.com" />
@@ -62,7 +68,7 @@
       content="https://purekoor.com/assets/Meta/SocialPreview.png"
     />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="{`Image" of $PureKoor site`} />
+    <meta property="og:image:alt" content="PureKoor site preview" />
 
     <!-- Twitter tags -->
     <meta name="twitter:creator" content="PureKoor" />
@@ -79,8 +85,7 @@
     />
 
     <!-- Robots -->
-    <meta name="robots" content="noai, noimageai" />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index, follow, noai, noimageai" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

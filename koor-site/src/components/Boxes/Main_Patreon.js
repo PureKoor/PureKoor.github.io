@@ -1,4 +1,4 @@
-import { FaBluesky, FaYoutube, FaTelegram, FaPatreon } from "react-icons/fa6";
+import { FaPatreon } from "react-icons/fa6";
 
 function Main_Patreon() {
   return (
@@ -23,7 +23,7 @@ function Main_Patreon() {
                 <p className="mx-3 my-1 text-3xl">Monthly Tip</p>
               </div>
               <div className="row-start-3 row-span-3 col-span-full m-1 mt-5">
-                <ul className="text-xl font-regular text-right">
+                <ul className="text-xl text-right">
                   <li>Your Name In The Youtube Credits -</li>
                   <li>Early Videos -</li>
                   <li>Secret Info -</li>
@@ -41,7 +41,7 @@ function Main_Patreon() {
               rel="noopener noreferrer"
               aria-label="PureKoor's Patreon"
             >
-              <p className="text-2xl md:text-5xl font-regular text-center text-white text-stroke-sm font-serif">
+              <p className="text-2xl md:text-5xl text-center text-white text-stroke-sm font-serif">
                 Help Support My Work
               </p>
             </a>
@@ -66,7 +66,7 @@ function Main_Patreon() {
           aria-label="PureKoor's Patreon"
         >
           <div
-            className="text-4xl text-white font-serif text-white text-stroke-sm font-serif inline flex items-center align-middle h-full bg-[#4d0000] bg-opacity-25 md:mr-5 rounded-3xl
+            className="text-4xl text-white text-stroke-sm font-serif inline flex items-center align-middle h-full bg-[#4d0000] bg-opacity-25 md:mr-5 rounded-3xl
          hover:bg-[#027521] duration-150 hover:bg-opacity-65 transition-all ease-out hover:scale-105"
           >
             <div className="w-full">
@@ -75,7 +75,7 @@ function Main_Patreon() {
                 <p className="mx-3 my-1 text-3xl">Paw Tier</p>
               </div>
               <div className="row-start-3 row-span-3 col-span-full m-1 mt-5">
-                <ul className="text-xl font-regular font-serif text-white text-stroke-sm">
+                <ul className="text-xl font-serif text-white text-stroke-sm">
                   <li>- BETTER DEAL THAN SOMNA CODE</li>
                   <li>- Icon Bases</li>
                   <li>- New Art</li>
@@ -94,7 +94,7 @@ function Main_Patreon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-2xl font-regular text-center text-white text-stroke-sm font-serif my-1 ">
+            <p className="text-2xl text-center text-white text-stroke-sm font-serif my-1">
               GIFT A TIER TO YOUR FRIENDS!!
             </p>
           </a>

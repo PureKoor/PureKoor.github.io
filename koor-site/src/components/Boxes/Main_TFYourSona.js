@@ -53,7 +53,7 @@ function Main_TFYourSona() {
             className="text-center lg:pl-12 text-3xl lg:text-6xl col-start-1 grow-0 shrink inline text-white font-extrabold text-stroke-sm
          transition-transform hover:scale-105 hover:-translate-y-2 duration-50 ease-in"
           >
-            <p className>
+            <p>
               <a
                 href="https://www.patreon.com/c/purekoor/shop"
                 target="_blank"
@@ -68,7 +68,6 @@ function Main_TFYourSona() {
                 <span className="inline-block text-2xl text-[#eb812a]">
                   Ends June 11th
                 </span>
-                <span className="inline-block"></span>
               </a>
             </p>
           </div>
