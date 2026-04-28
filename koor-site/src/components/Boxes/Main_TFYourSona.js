@@ -128,7 +128,7 @@ function Main_TFYourSona() {
               </a>
             </div>
           </div>
-          <div className="grid grid-rows-2 grid-cols-3 lg:col-start-3 w-full max-w-sm mx-auto h-64 gap-3">
+          <div className="grid grid-rows-2 grid-cols-3 lg:col-start-3 w-full max-w-sm mx-auto lg:mx-0 h-64 gap-3">
             <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
               {images.map((bgClass, i) => (
                 <div
