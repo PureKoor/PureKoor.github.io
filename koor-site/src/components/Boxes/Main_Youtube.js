@@ -10,10 +10,10 @@ function Main_Youtube() {
   return (
     <div
       id="youtube"
-      className="bg-[#ffb600] max-w-screen-xl flex flex-row justify-between items-center flex-wrap lg:flex-nowrap w-full
+      className="bg-[#ffb600] max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 items-center w-full
       bg-[url('../public/assets/bg_box/pexels-liser1227-11521734.webp')] max-w-screen-xl w-full bg-cover bg-top bg-no-repeat"
     >
-      <div className="rounded-xl border-4 border-white my-3 ml-3 overflow-hidden w-full max-w-2xl aspect-video">
+      <div className="rounded-xl border-4 border-white my-3 mx-3 lg:mr-0 overflow-hidden lg:col-span-1 aspect-video">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=saXzXq3lXnM"
           width="100%"
@@ -29,7 +29,7 @@ function Main_Youtube() {
         />
       </div>
 
-      <div className="grid grid-cols-1 grid-rows-2 gap-1 mx-auto">
+      <div className="grid grid-cols-1 grid-rows-2 gap-1 w-full">
         <a
           href="https://www.youtube.com/@PureKoor"
           target="_blank"
