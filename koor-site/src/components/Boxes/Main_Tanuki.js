@@ -20,10 +20,10 @@ function Main_Tanuki() {
             src="assets/TanukiFellaSpin.webp"
           />
 
-          <div className="grow shrink-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mt-5">
+          <div className="grow min-w-0 grid grid-cols-5 grid-rows-3 h-full gap-3 mt-5">
             <div className="col-span-full row-span-1 my-auto">
               <div className="text-white font-serif text-center">
-                <p className="text-6xl align-middle text-stroke-sm hover:underline transition-transform hover:scale-110 hover:-translate-y-2 duration-50 ease-in">
+                <p className="text-3xl lg:text-6xl align-middle text-stroke-sm hover:underline transition-transform hover:scale-110 hover:-translate-y-2 duration-50 ease-in">
                   <a
                     href="https://www.patreon.com/purekoor/shop/tanuki-fella-avatar-support-ver-1-1-229840"
                     target="_blank"
@@ -63,7 +63,7 @@ function Main_Tanuki() {
             </div>
           </div>
 
-          <div className="grow shrink-0 grid grid-cols-2 grid-rows-3 h-full gap-3 mr-10 my-3">
+          <div className="grow shrink-0 grid grid-cols-2 grid-rows-3 h-full gap-3 lg:mr-10 my-3">
             <div className="my-auto col-span-2">
               <p className="text-4xl text-center font-extrabold text-white text-stroke-sm">
                 Available on

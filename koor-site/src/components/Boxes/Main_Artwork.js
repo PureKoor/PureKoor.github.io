@@ -6,13 +6,13 @@ function Main_Artwork() {
       id="art"
       className="bg-[url('../public/assets/bg_box/IMG_ArtBG.webp')] max-w-screen-xl  w-full bg-cover bg-top bg-no-repeat"
     >
-      <div className="grid grid-cols-2 grid-rows-1 gap-5 my-5 w-full">
+      <div className="grid grid-cols-1 gap-5 my-5 w-full">
         <div className="col-start-1 col-span-1 flex flex-col">
           <div className="grow-0 shrink-0 text-5xl font-serif text-center inline stroke-[#2e002c] text-white text-stroke-sm">
             <p>View My Art</p>
           </div>
           <div className="mt-5">
-            <div className="shrink-0 grow-0 grid grid-cols-3 grid-rows-1 gap-5 mx-5 w-full">
+            <div className="shrink-0 grow-0 grid grid-cols-3 grid-rows-1 gap-5 mx-5">
               <a
                 href="https://bsky.app/profile/purekoor.art/feed/aaaauebqu3eqq"
                 target="_blank"

@@ -35,7 +35,7 @@ function Main_TFYourSona() {
       bg-[url('../public/assets/bg_box/pexels-ignacio-pales-407380-2877375.webp')] max-w-screen-xl w-full bg-cover bg-bottom bg-no-repeat"
       >
         <h1
-          className="text-slate-50 font-serif text-6xl text-center text-stroke-sm mt-2
+          className="text-slate-50 font-serif text-3xl lg:text-6xl text-center text-stroke-sm mt-2
         hover:underline transition-transform hover:scale-110 hover:translate-y-2 duration-50 ease-in"
         >
           <a
@@ -48,9 +48,9 @@ function Main_TFYourSona() {
             TRANSFORM YOUR SONA: ICON BASES
           </a>
         </h1>
-        <div className="grid grid-rows-1 grid-cols-3 gap-5 items-center m-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center m-5">
           <div
-            className="text-center pl-12 text-6xl col-start-1 grow-0 shrink inline text-white font-extrabold text-stroke-sm
+            className="text-center lg:pl-12 text-3xl lg:text-6xl col-start-1 grow-0 shrink inline text-white font-extrabold text-stroke-sm
          transition-transform hover:scale-105 hover:-translate-y-2 duration-50 ease-in"
           >
             <p className>
@@ -61,7 +61,7 @@ function Main_TFYourSona() {
                 className="rounded-2xl h-20 w-20 m-auto"
               >
                 <span className="inline-block text-4xl">Use Code</span>
-                <span className="inline-block text-8x1 pt-4">"SOMNA"</span>
+                <span className="inline-block text-8xl pt-4">"SOMNA"</span>
                 <span className="inline-block text-4xl">
                   for 25% Select Packs
                 </span>
@@ -72,8 +72,8 @@ function Main_TFYourSona() {
               </a>
             </p>
           </div>
-          <div className="col-start-2 flex flex-col items-center justify-center">
-            <div className="grow grid grid-cols-2 grid-rows-3 h-full gap-5 mr-16 my-3">
+          <div className="lg:col-start-2 flex flex-col items-center justify-center">
+            <div className="grow grid grid-cols-2 grid-rows-3 h-full gap-5 lg:mr-16 my-3">
               <div className="my-auto col-span-2">
                 <p className="text-4xl text-center font-extrabold text-white text-stroke-sm">
                   Available on
@@ -129,7 +129,7 @@ function Main_TFYourSona() {
               </a>
             </div>
           </div>
-          <div className="grid grid-rows-2 grid-cols-3 col-start-3 w-96 h-64 gap-3">
+          <div className="grid grid-rows-2 grid-cols-3 lg:col-start-3 w-full max-w-sm mx-auto h-64 gap-3">
             <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
               {images.map((bgClass, i) => (
                 <div

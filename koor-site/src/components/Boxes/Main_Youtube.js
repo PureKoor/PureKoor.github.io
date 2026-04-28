@@ -13,9 +13,10 @@ function Main_Youtube() {
       className="bg-[#ffb600] max-w-screen-xl flex flex-row justify-between items-center flex-wrap lg:flex-nowrap w-full
       bg-[url('../public/assets/bg_box/pexels-liser1227-11521734.webp')] max-w-screen-xl w-full bg-cover bg-top bg-no-repeat"
     >
-      <div className="rounded-xl border-4 border-white my-3 ml-3 overflow-hidden shrink-0 w-2xl">
+      <div className="rounded-xl border-4 border-white my-3 ml-3 overflow-hidden w-full max-w-2xl">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=saXzXq3lXnM"
+          width="100%"
           config={{
             youtube: {
               playerVars: { controls: 1 },
@@ -34,7 +35,7 @@ function Main_Youtube() {
           rel="noopener noreferrer"
           className="border-4 bg-red-600 hover:bg-red-700 rounded-xl flex w-3/4 h-3/4 m-auto transition-all hover:scale-90 hover:border-[#ff0000] duration-450 ease-in-out"
         >
-          <p className="text-6xl m-auto font-bold align-middle text-white align-right flex">
+          <p className="text-3xl lg:text-6xl m-auto font-bold align-middle text-white align-right flex">
             <FaYoutube className="mr-3" />
             Subscribe!
           </p>
