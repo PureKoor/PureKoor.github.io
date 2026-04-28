@@ -1,8 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-{
-  /* Generated. Should be a scrolling to the right loop of clickable thumbnails in a rectangle. Atleast this got some bouncy animation to look at */
-}
 const videoIds = [
   "E0ATr0jo-Bo", // Coming Out As A Furry
   "rH3ijIrG1mY", // Coddle Crystal
@@ -15,40 +12,49 @@ const videoIds = [
   "sENpc-be39I", // How I Became A Furry
 ];
 
+const doubled = [...videoIds, ...videoIds];
+
 export default function Func_AutoScrollThumbnails() {
   const containerRef = useRef();
 
   useEffect(() => {
     const container = containerRef.current;
-
-    let start = null;
     let scrollLeft = 0;
-    let requestId;
+    let requestId = null;
 
-    const speed = 0.6; // pixels per frame
-
-    const step = (timestamp) => {
-      if (!start) start = timestamp;
-      start = timestamp;
-
-      scrollLeft += speed;
-      if (scrollLeft >= container.scrollWidth / 2) {
-        scrollLeft = 0;
-      }
-
+    const step = () => {
+      scrollLeft += 0.6;
+      if (scrollLeft >= container.scrollWidth / 2) scrollLeft = 0;
       container.scrollLeft = scrollLeft;
       requestId = requestAnimationFrame(step);
     };
 
-    requestId = requestAnimationFrame(step);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          requestId = requestAnimationFrame(step);
+        } else {
+          if (requestId !== null) {
+            cancelAnimationFrame(requestId);
+            requestId = null;
+          }
+        }
+      },
+      { threshold: 0 }
+    );
 
-    return () => cancelAnimationFrame(requestId);
+    observer.observe(container);
+
+    return () => {
+      if (requestId !== null) cancelAnimationFrame(requestId);
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <div className="overflow-hidden w-full py-3" ref={containerRef}>
       <div className="flex min-w-fit gap-2 whitespace-nowrap">
-        {[...videoIds, ...videoIds].map((id, idx) => (
+        {doubled.map((id, idx) => (
           <a
             key={idx}
             href={`https://www.youtube.com/watch?v=${id}`}
@@ -59,6 +65,8 @@ export default function Func_AutoScrollThumbnails() {
             <img
               src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
               alt="YouTube thumbnail"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </a>
