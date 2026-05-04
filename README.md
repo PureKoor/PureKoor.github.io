@@ -8,5 +8,10 @@
 [Via Patreon](https://patreon.purekoor.com)
 [Via Youtube](https://yt.purekoor.com)
 
+
+## How to develop
+
+Run `npm start` inside the `koor-site/` directory.
+
 **Thanks for reading. Have a bear**
 ʕ˶´• ᴥ •`˶ʔ

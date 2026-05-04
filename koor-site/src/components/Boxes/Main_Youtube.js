@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa6";
 function Main_Youtube() {
   return (
     <div
-      id="youtube"
+      id="video"
       className="bg-[#ffb600] max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 items-center w-full
       bg-[url('../public/assets/bg_box/pexels-liser1227-11521734.webp')] max-w-screen-xl w-full bg-cover bg-top bg-no-repeat"
     >

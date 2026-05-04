@@ -28,8 +28,8 @@ function Main_AFC2025() {
                 >
                   <span className="text-2xl lg:text-4xl text-center text-stroke-sm">
                     <a
-                      href="https://furality.online/event?id=community-showcase"
-                      aria-label="Furality Somna Community Showcase"
+                      href="https://builder.guidebook.com/g/#/guides/furryweekend2026/schedule/sessions/32501270"
+                      aria-label="FWA 2026: Creating Your Art Style: Where To Begin?"
                     >
                       Creating Your Artstyle: Where To Begin?
                     </a>
@@ -38,11 +38,10 @@ function Main_AFC2025() {
                 <div className="row-span-3 col-span-3 mx-auto pb-5">
                   <span className="text-2xl text-center text-stroke-sm">
                     <a
-                      href="https://furality.online/event?id=community-showcase"
-                      aria-label="Furality Somna Community Showcase"
+                      href="https://builder.guidebook.com/g/#/guides/furryweekend2026/schedule/sessions/32501270"
+                      aria-label="FWA 2026: Creating Your Art Style: Where To Begin?"
                     >
-                      Friday Sept 19th, Begins 2PM @ on Second Floor in Panel
-                      Room 1
+                      Sunday May 10th, 2:30-4:00 pm @ Hyatt Regency C3 (Centennial Ballroom B)
                     </a>
                   </span>
                 </div>
@@ -53,8 +52,8 @@ function Main_AFC2025() {
                 >
                   <span className="text-2xl lg:text-4xl text-center text-stroke-sm">
                     <a
-                      href="https://furality.online/event?id=lobby"
-                      aria-label="Furality Somna Lobby"
+                      href="https://builder.guidebook.com/g/#/guides/furryweekend2026/schedule/sessions/32501269"
+                      aria-label="FWA 2026: Transformation (TF) Meet N' Greet"
                     >
                       TF Meet N' Greet
                     </a>
@@ -66,8 +65,7 @@ function Main_AFC2025() {
                       href="https://furality.online/event?id=lobby"
                       aria-label="Furality Somna Lobby"
                     >
-                      Saturday Sept 20th, From 9PM - 10PM on First Floor in
-                      Meetup Room 1
+                      Sunday May 10th, 4:30-5:30 pm @ Hyatt Regency C3 (Centennial Ballroom B)
                     </a>
                   </span>
                 </div>
