@@ -25,7 +25,7 @@ function Main_FWA26_Panel() {
           className="text-5xl text-center text-white text-stroke-sm font-serif inline-flex items-center justify-center align-middle h-full bg-[#4d0000] bg-opacity-25 md:mr-5 rounded-3xl px-4 py-4
          hover:bg-[#027521] duration-150 hover:bg-opacity-65 transition-all ease-out hover:scale-105"
         >
-          More info here!
+          More Info Here!
         </a>
         <a
           href="https://builder.guidebook.com/g/#/guides/furryweekend2026/schedule/sessions/32501270"
