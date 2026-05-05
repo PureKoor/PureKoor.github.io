@@ -20,5 +20,14 @@ npm start
 
 To end the local instance type Ctrl-C in the terminal.
 
+## How to publish
+
+To publish the site to purekoor.com, run:
+
+```bash
+cd koor-site/
+npm run deploy
+```
+
 **Thanks for reading. Have a bear**
 ʕ˶´• ᴥ •`˶ʔ
