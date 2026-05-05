@@ -9,12 +9,16 @@
 [Via Patreon](https://patreon.purekoor.com)
 [Via Youtube](https://yt.purekoor.com)
 
-## How to develop/run site locally
+## How to develop
+
+To start the site:
 
 ```bash
 cd koor-site/
 npm start
 ```
+
+To end the local instance type Ctrl-C in the terminal.
 
 **Thanks for reading. Have a bear**
 ʕ˶´• ᴥ •`˶ʔ
