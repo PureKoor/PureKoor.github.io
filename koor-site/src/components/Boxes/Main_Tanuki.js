@@ -51,15 +51,6 @@ function Main_Tanuki() {
               <p className="text-2xl text-center font-extrabold text-white text-stroke-sm pb-3">
                 Quest & PC Compatible
               </p>
-              <p className="text-3xl text-center font-extrabold text-white text-stroke-sm underline transition-transform hover:scale-110 hover:translate-y-2 duration-50 ease-in">
-                <a
-                  href="https://furality.online/explore/dealers?id=831"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try it out for FREE at My Somna Booth #831
-                </a>
-              </p>
             </div>
           </div>
 
