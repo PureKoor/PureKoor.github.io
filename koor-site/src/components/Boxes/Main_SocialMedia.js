@@ -3,7 +3,7 @@ import { SiGumroad } from "react-icons/si";
 
 function Main_SocialMedia() {
   return (
-    <div className="grid grid-cols-3 grid-rows-2 justify-items-center items-center gap-6 sm:gap-10 px-4 mx-auto w-fit">
+    <div className="grid grid-cols-3 grid-rows-2 justify-items-center items-center gap-4 sm:gap-10 px-4 mx-auto w-fit">
       <a
         href="https://patreon.purekoor.com" target="_blank" rel="noopener noreferrer"
         aria-label="PureKoor's Patreon"
