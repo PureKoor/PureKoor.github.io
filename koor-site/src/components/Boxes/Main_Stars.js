@@ -16,6 +16,7 @@ export default function Main_Stars() {
   return (
     <Particles
       id="koor-stars"
+      className="absolute inset-0"
       options={{
         fullScreen: { enable: false },
         background: { color: "transparent" },
