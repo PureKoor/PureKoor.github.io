@@ -12,18 +12,18 @@ function Main_Artwork() {
             <p>View My Art</p>
           </div>
           <div className="mt-5">
-            <div className="shrink-0 grow-0 grid grid-cols-3 grid-rows-1 gap-5 mx-5 w-full">
+            <div className="shrink-0 grow-0 grid grid-cols-1 sm:grid-cols-3 grid-rows-1 gap-5 lg:mx-5 w-full">
               <a
                 href="https://bsky.app/profile/purekoor.art/feed/aaaauebqu3eqq"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="PureKoor's Patreon"
-                className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
+                className="aspect-square w-full max-w-[12rem] mx-auto flex items-center justify-center border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#010b38] hover:bg-[#010b38] hover:bg-opacity-50 hover:border-opacity-70 duration-300 ease-in-out hover:opacity-100"
               >
                 <FaBluesky
                   color="#2e002c"
-                  className="m-4 h-5/6 w-5/6 object-cover hover:fill-[#25C5DF]"
+                  className="h-3/4 w-3/4 hover:fill-[#25C5DF]"
                 />
               </a>
               <a
@@ -31,12 +31,12 @@ function Main_Artwork() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="PureKoor's YouTube"
-                className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
+                className="aspect-square w-full max-w-[12rem] mx-auto flex items-center justify-center border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#52072a] hover:bg-[#ffd5a6] hover:bg-opacity-60 hover:border-opacity-70 duration-300 ease-in-out hover:opacity-100"
               >
                 <FaYoutube
                   color="#2e002c"
-                  className="m-4 h-5/6 w-5/6 object-cover hover:fill-[#CD201F]"
+                  className="h-3/4 w-3/4 hover:fill-[#CD201F]"
                 />
               </a>
               <a
@@ -44,12 +44,12 @@ function Main_Artwork() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="PureKoor's Telegram Channel"
-                className="border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
+                className="aspect-square w-full max-w-[12rem] mx-auto flex items-center justify-center border-4 rounded-xl border-dotted border-[#2e002c] bg-transparent overflow-hidden opacity-80
                 transition-all hover:-translate-y-2 hover:border-[#010b38] hover:bg-[#010b38] hover:border-opacity-70 hover:bg-opacity-50 duration-300 ease-in-out hover:opacity-100"
               >
                 <FaTelegram
                   color="#2e002c"
-                  className="m-4 h-5/6 w-5/6 object-cover hover:fill-[#0088cc]"
+                  className="h-3/4 w-3/4 hover:fill-[#0088cc]"
                 />
               </a>
             </div>
