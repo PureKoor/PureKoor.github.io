@@ -3,6 +3,7 @@ import Main_CoverImage from "./components/Boxes/Main_CoverImage";
 import Main_NavBar from "./components/Boxes/Main_NavBar";
 import Main_SocialMedia from "./components/Boxes/Main_SocialMedia";
 import { FaChevronDown } from "react-icons/fa6";
+import { Link } from 'react-scroll';
 
 const Main_Stars        = lazy(() => import("./components/Boxes/Main_Stars"));
 const Main_FWA26        = lazy(() => import("./components/Boxes/Main_FWA26"));
@@ -36,15 +37,15 @@ export default function App() {
           <Main_SocialMedia />
         </div>
         <div className="flex-grow" />
-        <div className="mb-8 flex flex-col items-center animate-bounce">
-          <button
-            onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
-            className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer flex flex-col items-center"
-            aria-label="Scroll down for more info"
+        <div className="mb-8 flex flex-col items-center animate-bounce hover:[animation-play-state:paused]">
+          <Link
+            to="fwa-header"
+            smooth={true} duration={500} offset={-20}
+            className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer flex flex-col items-center transition-transform hover:scale-110 hover:-translate-y-2 hover:border-[#00FF00] duration-450 ease-in-out"
           >
             <span className="font-serif text-2xl mb-2 text-stroke-sm">Find me at FWA!</span>
             <FaChevronDown className="w-12 h-12" />
-          </button>
+          </Link>
         </div>
       </div>
 
