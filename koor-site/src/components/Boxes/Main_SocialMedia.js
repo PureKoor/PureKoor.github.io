@@ -32,13 +32,13 @@ function Main_SocialMedia() {
         <FaYoutube className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
       </a>
       <a
-        href="https://tiktok.purekoor.com" target="_blank" rel="noopener noreferrer"
-        aria-label="PureKoor's TikTok"
+        href="https://gumroad.purekoor.com" target="_blank" rel="noopener noreferrer"
+        aria-label="PureKoor's Gumroad"
         className="w-28 h-28 sm:w-40 sm:h-40 rounded-2xl border-4 border-[#4a2787] bg-[#0d0033] bg-opacity-70
           flex items-center justify-center
-          transition-all hover:scale-110 hover:-translate-y-2 hover:border-white duration-300 ease-in-out"
+          transition-all hover:scale-110 hover:-translate-y-2 hover:border-[#FF90E8] duration-300 ease-in-out"
       >
-        <FaTiktok className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
+        <SiGumroad className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
       </a>
       <a
         href="https://telegram.purekoor.com" target="_blank" rel="noopener noreferrer"
@@ -50,13 +50,13 @@ function Main_SocialMedia() {
         <FaTelegram className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
       </a>
       <a
-        href="https://gumroad.purekoor.com" target="_blank" rel="noopener noreferrer"
-        aria-label="PureKoor's Gumroad"
+        href="https://tiktok.purekoor.com" target="_blank" rel="noopener noreferrer"
+        aria-label="PureKoor's TikTok"
         className="w-28 h-28 sm:w-40 sm:h-40 rounded-2xl border-4 border-[#4a2787] bg-[#0d0033] bg-opacity-70
           flex items-center justify-center
-          transition-all hover:scale-110 hover:-translate-y-2 hover:border-[#FF90E8] duration-300 ease-in-out"
+          transition-all hover:scale-110 hover:-translate-y-2 hover:border-white duration-300 ease-in-out"
       >
-        <SiGumroad className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
+        <FaTiktok className="w-14 h-14 sm:w-24 sm:h-24 text-white" />
       </a>
     </div>
   );
