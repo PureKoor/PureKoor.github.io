@@ -34,9 +34,9 @@ function Main_Youtube() {
           href="https://www.youtube.com/@PureKoor"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-4 bg-red-600 hover:bg-red-700 rounded-xl flex w-3/4 h-3/4 m-auto transition-all hover:scale-90 hover:border-[#ff0000] duration-450 ease-in-out"
+          className="border-4 bg-red-600 hover:bg-red-700 rounded-xl flex w-3/4 aspect-[4/1] m-auto transition-all hover:scale-90 hover:border-[#ff0000] duration-450 ease-in-out [container-type:inline-size]"
         >
-          <p className="text-3xl lg:text-6xl m-auto font-bold align-middle text-white align-right flex">
+          <p className="text-[clamp(1.875rem,13cqi,3.75rem)] m-auto font-bold align-middle text-white align-right flex items-center">
             <FaYoutube className="mr-3" />
             Subscribe!
           </p>
