@@ -48,31 +48,47 @@ function Main_TFYourSona() {
             TRANSFORM YOUR SONA: ICON BASES
           </a>
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center m-5">
-          <div
-            className="text-center lg:pl-12 text-3xl lg:text-6xl col-start-1 grow-0 shrink inline text-white font-extrabold text-stroke-sm
-         transition-transform hover:scale-105 hover:-translate-y-2 duration-50 ease-in"
-          >
-            <p>
-              <a
-                href="https://www.patreon.com/c/purekoor/shop"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl h-20 w-20 m-auto"
-              >
-                <span className="inline-block text-4xl">Use Code</span>
-                <span className="inline-block text-8xl pt-4">"SOMNA"</span>
-                <span className="inline-block text-4xl">
-                  for 25% Select Packs
-                </span>
-                <span className="inline-block text-2xl text-[#eb812a]">
-                  Ends June 11th
-                </span>
-              </a>
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center m-5 justify-items-center max-w-4xl mx-auto">
+                    <div className="grid grid-rows-2 grid-cols-3 w-full max-w-sm mx-auto h-64 gap-3">
+            <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 0) % numOfImgs === current
+                      ? "opacity-100"
+                      : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
+            </div>
+            <div className="relative w-full h-full m-auto col-start-3 row-start-2 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 1) % numOfImgs === current
+                      ? "opacity-100"
+                      : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
+            </div>
+            <div className="relative w-full h-full m-auto col-start-1 col-span-2 row-start-1 row-span-2 border-4 rounded-xl border-white overflow-hidden">
+              {images.map((bgClass, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    (i + 2) % numOfImgs === current
+                      ? "opacity-100"
+                      : "opacity-0"
+                  } ${bgClass} bg-cover bg-center`}
+                />
+              ))}
+            </div>
           </div>
-          <div className="lg:col-start-2 flex flex-col items-center justify-center">
-            <div className="grow grid grid-cols-2 grid-rows-3 h-full gap-5 lg:mr-16 my-3">
+          <div className="flex flex-col items-center justify-center">
+            <div className="grow grid grid-cols-2 grid-rows-3 h-full gap-5 my-3">
               <div className="my-auto col-span-2">
                 <p className="text-4xl text-center font-extrabold text-white text-stroke-sm">
                   Available on
@@ -126,44 +142,6 @@ function Main_TFYourSona() {
               transition-all  hover:scale-125 hover:translate-y-2"
                 />
               </a>
-            </div>
-          </div>
-          <div className="grid grid-rows-2 grid-cols-3 lg:col-start-3 w-full max-w-sm mx-auto lg:mx-0 h-64 gap-3">
-            <div className="relative w-full h-full m-auto col-start-3 row-start-1 border-4 rounded-xl border-white overflow-hidden">
-              {images.map((bgClass, i) => (
-                <div
-                  key={i}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    (i + 0) % numOfImgs === current
-                      ? "opacity-100"
-                      : "opacity-0"
-                  } ${bgClass} bg-cover bg-center`}
-                />
-              ))}
-            </div>
-            <div className="relative w-full h-full m-auto col-start-3 row-start-2 border-4 rounded-xl border-white overflow-hidden">
-              {images.map((bgClass, i) => (
-                <div
-                  key={i}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    (i + 1) % numOfImgs === current
-                      ? "opacity-100"
-                      : "opacity-0"
-                  } ${bgClass} bg-cover bg-center`}
-                />
-              ))}
-            </div>
-            <div className="relative w-full h-full m-auto col-start-1 col-span-2 row-start-1 row-span-2 border-4 rounded-xl border-white overflow-hidden">
-              {images.map((bgClass, i) => (
-                <div
-                  key={i}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    (i + 2) % numOfImgs === current
-                      ? "opacity-100"
-                      : "opacity-0"
-                  } ${bgClass} bg-cover bg-center`}
-                />
-              ))}
             </div>
           </div>
         </div>
