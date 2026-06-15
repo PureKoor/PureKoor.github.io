@@ -6,13 +6,11 @@ import { FaChevronDown } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
 const Main_Stars        = lazy(() => import("./components/Boxes/Main_Stars"));
-const Main_FWA26        = lazy(() => import("./components/Boxes/Main_FWA26"));
-const Main_FWA26_Panel  = lazy(() => import("./components/Boxes/Main_FWA26_Panel"));
-const Main_FWA26_TF     = lazy(() => import("./components/Boxes/Main_FWA26_TF"));
 const Main_Youtube      = lazy(() => import("./components/Boxes/Main_Youtube"));
 const Main_Patreon      = lazy(() => import("./components/Boxes/Main_Patreon"));
 const Main_TFYourSona   = lazy(() => import("./components/Boxes/Main_TFYourSona"));
 const Main_Artwork      = lazy(() => import("./components/Boxes/Main_Artwork"));
+const Main_Photos       = lazy(() => import("./components/Boxes/Main_Photos"));
 const Main_Tanuki       = lazy(() => import("./components/Boxes/Main_Tanuki"));
 const Main_FootBar      = lazy(() => import("./components/Boxes/Main_FootBar"));
 
@@ -39,11 +37,11 @@ export default function App() {
         <div className="flex-grow" />
         <div className="mb-8 flex flex-col items-center animate-bounce hover:[animation-play-state:paused]">
           <Link
-            to="fwa-header"
+            to="video"
             smooth={true} duration={500} offset={-20}
             className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-pointer flex flex-col items-center transition-transform hover:scale-110 hover:-translate-y-2 hover:border-[#00FF00] duration-450 ease-in-out"
           >
-            <span className="font-serif text-2xl mb-2 text-stroke-sm">Find me at FWA!</span>
+            <span className="font-serif text-2xl mb-2 text-stroke-sm">Check Out My Work!</span>
             <FaChevronDown className="w-12 h-12" />
           </Link>
         </div>
@@ -54,13 +52,11 @@ export default function App() {
         <div className="relative z-10 flex flex-col items-center mx-auto max-w-screen-xl gap-2">
           <div className="max-w-screen-xl w-full">
           </div>
-          <Main_FWA26 />
-          <Main_FWA26_Panel />
-          <Main_FWA26_TF />
           <Main_Youtube />
           <Main_Patreon />
           <Main_TFYourSona />
           <Main_Artwork />
+          <Main_Photos />
           <Main_Tanuki />
           <Main_FootBar />
         </div>

@@ -6,7 +6,7 @@ function Main_CoverImage() {
   width="4110"
   height="1275"
   fetchpriority="high"
-  alt="Header with sleepy PureKoor Art and Video"
+  alt="Header Image PureKoor Art and Video with Sleepy Koor"
   className="max-w-7xl w-full mx-auto h-auto"
 />
 }
